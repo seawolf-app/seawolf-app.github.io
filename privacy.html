@@ -10,7 +10,7 @@
 :root{--deep:#081A31;--navy:#0B2340;--gold:#D6B461;--ink:#EEF3F8;--mist:#A8B8CC;--line:rgba(214,180,97,.22);--panel:rgba(255,255,255,.045);
 --display:"Fira Sans Extra Condensed","Arial Narrow",sans-serif;--body:"PT Sans","Noto Sans","Segoe UI",system-ui,sans-serif;color-scheme:dark}
 *{box-sizing:border-box}html{background:var(--deep)}
-body{margin:0;background:radial-gradient(120% 70% at 85% -10%,rgba(30,74,122,.55),transparent 60%),linear-gradient(180deg,var(--navy),var(--deep) 60%);background-color:var(--deep);color:var(--ink);font:17px/1.65 var(--body);padding-inline:16px}
+body{margin:0;background:radial-gradient(120% 70% at 85% -10%,rgba(30,74,122,.55),transparent 60%),linear-gradient(180deg,var(--navy),var(--deep) 60%);background-color:var(--deep);color:var(--ink);font:17px/1.65 var(--body);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 .wrap{max-width:760px;margin:0 auto;padding-block:24px 48px}
 a{color:#E7CF94}a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
 header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;margin-bottom:22px}
@@ -24,8 +24,10 @@ h1{font:600 clamp(32px,5vw,44px)/1.1 var(--display);margin:6px 0 4px}
 h2{font:600 24px/1.2 var(--display);letter-spacing:.02em;margin:30px 0 8px;color:var(--gold)}
 p,li{color:#D5DEE9}ul{padding-left:22px}li{margin:4px 0}
 .note{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 16px;color:var(--mist);font-size:15px}
-.mail{font-family:"PT Mono",ui-monospace,monospace;user-select:all}
-footer{margin-top:40px;color:var(--mist);font-size:14px}
+.upd{background:rgba(214,180,97,.10);border:1px solid rgba(214,180,97,.45);border-radius:12px;padding:12px 16px;font-size:15px}
+.upd b{color:var(--gold)}
+.mail{font-family:"PT Mono",ui-monospace,monospace;user-select:all;overflow-wrap:anywhere}
+footer{margin-top:40px;color:var(--mist);font-size:14px;display:flex;flex-wrap:wrap;gap:8px 20px}
 </style>
 </head>
 <body>
@@ -34,38 +36,40 @@ footer{margin-top:40px;color:var(--mist);font-size:14px}
 <header>
   <a class="brand" href="index.html"><svg><use href="#wolf"/></svg>SEA WOLF</a>
   <div class="tabs" role="group" aria-label="Language">
-    <button type="button" data-l="en">English</button><button type="button" data-l="ru">Русский</button><button type="button" data-l="uk">Українська</button>
+    <button type="button" data-l="en">English</button><button type="button" data-l="ru">Русский</button><button type="button" data-l="uk">Українська</button><button type="button" data-l="zh">中文</button><button type="button" data-l="id">Bahasa Indonesia</button><button type="button" data-l="fil">Filipino</button><button type="button" data-l="hi">हिन्दी</button>
   </div>
 </header>
 
 <article lang="en" data-lang="en">
 <h1>Privacy Policy</h1>
-<p class="date">Effective date: 15 October 2026 · Applies to the Sea Wolf app for Android (app.seawolf.logbook)</p>
-<p>Sea Wolf ("the app") is a free app for seafarers that keeps a seafarer's card, documents, voyages, crew list, logbook, sea service and CV on the user's own phone. This policy explains what happens to your information. In short: <b>we do not collect, receive or store your personal data. Everything stays on your device.</b></p>
+<p class="date">Effective date: 18 November 2026 · Applies to the Sea Wolf app for Android (app.seawolf.logbook)</p>
+<p class="upd"><b>What changed on 18 November 2026:</b> the optional home-screen widget (section 2), hours of rest and salary records among the data kept on your phone, photos shared into the app from other apps, and a check of downloaded recognition files. Nothing changed in how your data is handled: it still never leaves your phone unless you send it.</p>
+<p>Sea Wolf ("the app") is a free app for seafarers that keeps a seafarer's card, documents, voyages, crew list, logbook, hours of rest, sea service and CV on the user's own phone. This policy explains what happens to your information. In short: <b>we do not collect, receive or store your personal data. Everything stays on your device.</b></p>
 <h2>1. Data you enter</h2>
-<p>Everything you enter or scan in the app — profile and contact details, photo, document numbers and scans, vessel and crew details, positions, logbook entries, sea service, colleagues — is stored only in the app's private storage on your phone. The developer has no server and no access to this data. The app has no user accounts.</p>
-<h2>2. Permissions</h2>
+<p>Everything you enter or scan in the app — profile and contact details, photo, document numbers and scans, vessel and crew details, positions, logbook entries, hours of work and rest, salary records, sea service, colleagues — is stored only in the app's private storage on your phone. The developer has no server and no access to this data. The app has no user accounts.</p>
+<h2>2. Permissions and the widget</h2>
 <ul>
 <li><b>Camera</b> — only when you scan a document or a QR code. Images are processed on the phone and saved only if you choose to keep them.</li>
 <li><b>Location</b> — only when you tap to record the vessel's position, and only while the app is open. The position is saved on the phone only. The app never tracks location in the background.</li>
 <li><b>Notifications</b> — to remind you about expiring documents, sign-off dates, birthdays and backups. Reminders are scheduled on the phone.</li>
 <li><b>Biometrics</b> — if you turn on fingerprint lock, Android checks your fingerprint; the app never receives fingerprint data.</li>
-<li><b>Photos and files</b> – the app has no access to your gallery or storage. Only on Android 9 and older does it ask for storage permission, and only to save the files you export (CV, backup) to the Download folder. You pick single photos or files in Android's own picker, and the app receives only those. Files that another app sends to Sea Wolf (“Open with”) are taken in only after you confirm.</li>
+<li><b>Photos and files</b> – the app has no access to your gallery or storage. Only on Android 9 and older does it ask for storage permission, and only to save the files you export (CV, backup) to the Download folder. You pick single photos or files in Android's own picker, and the app receives only those. Files that another app sends to Sea Wolf (“Open with”) are taken in only after you confirm. Photos you share to Sea Wolf from another app (“Share”) open in the document scanner, and nothing is saved until you confirm.</li>
+<li><b>Home-screen widget (optional)</b> — needs no permission. If you add it, it shows days to sign-off, contract progress, how many documents need attention and the name of the document that expires first (for example “Passport”). It never shows document numbers, the vessel or people's names. The widget is visible on your home screen without the PIN, so do not add it if that matters to you; you can remove it at any time.</li>
 </ul>
 <h2>3. Network connections</h2>
 <p>The app works fully offline. It connects to the internet only in these cases:</p>
 <ul>
-<li><b>Optional language pack</b> — if you download Cyrillic text recognition in Settings, the file is downloaded from GitHub. No personal data is sent; GitHub receives the technical request (such as your IP address) as for any download.</li>
+<li><b>Optional language pack</b> — if you download Cyrillic text recognition (Russian and Ukrainian) in Settings, the files are downloaded from GitHub and each file is checked (SHA-256) before use. No personal data is sent; GitHub receives the technical request (such as your IP address) as for any download.</li>
 <li><b>Links you open</b> — for example MarineTraffic, VesselFinder, Telegram, WhatsApp, or e-mail. These open in other apps or the browser and are governed by those services' own policies.</li>
 <li><b>Google text recognition</b> — document scanning uses Google ML Kit, which runs on the phone through Google Play services. The text of your documents is not sent anywhere, but Google Play services may send Google anonymous diagnostic and usage information about the ML Kit component, as described in Google's terms.</li>
 </ul>
-<p>The app contains no advertising, no analytics and no third-party tracking.</p>
+<p>All fonts are built into the app; nothing else is downloaded. Apart from the Google component above, the app contains no advertising, no analytics and no third-party tracking.</p>
 <h2>4. Backups, sharing and handover</h2>
-<p>Backups are files that you create and keep yourself; they are encrypted with a password you choose. When you share your card, CV, a contact file, a handover file or a backup, the file goes only where you send it. The developer never receives these files.</p>
+<p>Backups are files that you create and keep yourself; they are encrypted (AES-256) with a password you choose. When you share your card, CV, a contact file, a handover file or a backup, the file goes only where you send it. The developer never receives these files.</p>
 <h2>5. Security</h2>
-<p>You can protect the app with a PIN and fingerprint. While the app is locked, none of its screens can be opened – not even by a link or another app. Erasing all data and making or sending a backup ask for the PIN (or fingerprint) again. The app hides its content in the recent-apps screen. Your data stays in the app's private storage, which other apps cannot read; it is not included in Android's cloud backup or device-to-device transfer. Backups you make are encrypted with your password.</p>
+<p>You can protect the app with a PIN and fingerprint. While the app is locked, none of its screens can be opened – not even by a link or another app. The only exception is the optional home-screen widget, which shows dates and counts (see section 2). Deleting all data and making or sending a backup ask for the PIN (or fingerprint) again. The app hides its content in the recent-apps screen. Your data stays in the app's private storage, which other apps cannot read; it is not included in Android's cloud backup or device-to-device transfer. Backups you make are encrypted with your password.</p>
 <h2>6. Deleting your data</h2>
-<p>You can delete any entry in the app at any time. Settings → “Erase all data” removes everything the app keeps on the phone (after your PIN or fingerprint). Uninstalling the app also deletes all of its data. Backup files you saved elsewhere remain under your control until you delete them.</p>
+<p>You can delete any entry in the app at any time. Settings → “Delete all data from this device” removes everything the app keeps on the phone (after your PIN or fingerprint). Uninstalling the app also deletes all of its data. Backup files you saved elsewhere remain under your control until you delete them.</p>
 <h2>7. Children</h2>
 <p>The app is intended for professional seafarers and is not directed at children under 16.</p>
 <h2>8. Changes</h2>
@@ -76,33 +80,35 @@ footer{margin-top:40px;color:var(--mist);font-size:14px}
 
 <article lang="ru" data-lang="ru" hidden>
 <h1>Политика конфиденциальности</h1>
-<p class="date">Действует с 15 октября 2026 г. · Для приложения Sea Wolf для Android (app.seawolf.logbook)</p>
+<p class="date">Действует с 18 ноября 2026 г. · Для приложения Sea Wolf для Android (app.seawolf.logbook)</p>
 <p class="note">Перевод для удобства. При расхождении действует английская версия.</p>
-<p>Sea Wolf («приложение») — бесплатное приложение для моряков, которое хранит карточку моряка, документы, рейсы, список экипажа, дневник, стаж и CV на телефоне пользователя. Коротко: <b>мы не собираем, не получаем и не храним ваши персональные данные. Всё остаётся на вашем устройстве.</b></p>
+<p class="upd"><b>Что изменилось 18 ноября 2026 г.:</b> необязательный виджет на главном экране (раздел 2), часы отдыха и записи о зарплате среди данных на телефоне, фото, присланные в приложение из других приложений, и проверка скачиваемых файлов распознавания. Обращение с вашими данными не изменилось: они по-прежнему не покидают телефон, пока вы сами их не отправите.</p>
+<p>Sea Wolf («приложение») — бесплатное приложение для моряков, которое хранит карточку моряка, документы, рейсы, список экипажа, дневник, часы отдыха, стаж и CV на телефоне пользователя. Коротко: <b>мы не собираем, не получаем и не храним ваши персональные данные. Всё остаётся на вашем устройстве.</b></p>
 <h2>1. Данные, которые вы вводите</h2>
-<p>Всё, что вы вводите или сканируете — профиль и контакты, фото, номера и сканы документов, данные судна и экипажа, позиции, записи дневника, стаж, коллеги, — хранится только в закрытом хранилище приложения на вашем телефоне. У разработчика нет сервера и нет доступа к этим данным. Аккаунтов в приложении нет.</p>
-<h2>2. Разрешения</h2>
+<p>Всё, что вы вводите или сканируете — профиль и контакты, фото, номера и сканы документов, данные судна и экипажа, позиции, записи дневника, часы работы и отдыха, записи о зарплате, стаж, коллеги, — хранится только в закрытом хранилище приложения на вашем телефоне. У разработчика нет сервера и нет доступа к этим данным. Аккаунтов в приложении нет.</p>
+<h2>2. Разрешения и виджет</h2>
 <ul>
 <li><b>Камера</b> — только при сканировании документа или QR-кода. Изображения обрабатываются на телефоне и сохраняются, только если вы решите их оставить.</li>
 <li><b>Местоположение</b> — только когда вы сами записываете позицию судна и только пока приложение открыто. Позиция сохраняется только на телефоне. Слежения в фоне нет.</li>
 <li><b>Уведомления</b> — напоминания об истечении документов, списании, днях рождения и резервных копиях. Напоминания ставятся на самом телефоне.</li>
 <li><b>Биометрия</b> — если включена защита отпечатком, его проверяет Android; приложение не получает данные отпечатка.</li>
-<li><b>Фото и файлы</b> – у приложения нет доступа к галерее и памяти телефона. Только на Android 9 и более ранних версиях оно просит разрешение на память — и только чтобы сохранить выгруженные вами файлы (CV, резервную копию) в папку «Загрузки». Вы сами выбираете отдельные фото или файлы в системном окне Android, и приложение получает только их. Файлы, которые другое приложение передаёт в Sea Wolf («Открыть с помощью»), принимаются только после вашего подтверждения.</li>
+<li><b>Фото и файлы</b> – у приложения нет доступа к галерее и памяти телефона. Только на Android 9 и более ранних версиях оно просит разрешение на память — и только чтобы сохранить выгруженные вами файлы (CV, резервную копию) в папку «Загрузки». Вы сами выбираете отдельные фото или файлы в системном окне Android, и приложение получает только их. Файлы, которые другое приложение передаёт в Sea Wolf («Открыть с помощью»), принимаются только после вашего подтверждения. Фото, которые вы отправляете в Sea Wolf из другого приложения («Поделиться»), открываются в сканере документов, и ничего не сохраняется без вашего подтверждения.</li>
+<li><b>Виджет на главном экране (по желанию)</b> — разрешений не требует. Если вы его добавите, он показывает дни до списания, прогресс контракта, сколько документов требуют внимания и название документа, который истекает первым (например, «Паспорт»). Номера документов, судно и имена людей он не показывает никогда. Виджет виден на главном экране без PIN-кода — не добавляйте его, если для вас это важно; убрать его можно в любой момент.</li>
 </ul>
 <h2>3. Подключение к интернету</h2>
 <p>Приложение полностью работает без интернета и подключается только в этих случаях:</p>
 <ul>
-<li><b>Дополнительный языковой пакет</b> — если вы скачиваете распознавание кириллицы в настройках, файл загружается с GitHub. Персональные данные не передаются; GitHub получает технический запрос (например, IP-адрес), как при любой загрузке.</li>
+<li><b>Дополнительный языковой пакет</b> — если вы скачиваете распознавание кириллицы (русский и украинский) в настройках, файлы загружаются с GitHub, и каждый файл перед использованием проверяется (SHA-256). Персональные данные не передаются; GitHub получает технический запрос (например, IP-адрес), как при любой загрузке.</li>
 <li><b>Ссылки, которые вы открываете</b> — например MarineTraffic, VesselFinder, Telegram, WhatsApp, почта. Они открываются в других приложениях или браузере и подчиняются правилам этих сервисов.</li>
 <li><b>Распознавание текста Google</b> — сканирование документов использует Google ML Kit, который работает на телефоне через сервисы Google Play. Текст ваших документов никуда не отправляется, но сервисы Google Play могут передавать Google анонимную диагностическую информацию о работе компонента ML Kit согласно условиям Google.</li>
 </ul>
-<p>В приложении нет рекламы, аналитики и сторонних трекеров.</p>
+<p>Все шрифты встроены в приложение, больше ничего не скачивается. Кроме описанного выше компонента Google, в приложении нет рекламы, аналитики и сторонних трекеров.</p>
 <h2>4. Резервные копии и передача</h2>
-<p>Резервные копии — это файлы, которые вы создаёте и храните сами; они зашифрованы паролем, который выбираете вы. Когда вы отправляете карточку, CV, файл контакта, файл передачи дел или копию, файл уходит только туда, куда вы его отправили. Разработчик эти файлы не получает.</p>
+<p>Резервные копии — это файлы, которые вы создаёте и храните сами; они зашифрованы (AES-256) паролем, который выбираете вы. Когда вы отправляете карточку, CV, файл контакта, файл передачи дел или копию, файл уходит только туда, куда вы его отправили. Разработчик эти файлы не получает.</p>
 <h2>5. Безопасность</h2>
-<p>Приложение можно защитить PIN-кодом и отпечатком пальца. Пока приложение заблокировано, ни один его экран не открывается – даже по ссылке или из другого приложения. Удаление всех данных, создание и отправка резервной копии снова спрашивают PIN (или отпечаток). В списке недавних приложений содержимое скрыто. Данные хранятся в закрытой папке приложения, недоступной другим приложениям; они не попадают в облачную резервную копию Android и не переносятся на другое устройство. Ваши резервные копии шифруются вашим паролем.</p>
+<p>Приложение можно защитить PIN-кодом и отпечатком пальца. Пока приложение заблокировано, ни один его экран не открывается – даже по ссылке или из другого приложения. Единственное исключение — необязательный виджет на главном экране, который показывает даты и числа (см. раздел 2). Удаление всех данных, создание и отправка резервной копии снова спрашивают PIN (или отпечаток). В списке недавних приложений содержимое скрыто. Данные хранятся в закрытой папке приложения, недоступной другим приложениям; они не попадают в облачную резервную копию Android и не переносятся на другое устройство. Ваши резервные копии шифруются вашим паролем.</p>
 <h2>6. Удаление данных</h2>
-<p>Любую запись можно удалить в приложении в любой момент. Настройки → «Удалить все данные» удаляет всё, что приложение хранит на телефоне (после PIN-кода или отпечатка). При удалении приложения его данные тоже удаляются. Резервные копии, сохранённые в другом месте, остаются под вашим контролем, пока вы их не удалите.</p>
+<p>Любую запись можно удалить в приложении в любой момент. Настройки → «Удалить все данные с устройства» удаляет всё, что приложение хранит на телефоне (после PIN-кода или отпечатка). При удалении приложения его данные тоже удаляются. Резервные копии, сохранённые в другом месте, остаются под вашим контролем, пока вы их не удалите.</p>
 <h2>7. Дети</h2>
 <p>Приложение предназначено для профессиональных моряков и не рассчитано на детей младше 16 лет.</p>
 <h2>8. Изменения</h2>
@@ -113,33 +119,35 @@ footer{margin-top:40px;color:var(--mist);font-size:14px}
 
 <article lang="uk" data-lang="uk" hidden>
 <h1>Політика конфіденційності</h1>
-<p class="date">Діє з 15 жовтня 2026 р. · Для застосунку Sea Wolf для Android (app.seawolf.logbook)</p>
+<p class="date">Діє з 18 листопада 2026 р. · Для застосунку Sea Wolf для Android (app.seawolf.logbook)</p>
 <p class="note">Переклад для зручності. У разі розбіжностей діє англійська версія.</p>
-<p>Sea Wolf («застосунок») — безкоштовний застосунок для моряків, який зберігає картку моряка, документи, рейси, список екіпажу, щоденник, стаж і CV на телефоні користувача. Коротко: <b>ми не збираємо, не отримуємо й не зберігаємо ваші персональні дані. Усе залишається на вашому пристрої.</b></p>
+<p class="upd"><b>Що змінилося 18 листопада 2026 р.:</b> необов’язковий віджет на головному екрані (розділ 2), години відпочинку й записи про зарплату серед даних на телефоні, фото, надіслані в застосунок з інших застосунків, і перевірка завантажуваних файлів розпізнавання. Поводження з вашими даними не змінилося: вони, як і раніше, не залишають телефон, доки ви самі їх не надішлете.</p>
+<p>Sea Wolf («застосунок») — безкоштовний застосунок для моряків, який зберігає картку моряка, документи, рейси, список екіпажу, щоденник, години відпочинку, стаж і CV на телефоні користувача. Коротко: <b>ми не збираємо, не отримуємо й не зберігаємо ваші персональні дані. Усе залишається на вашому пристрої.</b></p>
 <h2>1. Дані, які ви вводите</h2>
-<p>Усе, що ви вводите або скануєте — профіль і контакти, фото, номери й скани документів, дані судна та екіпажу, позиції, записи щоденника, стаж, колеги, — зберігається лише в закритому сховищі застосунку на вашому телефоні. Розробник не має сервера й доступу до цих даних. Акаунтів у застосунку немає.</p>
-<h2>2. Дозволи</h2>
+<p>Усе, що ви вводите або скануєте — профіль і контакти, фото, номери й скани документів, дані судна та екіпажу, позиції, записи щоденника, години роботи й відпочинку, записи про зарплату, стаж, колеги, — зберігається лише в закритому сховищі застосунку на вашому телефоні. Розробник не має сервера й доступу до цих даних. Акаунтів у застосунку немає.</p>
+<h2>2. Дозволи й віджет</h2>
 <ul>
 <li><b>Камера</b> — лише під час сканування документа або QR-коду. Зображення обробляються на телефоні й зберігаються, лише якщо ви вирішите їх залишити.</li>
 <li><b>Місцезнаходження</b> — лише коли ви самі записуєте позицію судна і лише поки застосунок відкритий. Позиція зберігається тільки на телефоні. Стеження у фоні немає.</li>
 <li><b>Сповіщення</b> — нагадування про закінчення документів, списання, дні народження й резервні копії. Нагадування ставляться на самому телефоні.</li>
 <li><b>Біометрія</b> — якщо ввімкнено захист відбитком, його перевіряє Android; застосунок не отримує дані відбитка.</li>
-<li><b>Фото і файли</b> – застосунок не має доступу до галереї та пам’яті телефону. Лише на Android 9 і старіших він просить дозвіл на пам’ять — і лише щоб зберегти вивантажені вами файли (CV, резервну копію) у папку «Завантаження». Ви самі вибираєте окремі фото або файли в системному вікні Android, і застосунок отримує лише їх. Файли, які інший застосунок передає в Sea Wolf («Відкрити за допомогою»), приймаються лише після вашого підтвердження.</li>
+<li><b>Фото і файли</b> – застосунок не має доступу до галереї та пам’яті телефону. Лише на Android 9 і старіших він просить дозвіл на пам’ять — і лише щоб зберегти вивантажені вами файли (CV, резервну копію) у папку «Завантаження». Ви самі вибираєте окремі фото або файли в системному вікні Android, і застосунок отримує лише їх. Файли, які інший застосунок передає в Sea Wolf («Відкрити за допомогою»), приймаються лише після вашого підтвердження. Фото, які ви надсилаєте в Sea Wolf з іншого застосунку («Поділитися»), відкриваються в сканері документів, і нічого не зберігається без вашого підтвердження.</li>
+<li><b>Віджет на головному екрані (за бажанням)</b> — дозволів не потребує. Якщо ви його додасте, він показує дні до списання, прогрес контракту, скільки документів потребують уваги, і назву документа, що спливає першим (наприклад, «Паспорт»). Номерів документів, судна й імен людей він не показує ніколи. Віджет видно на головному екрані без PIN-коду — не додавайте його, якщо для вас це важливо; прибрати його можна будь-коли.</li>
 </ul>
 <h2>3. Підключення до інтернету</h2>
 <p>Застосунок повністю працює без інтернету й підключається лише в таких випадках:</p>
 <ul>
-<li><b>Додатковий мовний пакет</b> — якщо ви завантажуєте розпізнавання кирилиці в налаштуваннях, файл завантажується з GitHub. Персональні дані не передаються; GitHub отримує технічний запит (наприклад, IP-адресу), як і під час будь-якого завантаження.</li>
+<li><b>Додатковий мовний пакет</b> — якщо ви завантажуєте розпізнавання кирилиці (російська й українська) в налаштуваннях, файли завантажуються з GitHub, і кожен файл перед використанням перевіряється (SHA-256). Персональні дані не передаються; GitHub отримує технічний запит (наприклад, IP-адресу), як і під час будь-якого завантаження.</li>
 <li><b>Посилання, які ви відкриваєте</b> — наприклад MarineTraffic, VesselFinder, Telegram, WhatsApp, пошта. Вони відкриваються в інших застосунках або браузері й підпорядковуються правилам цих сервісів.</li>
 <li><b>Розпізнавання тексту Google</b> — сканування документів використовує Google ML Kit, що працює на телефоні через сервіси Google Play. Текст ваших документів нікуди не надсилається, але сервіси Google Play можуть передавати Google анонімну діагностичну інформацію про роботу компонента ML Kit відповідно до умов Google.</li>
 </ul>
-<p>У застосунку немає реклами, аналітики та сторонніх трекерів.</p>
+<p>Усі шрифти вбудовані в застосунок, більше нічого не завантажується. Крім описаного вище компонента Google, у застосунку немає реклами, аналітики та сторонніх трекерів.</p>
 <h2>4. Резервні копії та передача</h2>
-<p>Резервні копії — це файли, які ви створюєте й зберігаєте самі; вони зашифровані паролем, який обираєте ви. Коли ви надсилаєте картку, CV, файл контакту, файл передачі справ або копію, файл потрапляє лише туди, куди ви його надіслали. Розробник цих файлів не отримує.</p>
+<p>Резервні копії — це файли, які ви створюєте й зберігаєте самі; вони зашифровані (AES-256) паролем, який обираєте ви. Коли ви надсилаєте картку, CV, файл контакту, файл передачі справ або копію, файл потрапляє лише туди, куди ви його надіслали. Розробник цих файлів не отримує.</p>
 <h2>5. Безпека</h2>
-<p>Застосунок можна захистити PIN-кодом і відбитком пальця. Поки застосунок заблоковано, жоден його екран не відкривається – навіть за посиланням чи з іншого застосунку. Видалення всіх даних, створення й надсилання резервної копії знову питають PIN (або відбиток). У списку недавніх застосунків вміст приховано. Дані зберігаються в закритій теці застосунку, недоступній іншим застосункам; вони не потрапляють до хмарної резервної копії Android і не переносяться на інший пристрій. Ваші резервні копії шифруються вашим паролем.</p>
+<p>Застосунок можна захистити PIN-кодом і відбитком пальця. Поки застосунок заблоковано, жоден його екран не відкривається – навіть за посиланням чи з іншого застосунку. Єдиний виняток — необов’язковий віджет на головному екрані, який показує дати й числа (див. розділ 2). Видалення всіх даних, створення й надсилання резервної копії знову питають PIN (або відбиток). У списку недавніх застосунків вміст приховано. Дані зберігаються в закритій теці застосунку, недоступній іншим застосункам; вони не потрапляють до хмарної резервної копії Android і не переносяться на інший пристрій. Ваші резервні копії шифруються вашим паролем.</p>
 <h2>6. Видалення даних</h2>
-<p>Будь-який запис можна видалити в застосунку будь-коли. Налаштування → «Видалити всі дані» видаляє все, що застосунок зберігає на телефоні (після PIN-коду або відбитка). Після видалення застосунку його дані теж видаляються. Резервні копії, збережені деінде, залишаються під вашим контролем, доки ви їх не видалите.</p>
+<p>Будь-який запис можна видалити в застосунку будь-коли. Налаштування → «Видалити всі дані з пристрою» видаляє все, що застосунок зберігає на телефоні (після PIN-коду або відбитка). Після видалення застосунку його дані теж видаляються. Резервні копії, збережені деінде, залишаються під вашим контролем, доки ви їх не видалите.</p>
 <h2>7. Діти</h2>
 <p>Застосунок призначений для професійних моряків і не розрахований на дітей до 16 років.</p>
 <h2>8. Зміни</h2>
@@ -148,10 +156,167 @@ footer{margin-top:40px;color:var(--mist);font-size:14px}
 <p>Запитання щодо конфіденційності: <span class="mail">myaziopa@gmail.com</span></p>
 </article>
 
-<footer>© 2026 Sea Wolf · <a href="index.html">seawolf</a></footer>
+<article lang="zh" data-lang="zh" hidden>
+<h1>隐私政策</h1>
+<p class="date">生效日期：2026 年 11 月 18 日 · 适用于 Android 版 Sea Wolf 应用（app.seawolf.logbook）</p>
+<p class="note">本译文仅供参考。如有出入，以英文版本为准。</p>
+<p class="upd"><b>2026 年 11 月 18 日的更新：</b>可选的桌面小组件（第 2 节）；手机上保存的数据中新增休息时间和工资记录；从其他应用分享到本应用的照片；对下载的识别文件进行校验。您的数据处理方式没有改变：除非您自己发送，数据始终不会离开您的手机。</p>
+<p>Sea Wolf（“本应用”）是一款面向海员的免费应用，在用户自己的手机上保存海员名片、证书、航次、船员名单、日志、休息时间、海上资历和简历。本政策说明您的信息会如何处理。简而言之：<b>我们不收集、不接收、也不存储您的个人数据。一切都保存在您的设备上。</b></p>
+<h2>1. 您输入的数据</h2>
+<p>您在本应用中输入或扫描的所有内容——个人资料和联系方式、照片、证书号码和扫描件、船舶和船员信息、船位、日志记录、工作和休息时间、工资记录、海上资历、同事——仅保存在您手机上本应用的私有存储中。开发者没有服务器，也无法访问这些数据。本应用没有用户账号。</p>
+<h2>2. 权限与小组件</h2>
+<ul>
+<li><b>相机</b>——仅在您扫描证书或二维码时使用。图像在手机上处理，只有您选择保留时才会保存。</li>
+<li><b>位置</b>——仅在您点击记录船位时、且仅在应用打开期间使用。船位只保存在手机上。本应用从不在后台跟踪位置。</li>
+<li><b>通知</b>——提醒证书到期、下船日期、生日和备份。提醒在手机本地安排。</li>
+<li><b>生物识别</b>——如果您开启指纹锁，由 Android 验证指纹；本应用从不获取指纹数据。</li>
+<li><b>照片和文件</b>——本应用无权访问您的相册或存储。仅在 Android 9 及更早版本上，才会申请存储权限，且仅用于把您导出的文件（简历、备份）保存到“下载”文件夹。您在 Android 自带的选择器中挑选单张照片或文件，本应用只会收到这些内容。其他应用发送给 Sea Wolf 的文件（“打开方式”）只有在您确认后才会被接收。您从其他应用分享到 Sea Wolf 的照片（“分享”）会在证书扫描器中打开，未经您确认不会保存任何内容。</li>
+<li><b>桌面小组件（可选）</b>——不需要任何权限。如果您添加它，它会显示距离下船的天数、合同进度、需要处理的证书数量，以及最先到期的证书名称（例如“护照”）。它从不显示证书号码、船名或人员姓名。小组件在桌面上无需 PIN 码即可看到，如果您介意，请不要添加；您可以随时将其移除。</li>
+</ul>
+<h2>3. 网络连接</h2>
+<p>本应用完全可以离线使用，仅在以下情况下连接互联网：</p>
+<ul>
+<li><b>可选语言包</b>——如果您在设置中下载西里尔文识别（俄语和乌克兰语），文件将从 GitHub 下载，每个文件在使用前都会进行校验（SHA-256）。不会发送任何个人数据；与任何下载一样，GitHub 会收到技术请求（例如您的 IP 地址）。</li>
+<li><b>您打开的链接</b>——例如 MarineTraffic、VesselFinder、Telegram、WhatsApp 或电子邮件。这些链接会在其他应用或浏览器中打开，并受这些服务各自政策的约束。</li>
+<li><b>Google 文字识别</b>——证书扫描使用 Google ML Kit，它通过 Google Play 服务在手机上运行。您证书上的文字不会被发送到任何地方，但 Google Play 服务可能会按照 Google 的条款，向 Google 发送有关 ML Kit 组件的匿名诊断和使用信息。</li>
+</ul>
+<p>所有字体都内置于应用中，不会下载其他任何内容。除上述 Google 组件外，本应用不含广告、分析工具或第三方跟踪。</p>
+<h2>4. 备份、分享和交接</h2>
+<p>备份是由您自己创建和保管的文件，并使用您选择的密码加密（AES-256）。当您分享名片、简历、联系人文件、交接文件或备份时，文件只会发送到您指定的地方。开发者从不接收这些文件。</p>
+<h2>5. 安全</h2>
+<p>您可以用 PIN 码和指纹保护本应用。应用锁定时，其任何界面都无法打开——即使通过链接或其他应用也不行。唯一的例外是可选的桌面小组件，它只显示日期和数字（见第 2 节）。删除全部数据以及创建或发送备份时，会再次要求输入 PIN 码（或指纹）。在“最近使用的应用”界面中，本应用会隐藏其内容。您的数据保存在本应用的私有存储中，其他应用无法读取；这些数据不会包含在 Android 云备份或设备间迁移中。您创建的备份使用您的密码加密。</p>
+<h2>6. 删除数据</h2>
+<p>您可以随时删除应用中的任何记录。“设置”→“删除本机上的所有数据”会删除本应用保存在手机上的全部内容（需验证 PIN 码或指纹）。卸载本应用也会删除其所有数据。您保存在其他位置的备份文件由您自行控制，直到您将其删除。</p>
+<h2>7. 儿童</h2>
+<p>本应用面向职业海员，不面向 16 岁以下儿童。</p>
+<h2>8. 变更</h2>
+<p>如本政策发生变更，新版本将在本页面发布，并注明新的生效日期。</p>
+<h2>9. 联系方式</h2>
+<p>隐私相关问题：<span class="mail">myaziopa@gmail.com</span></p>
+</article>
+
+<article lang="id" data-lang="id" hidden>
+<h1>Kebijakan Privasi</h1>
+<p class="date">Berlaku sejak 18 November 2026 · Untuk aplikasi Sea Wolf untuk Android (app.seawolf.logbook)</p>
+<p class="note">Terjemahan untuk kemudahan. Jika ada perbedaan, versi bahasa Inggris yang berlaku.</p>
+<p class="upd"><b>Yang berubah pada 18 November 2026:</b> widget layar utama opsional (bagian 2), jam istirahat dan catatan gaji di antara data yang disimpan di ponsel, foto yang dibagikan ke aplikasi dari aplikasi lain, dan pemeriksaan file pengenalan yang diunduh. Cara data Anda ditangani tidak berubah: data tetap tidak pernah meninggalkan ponsel Anda kecuali Anda sendiri yang mengirimnya.</p>
+<p>Sea Wolf ("aplikasi") adalah aplikasi gratis untuk pelaut yang menyimpan kartu pelaut, dokumen, pelayaran, daftar kru, catatan harian, jam istirahat, masa layar, dan CV di ponsel pengguna sendiri. Kebijakan ini menjelaskan apa yang terjadi pada informasi Anda. Singkatnya: <b>kami tidak mengumpulkan, menerima, atau menyimpan data pribadi Anda. Semuanya tetap di perangkat Anda.</b></p>
+<h2>1. Data yang Anda masukkan</h2>
+<p>Semua yang Anda masukkan atau pindai di aplikasi — profil dan kontak, foto, nomor dan pindaian dokumen, data kapal dan kru, posisi, catatan harian, jam kerja dan istirahat, catatan gaji, masa layar, rekan kerja — hanya disimpan di penyimpanan pribadi aplikasi di ponsel Anda. Pengembang tidak memiliki server dan tidak memiliki akses ke data ini. Aplikasi tidak memiliki akun pengguna.</p>
+<h2>2. Izin dan widget</h2>
+<ul>
+<li><b>Kamera</b> — hanya saat Anda memindai dokumen atau kode QR. Gambar diproses di ponsel dan hanya disimpan jika Anda memilih untuk menyimpannya.</li>
+<li><b>Lokasi</b> — hanya saat Anda mengetuk untuk mencatat posisi kapal, dan hanya saat aplikasi terbuka. Posisi hanya disimpan di ponsel. Aplikasi tidak pernah melacak lokasi di latar belakang.</li>
+<li><b>Notifikasi</b> — untuk mengingatkan dokumen yang akan habis berlaku, tanggal sign-off, ulang tahun, dan cadangan. Pengingat dijadwalkan di ponsel.</li>
+<li><b>Biometrik</b> — jika Anda mengaktifkan kunci sidik jari, Android yang memeriksa sidik jari Anda; aplikasi tidak pernah menerima data sidik jari.</li>
+<li><b>Foto dan file</b> – aplikasi tidak memiliki akses ke galeri atau penyimpanan Anda. Hanya di Android 9 dan versi lebih lama aplikasi meminta izin penyimpanan, dan hanya untuk menyimpan file yang Anda ekspor (CV, cadangan) ke folder Download. Anda memilih foto atau file satu per satu di pemilih bawaan Android, dan aplikasi hanya menerima itu. File yang dikirim aplikasi lain ke Sea Wolf ("Buka dengan") hanya diterima setelah Anda mengonfirmasi. Foto yang Anda bagikan ke Sea Wolf dari aplikasi lain ("Bagikan") dibuka di pemindai dokumen, dan tidak ada yang disimpan sampai Anda mengonfirmasi.</li>
+<li><b>Widget layar utama (opsional)</b> — tidak memerlukan izin apa pun. Jika Anda menambahkannya, widget menampilkan sisa hari sampai sign-off, kemajuan kontrak, jumlah dokumen yang perlu diperhatikan, dan nama dokumen yang paling dulu habis berlaku (misalnya "Paspor"). Widget tidak pernah menampilkan nomor dokumen, nama kapal, atau nama orang. Widget terlihat di layar utama tanpa PIN, jadi jangan tambahkan jika hal itu penting bagi Anda; Anda dapat menghapusnya kapan saja.</li>
+</ul>
+<h2>3. Koneksi internet</h2>
+<p>Aplikasi berfungsi sepenuhnya secara offline. Aplikasi hanya terhubung ke internet dalam kasus berikut:</p>
+<ul>
+<li><b>Paket bahasa opsional</b> — jika Anda mengunduh pengenalan teks Sirilik (Rusia dan Ukraina) di Pengaturan, file diunduh dari GitHub dan setiap file diperiksa (SHA-256) sebelum digunakan. Tidak ada data pribadi yang dikirim; GitHub menerima permintaan teknis (seperti alamat IP Anda) seperti pada unduhan apa pun.</li>
+<li><b>Tautan yang Anda buka</b> — misalnya MarineTraffic, VesselFinder, Telegram, WhatsApp, atau email. Tautan ini dibuka di aplikasi lain atau browser dan tunduk pada kebijakan layanan tersebut.</li>
+<li><b>Pengenalan teks Google</b> — pemindaian dokumen menggunakan Google ML Kit, yang berjalan di ponsel melalui layanan Google Play. Teks dokumen Anda tidak dikirim ke mana pun, tetapi layanan Google Play dapat mengirimkan informasi diagnostik dan penggunaan anonim tentang komponen ML Kit kepada Google, sesuai ketentuan Google.</li>
+</ul>
+<p>Semua font sudah tertanam di aplikasi; tidak ada hal lain yang diunduh. Selain komponen Google di atas, aplikasi tidak berisi iklan, analitik, atau pelacakan pihak ketiga.</p>
+<h2>4. Cadangan, berbagi, dan serah terima</h2>
+<p>Cadangan adalah file yang Anda buat dan simpan sendiri; file tersebut dienkripsi (AES-256) dengan kata sandi pilihan Anda. Saat Anda membagikan kartu, CV, file kontak, file serah terima, atau cadangan, file hanya dikirim ke tempat yang Anda tuju. Pengembang tidak pernah menerima file ini.</p>
+<h2>5. Keamanan</h2>
+<p>Anda dapat melindungi aplikasi dengan PIN dan sidik jari. Selama aplikasi terkunci, tidak ada layarnya yang dapat dibuka – bahkan melalui tautan atau aplikasi lain. Satu-satunya pengecualian adalah widget layar utama opsional, yang menampilkan tanggal dan angka (lihat bagian 2). Menghapus semua data serta membuat atau mengirim cadangan akan meminta PIN (atau sidik jari) lagi. Aplikasi menyembunyikan isinya di layar aplikasi terbaru. Data Anda tetap berada di penyimpanan pribadi aplikasi yang tidak dapat dibaca aplikasi lain; data tidak disertakan dalam cadangan cloud Android atau transfer antar-perangkat. Cadangan yang Anda buat dienkripsi dengan kata sandi Anda.</p>
+<h2>6. Menghapus data Anda</h2>
+<p>Anda dapat menghapus entri apa pun di aplikasi kapan saja. Pengaturan → "Hapus semua data dari perangkat ini" menghapus semua yang disimpan aplikasi di ponsel (setelah PIN atau sidik jari Anda). Menghapus instalasi aplikasi juga menghapus semua datanya. File cadangan yang Anda simpan di tempat lain tetap berada dalam kendali Anda sampai Anda menghapusnya.</p>
+<h2>7. Anak-anak</h2>
+<p>Aplikasi ini ditujukan untuk pelaut profesional dan tidak ditujukan untuk anak-anak di bawah 16 tahun.</p>
+<h2>8. Perubahan</h2>
+<p>Jika kebijakan ini berubah, versi baru akan dipublikasikan di halaman ini dengan tanggal berlaku yang baru.</p>
+<h2>9. Kontak</h2>
+<p>Pertanyaan tentang privasi: <span class="mail">myaziopa@gmail.com</span></p>
+</article>
+
+<article lang="fil" data-lang="fil" hidden>
+<h1>Patakaran sa Privacy</h1>
+<p class="date">Epektibo mula 18 Nobyembre 2026 · Para sa Sea Wolf app para sa Android (app.seawolf.logbook)</p>
+<p class="note">Salin para sa kaginhawahan. Kung may pagkakaiba, ang bersyong English ang masusunod.</p>
+<p class="upd"><b>Ano ang nagbago noong 18 Nobyembre 2026:</b> ang opsyonal na widget sa home screen (seksyon 2), oras ng pahinga at record ng sahod sa mga data na nasa phone, mga photo na ibinahagi sa app mula sa ibang app, at pagsusuri ng mga dina-download na file para sa pagbasa ng teksto. Walang nagbago sa paghawak ng data mo: hindi pa rin ito umaalis sa phone mo maliban kung ikaw mismo ang magpadala.</p>
+<p>Ang Sea Wolf ("ang app") ay libreng app para sa mga seaman na nagtatago ng seafarer's card, mga dokumento, biyahe, crew list, logbook, oras ng pahinga, sea service at CV sa sariling phone ng user. Ipinapaliwanag ng patakarang ito kung ano ang nangyayari sa impormasyon mo. Sa madaling salita: <b>hindi namin kinokolekta, tinatanggap o iniimbak ang personal na data mo. Lahat ay nananatili sa device mo.</b></p>
+<h2>1. Data na inilalagay mo</h2>
+<p>Lahat ng inilalagay o sina-scan mo sa app — profile at contact details, photo, numero at scan ng mga dokumento, detalye ng barko at crew, mga posisyon, logbook entries, oras ng trabaho at pahinga, record ng sahod, sea service, mga kasamahan — ay nakaimbak lamang sa pribadong storage ng app sa phone mo. Walang server ang developer at walang access sa data na ito. Walang user account ang app.</p>
+<h2>2. Mga pahintulot at ang widget</h2>
+<ul>
+<li><b>Camera</b> — kapag nag-scan ka lamang ng dokumento o QR code. Pinoproseso ang mga larawan sa phone at sine-save lamang kung pipiliin mong itago ang mga ito.</li>
+<li><b>Lokasyon</b> — kapag nag-tap ka lamang para itala ang posisyon ng barko, at habang bukas lamang ang app. Sa phone lamang naka-save ang posisyon. Hindi kailanman sinusubaybayan ng app ang lokasyon sa background.</li>
+<li><b>Mga notification</b> — para paalalahanan ka sa mga dokumentong mag-e-expire, petsa ng sign-off, birthday at backup. Naka-iskedyul sa phone ang mga paalala.</li>
+<li><b>Biometrics</b> — kung bubuksan mo ang fingerprint lock, ang Android ang sumusuri ng fingerprint mo; hindi kailanman natatanggap ng app ang fingerprint data.</li>
+<li><b>Mga photo at file</b> – walang access ang app sa gallery o storage mo. Sa Android 9 at mas luma lamang ito humihingi ng storage permission, at para lamang i-save ang mga file na ine-export mo (CV, backup) sa Download folder. Ikaw ang pumipili ng mga photo o file sa sariling picker ng Android, at iyon lamang ang natatanggap ng app. Ang mga file na ipinapadala ng ibang app sa Sea Wolf ("Open with") ay tinatanggap lamang pagkatapos mong kumpirmahin. Ang mga photo na ibinabahagi mo sa Sea Wolf mula sa ibang app ("Share") ay nagbubukas sa document scanner, at walang sine-save hangga't hindi mo kinukumpirma.</li>
+<li><b>Widget sa home screen (opsyonal)</b> — walang kailangang pahintulot. Kung idadagdag mo ito, ipinapakita nito ang ilang araw pa bago mag-sign-off, progreso ng kontrata, ilang dokumento ang kailangang asikasuhin at ang pangalan ng dokumentong unang mag-e-expire (halimbawa "Passport"). Hindi kailanman nito ipinapakita ang numero ng dokumento, ang barko o pangalan ng tao. Nakikita ang widget sa home screen nang walang PIN, kaya huwag itong idagdag kung mahalaga iyon sa iyo; puwede mo itong alisin anumang oras.</li>
+</ul>
+<h2>3. Koneksyon sa internet</h2>
+<p>Gumagana nang buo ang app nang offline. Kumokonekta lamang ito sa internet sa mga kasong ito:</p>
+<ul>
+<li><b>Opsyonal na language pack</b> — kung ida-download mo ang Cyrillic text recognition (Russian at Ukrainian) sa Settings, dina-download ang mga file mula sa GitHub at sinusuri (SHA-256) ang bawat file bago gamitin. Walang personal na data na ipinapadala; natatanggap ng GitHub ang teknikal na request (gaya ng IP address mo) tulad ng sa anumang download.</li>
+<li><b>Mga link na binubuksan mo</b> — halimbawa MarineTraffic, VesselFinder, Telegram, WhatsApp, o e-mail. Nagbubukas ang mga ito sa ibang app o browser at sakop ng sariling patakaran ng mga serbisyong iyon.</li>
+<li><b>Google text recognition</b> — gumagamit ang document scanning ng Google ML Kit, na tumatakbo sa phone sa pamamagitan ng Google Play services. Hindi ipinapadala kahit saan ang teksto ng mga dokumento mo, pero maaaring magpadala ang Google Play services sa Google ng anonymous na diagnostic at usage information tungkol sa ML Kit component, ayon sa mga tuntunin ng Google.</li>
+</ul>
+<p>Naka-built-in sa app ang lahat ng font; wala nang ibang dina-download. Maliban sa Google component sa itaas, walang advertising, analytics o third-party tracking ang app.</p>
+<h2>4. Backup, pagbabahagi at handover</h2>
+<p>Ang mga backup ay mga file na ikaw mismo ang gumagawa at nagtatago; naka-encrypt ang mga ito (AES-256) gamit ang password na pinili mo. Kapag ibinahagi mo ang card, CV, contact file, handover file o backup, doon lamang pupunta ang file kung saan mo ito ipinadala. Hindi kailanman natatanggap ng developer ang mga file na ito.</p>
+<h2>5. Seguridad</h2>
+<p>Puwede mong protektahan ang app gamit ang PIN at fingerprint. Habang naka-lock ang app, walang screen nito ang mabubuksan – kahit sa pamamagitan ng link o ibang app. Ang tanging eksepsiyon ay ang opsyonal na widget sa home screen, na nagpapakita ng mga petsa at bilang (tingnan ang seksyon 2). Humihingi ulit ng PIN (o fingerprint) ang pagbura ng lahat ng data at ang paggawa o pagpapadala ng backup. Itinatago ng app ang nilalaman nito sa recent-apps screen. Nananatili ang data mo sa pribadong storage ng app na hindi mababasa ng ibang app; hindi ito kasama sa cloud backup ng Android o sa paglipat mula device papunta sa ibang device. Naka-encrypt gamit ang password mo ang mga backup na ginagawa mo.</p>
+<h2>6. Pagbura ng data mo</h2>
+<p>Puwede mong burahin ang anumang entry sa app anumang oras. Settings → "Burahin lahat ng data sa device na ito" ay binubura ang lahat ng itinatago ng app sa phone (pagkatapos ng PIN o fingerprint mo). Binubura rin ang lahat ng data nito kapag in-uninstall ang app. Ang mga backup file na na-save mo sa ibang lugar ay nananatili sa kontrol mo hanggang burahin mo ang mga ito.</p>
+<h2>7. Mga bata</h2>
+<p>Para sa mga propesyonal na seaman ang app at hindi ito para sa mga batang wala pang 16 taong gulang.</p>
+<h2>8. Mga pagbabago</h2>
+<p>Kung magbabago ang patakarang ito, ilalathala ang bagong bersyon sa pahinang ito na may bagong petsa ng pagiging epektibo.</p>
+<h2>9. Contact</h2>
+<p>Mga tanong tungkol sa privacy: <span class="mail">myaziopa@gmail.com</span></p>
+</article>
+
+<article lang="hi" data-lang="hi" hidden>
+<h1>गोपनीयता नीति</h1>
+<p class="date">लागू तिथि: 18 नवंबर 2026 · Android के लिए Sea Wolf ऐप (app.seawolf.logbook) पर लागू</p>
+<p class="note">यह अनुवाद सुविधा के लिए है। किसी भी अंतर की स्थिति में अंग्रेज़ी संस्करण मान्य होगा।</p>
+<p class="upd"><b>18 नवंबर 2026 को क्या बदला:</b> वैकल्पिक होम स्क्रीन विजेट (भाग 2), फ़ोन में रखे डेटा में रेस्ट आवर्स और वेतन रिकॉर्ड, दूसरे ऐप्स से इस ऐप में शेयर की गई फ़ोटो, और डाउनलोड की गई पहचान फ़ाइलों की जाँच। आपके डेटा के साथ व्यवहार नहीं बदला है: जब तक आप ख़ुद न भेजें, डेटा आपके फ़ोन से बाहर नहीं जाता।</p>
+<p>Sea Wolf ("ऐप") नाविकों के लिए एक मुफ़्त ऐप है, जो सीफेरर कार्ड, डॉक्यूमेंट्स, वॉयेज, क्रू लिस्ट, लॉगबुक, रेस्ट आवर्स, सी सर्विस और CV को उपयोगकर्ता के अपने फ़ोन पर रखता है। यह नीति बताती है कि आपकी जानकारी के साथ क्या होता है। संक्षेप में: <b>हम आपका निजी डेटा न इकट्ठा करते हैं, न प्राप्त करते हैं, न संग्रहीत करते हैं। सब कुछ आपके डिवाइस पर ही रहता है।</b></p>
+<h2>1. आपके द्वारा दर्ज किया गया डेटा</h2>
+<p>ऐप में आप जो कुछ भी दर्ज या स्कैन करते हैं — प्रोफ़ाइल और संपर्क विवरण, फ़ोटो, डॉक्यूमेंट नंबर और स्कैन, जहाज़ और क्रू की जानकारी, पोज़िशन, लॉगबुक प्रविष्टियाँ, काम और आराम के घंटे, वेतन रिकॉर्ड, सी सर्विस, साथी — केवल आपके फ़ोन पर ऐप के निजी स्टोरेज में रहता है। डेवलपर के पास कोई सर्वर नहीं है और इस डेटा तक कोई पहुँच नहीं है। ऐप में कोई यूज़र अकाउंट नहीं है।</p>
+<h2>2. अनुमतियाँ और विजेट</h2>
+<ul>
+<li><b>कैमरा</b> — केवल तब, जब आप कोई डॉक्यूमेंट या QR कोड स्कैन करते हैं। तस्वीरें फ़ोन पर ही प्रोसेस होती हैं और तभी सेव होती हैं जब आप उन्हें रखना चुनें।</li>
+<li><b>लोकेशन</b> — केवल तब, जब आप जहाज़ की पोज़िशन दर्ज करने के लिए टैप करते हैं, और केवल तब तक, जब तक ऐप खुला है। पोज़िशन केवल फ़ोन पर सेव होती है। ऐप कभी बैकग्राउंड में लोकेशन ट्रैक नहीं करता।</li>
+<li><b>नोटिफ़िकेशन</b> — एक्सपायर होने वाले डॉक्यूमेंट्स, sign-off की तारीख़, जन्मदिन और बैकअप की याद दिलाने के लिए। रिमाइंडर फ़ोन पर ही शेड्यूल होते हैं।</li>
+<li><b>बायोमेट्रिक</b> — अगर आप फ़िंगरप्रिंट लॉक चालू करते हैं, तो Android आपका फ़िंगरप्रिंट जाँचता है; ऐप को कभी फ़िंगरप्रिंट डेटा नहीं मिलता।</li>
+<li><b>फ़ोटो और फ़ाइलें</b> – ऐप को आपकी गैलरी या स्टोरेज तक पहुँच नहीं है। केवल Android 9 और पुराने संस्करणों पर यह स्टोरेज अनुमति माँगता है, और केवल आपकी एक्सपोर्ट की गई फ़ाइलें (CV, बैकअप) Download फ़ोल्डर में सेव करने के लिए। आप Android के अपने पिकर में एक-एक फ़ोटो या फ़ाइल चुनते हैं, और ऐप को केवल वही मिलती हैं। दूसरा ऐप Sea Wolf को जो फ़ाइलें भेजता है ("Open with"), वे आपकी पुष्टि के बाद ही ली जाती हैं। दूसरे ऐप से Sea Wolf में शेयर की गई फ़ोटो ("Share") डॉक्यूमेंट स्कैनर में खुलती हैं, और आपकी पुष्टि के बिना कुछ भी सेव नहीं होता।</li>
+<li><b>होम स्क्रीन विजेट (वैकल्पिक)</b> — किसी अनुमति की ज़रूरत नहीं। अगर आप इसे जोड़ते हैं, तो यह sign-off तक बचे दिन, कॉन्ट्रैक्ट की प्रगति, ध्यान देने वाले डॉक्यूमेंट्स की संख्या और सबसे पहले एक्सपायर होने वाले डॉक्यूमेंट का नाम (जैसे "पासपोर्ट") दिखाता है। यह कभी डॉक्यूमेंट नंबर, जहाज़ या लोगों के नाम नहीं दिखाता। विजेट होम स्क्रीन पर बिना PIN के दिखता है, इसलिए अगर यह आपके लिए मायने रखता है तो इसे न जोड़ें; आप इसे कभी भी हटा सकते हैं।</li>
+</ul>
+<h2>3. इंटरनेट कनेक्शन</h2>
+<p>ऐप पूरी तरह ऑफ़लाइन काम करता है। यह केवल इन स्थितियों में इंटरनेट से जुड़ता है:</p>
+<ul>
+<li><b>वैकल्पिक भाषा पैक</b> — अगर आप सेटिंग्स में सिरिलिक टेक्स्ट पहचान (रूसी और यूक्रेनी) डाउनलोड करते हैं, तो फ़ाइलें GitHub से डाउनलोड होती हैं और हर फ़ाइल को इस्तेमाल से पहले जाँचा जाता है (SHA-256)। कोई निजी डेटा नहीं भेजा जाता; किसी भी डाउनलोड की तरह GitHub को तकनीकी अनुरोध (जैसे आपका IP पता) मिलता है।</li>
+<li><b>आपके द्वारा खोले गए लिंक</b> — जैसे MarineTraffic, VesselFinder, Telegram, WhatsApp या ई-मेल। ये दूसरे ऐप्स या ब्राउज़र में खुलते हैं और उन सेवाओं की अपनी नीतियों के अधीन होते हैं।</li>
+<li><b>Google टेक्स्ट पहचान</b> — डॉक्यूमेंट स्कैनिंग Google ML Kit का उपयोग करती है, जो Google Play सेवाओं के ज़रिए फ़ोन पर ही चलता है। आपके डॉक्यूमेंट्स का टेक्स्ट कहीं नहीं भेजा जाता, लेकिन Google Play सेवाएँ Google की शर्तों के अनुसार ML Kit कंपोनेंट के बारे में अनाम डायग्नोस्टिक और उपयोग जानकारी Google को भेज सकती हैं।</li>
+</ul>
+<p>सभी फ़ॉन्ट ऐप में पहले से शामिल हैं; और कुछ डाउनलोड नहीं होता। ऊपर बताए गए Google कंपोनेंट के अलावा, ऐप में कोई विज्ञापन, एनालिटिक्स या थर्ड-पार्टी ट्रैकिंग नहीं है।</p>
+<h2>4. बैकअप, शेयरिंग और हैंडओवर</h2>
+<p>बैकअप वे फ़ाइलें हैं जिन्हें आप ख़ुद बनाते और रखते हैं; वे आपके चुने हुए पासवर्ड से एन्क्रिप्ट (AES-256) होती हैं। जब आप अपना कार्ड, CV, कॉन्टैक्ट फ़ाइल, हैंडओवर फ़ाइल या बैकअप शेयर करते हैं, तो फ़ाइल केवल वहीं जाती है जहाँ आप भेजते हैं। डेवलपर को ये फ़ाइलें कभी नहीं मिलतीं।</p>
+<h2>5. सुरक्षा</h2>
+<p>आप ऐप को PIN और फ़िंगरप्रिंट से सुरक्षित कर सकते हैं। जब ऐप लॉक होता है, तो उसकी कोई भी स्क्रीन नहीं खुल सकती – न किसी लिंक से, न किसी दूसरे ऐप से। एकमात्र अपवाद वैकल्पिक होम स्क्रीन विजेट है, जो तारीख़ें और संख्याएँ दिखाता है (भाग 2 देखें)। सारा डेटा हटाने और बैकअप बनाने या भेजने पर फिर से PIN (या फ़िंगरप्रिंट) माँगा जाता है। हाल के ऐप्स वाली स्क्रीन में ऐप अपनी सामग्री छिपा देता है। आपका डेटा ऐप के निजी स्टोरेज में रहता है, जिसे दूसरे ऐप्स नहीं पढ़ सकते; यह Android के क्लाउड बैकअप या एक डिवाइस से दूसरे डिवाइस में ट्रांसफ़र में शामिल नहीं होता। आपके बनाए बैकअप आपके पासवर्ड से एन्क्रिप्ट होते हैं।</p>
+<h2>6. अपना डेटा हटाना</h2>
+<p>आप ऐप में किसी भी प्रविष्टि को कभी भी हटा सकते हैं। सेटिंग्स → "इस डिवाइस से सारा डेटा हटाएँ" ऐप द्वारा फ़ोन पर रखी गई हर चीज़ को हटा देता है (आपके PIN या फ़िंगरप्रिंट के बाद)। ऐप अनइंस्टॉल करने पर भी उसका सारा डेटा हट जाता है। आपके द्वारा कहीं और सेव की गई बैकअप फ़ाइलें तब तक आपके नियंत्रण में रहती हैं, जब तक आप उन्हें हटा न दें।</p>
+<h2>7. बच्चे</h2>
+<p>यह ऐप पेशेवर नाविकों के लिए है और 16 वर्ष से कम उम्र के बच्चों के लिए नहीं है।</p>
+<h2>8. बदलाव</h2>
+<p>अगर यह नीति बदलती है, तो नया संस्करण नई लागू तिथि के साथ इसी पेज पर प्रकाशित किया जाएगा।</p>
+<h2>9. संपर्क</h2>
+<p>गोपनीयता से जुड़े प्रश्न: <span class="mail">myaziopa@gmail.com</span></p>
+</article>
+
+<footer><span>© 2026 Sea Wolf</span><a href="index.html">seawolf-app.github.io</a><a href="https://play.google.com/store/apps/details?id=app.seawolf.logbook" target="_blank" rel="noopener">Google Play</a></footer>
 </div>
 <script>
-function show(l){if(!['en','ru','uk'].includes(l))l='en';document.querySelectorAll('article').forEach(a=>a.hidden=a.dataset.lang!==l);document.querySelectorAll('.tabs button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.l===l));document.documentElement.lang=l}
+const L=['en','ru','uk','zh','id','fil','hi'];
+function show(l){if(!L.includes(l))l='en';document.querySelectorAll('article').forEach(a=>a.hidden=a.dataset.lang!==l);document.querySelectorAll('.tabs button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.l===l));document.documentElement.lang=l;try{history.replaceState(null,'','#'+l)}catch(e){}}
 document.querySelectorAll('.tabs button').forEach(b=>b.addEventListener('click',()=>show(b.dataset.l)));
 let l=(location.hash||'').slice(1);if(!l){try{l=localStorage.getItem('sw-lang')||''}catch(e){}}show(l);
 </script>
