@@ -52,7 +52,7 @@ footer{border-top:1px solid var(--line2);padding:22px 0 40px;color:var(--mute);f
 <main>
 <article lang="en" data-lang="en">
 <h1>Privacy Policy</h1>
-<p class="date">Effective date: 20 November 2026 · Applies to the Sea Wolf app for Android (app.seawolf.logbook)</p>
+<p class="date">Effective date: 23 November 2026 · Applies to the Sea Wolf app for Android (app.seawolf.logbook)</p>
 <p class="upd"><b>What changed on 20 November 2026:</b> added the optional Starpom assistant (section 3a): the questions and photos you send to it are processed on our server and by the AI service Anthropic. Everything else in Sea Wolf still stays only on your phone.</p>
 <p>Sea Wolf ("the app") is a free app for seafarers that keeps a seafarer's card, documents, voyages, crew list, logbook, hours of rest, sea service and CV on the user's own phone. This policy explains what happens to your information. In short: <b>everything you keep in Sea Wolf stays on your device. The only exception is the optional Starpom assistant: when you use it, the question and photos you send go to our server to get an answer (section 3a).</b></p>
 <h2>1. Data you enter</h2>
@@ -92,6 +92,7 @@ footer{border-top:1px solid var(--line2);padding:22px 0 40px;color:var(--mute);f
 <li>Our server (Hetzner Online, data centre in Helsinki, Finland, EU) receives the request, adds relevant manuals and procedures and gets an answer.</li>
 <li>Anthropic PBC (USA) processes the request with its Claude AI model to produce the answer, as our service provider. Under Anthropic's commercial terms, data sent through its API is not used to train its models; Anthropic keeps it only for a limited time to prevent abuse.</li>
 <li>Google processes the Play Integrity token.</li>
+<li>Google (Firebase Cloud Messaging) delivers notifications about the seafarers’ questions — a new answer to your question, a new question for your department, “Your answer helped”. For this the app receives a notification token from Google and sends it to our server. The notification carries only the text of the question or answer — never your name or documents.</li>
 <li>“Precise translation” in the Translator (an optional switch) sends the text or screenshot the same way; the normal translation works on the phone without internet.</li>
 </ul>
 <p><b>What our server keeps</b></p>
@@ -100,6 +101,7 @@ footer{border-top:1px solid var(--line2);padding:22px 0 40px;color:var(--mute);f
 <li>When the app starts and has internet, it checks in with our server once: only the random installation identifier and the app version are sent — even if you never use Starpom. We use this to count active installations; it is deleted after 30 days.</li>
 <li>Usage counters for this installation (number of requests per day, technical data volume) — for daily limits; deleted after 30 days.</li>
 <li>The result of the Play Integrity check for this installation — replaced by each new check.</li>
+<li>The notification token of this installation and your chosen departments — only to send you notifications; deleted with “Delete my data on the server” or when Google reports the token as invalid (for example, after the app is removed).</li>
 <li>Facts you explicitly ask Starpom to remember (“remember: …”, the Memory screen) — until you delete them in Memory.</li>
 <li>If you press 👍 or 👎 with a correction, the question, answer and correction are kept to improve answers for all users, without your name.</li>
 <li><b>Seafarers' questions:</b> a question you publish with “Ask seafarers”, answers you post, and attached photos are stored on the server and visible to all Sea Wolf users, without your name (only rank and vessel type). Before publishing, the text is checked automatically; phone numbers, e-mails, names and document numbers are hidden. You can delete your question or answer at any time; answers confirmed by other seafarers may be kept, without your name, in Starpom's shared knowledge.</li>
@@ -121,7 +123,7 @@ footer{border-top:1px solid var(--line2);padding:22px 0 40px;color:var(--mute);f
 </article>
 <article lang="ru" data-lang="ru" hidden>
 <h1>Политика конфиденциальности</h1>
-<p class="date">Действует с 20 ноября 2026 г. · Для приложения Sea Wolf для Android (app.seawolf.logbook)</p>
+<p class="date">Действует с 23 ноября 2026 г. · Для приложения Sea Wolf для Android (app.seawolf.logbook)</p>
 <p class="note">Перевод для удобства. При расхождении действует английская версия.</p>
 <p class="upd"><b>Что изменилось 20 ноября 2026 г.:</b> появился необязательный помощник «Старпом» (раздел 3a): вопросы и фото, которые вы ему отправляете, обрабатываются на нашем сервере и сервисом искусственного интеллекта Anthropic. Всё остальное в Sea Wolf по-прежнему хранится только на телефоне.</p>
 <p>Sea Wolf («приложение») — бесплатное приложение для моряков, которое хранит карточку моряка, документы, рейсы, список экипажа, дневник, часы отдыха, стаж и CV на телефоне пользователя. Коротко: <b>всё, что вы храните в Sea Wolf, остаётся на вашем телефоне. Единственное исключение — необязательный помощник «Старпом»: когда вы им пользуетесь, ваш вопрос и фото уходят на наш сервер, чтобы получить ответ (раздел 3a).</b></p>
@@ -162,6 +164,7 @@ footer{border-top:1px solid var(--line2);padding:22px 0 40px;color:var(--mute);f
 <li>Наш сервер (Hetzner Online, дата-центр в Хельсинки, Финляндия, ЕС) принимает запрос, подбирает подходящие мануалы и процедуры и получает ответ.</li>
 <li>Anthropic PBC (США) обрабатывает запрос моделью искусственного интеллекта Claude, чтобы сформировать ответ, как наш поставщик услуг. По коммерческим условиям Anthropic данные, отправленные через её API, не используются для обучения моделей; Anthropic хранит их ограниченное время для защиты от злоупотреблений.</li>
 <li>Google обрабатывает токен проверки Play Integrity.</li>
+<li>Google (Firebase Cloud Messaging) доставляет уведомления о вопросах моряков — новый ответ на ваш вопрос, новый вопрос по вашей службе, «Ваш ответ помог». Для этого приложение получает от Google токен уведомлений и отправляет его на наш сервер. В уведомлении передаётся только текст вопроса или ответа — никогда не имя и не документы.</li>
 <li>«Точный перевод» в Переводчике (необязательный переключатель) отправляет текст или скриншот так же; обычный перевод работает на телефоне без интернета.</li>
 </ul>
 <p><b>Что хранит наш сервер</b></p>
@@ -170,6 +173,7 @@ footer{border-top:1px solid var(--line2);padding:22px 0 40px;color:var(--mute);f
 <li>При запуске, если есть интернет, приложение один раз обращается к нашему серверу: передаются только случайный номер установки и версия приложения — даже если вы не пользуетесь Старпомом. Это нужно, чтобы считать число активных установок; удаляется через 30 дней.</li>
 <li>Счётчики использования для этой установки (число запросов в день, объём трафика) — для дневного лимита; удаляются через 30 дней.</li>
 <li>Результат проверки Play Integrity для этой установки — заменяется при каждой новой проверке.</li>
+<li>Токен уведомлений этой установки и выбранные вами службы — только чтобы присылать уведомления; удаляется кнопкой «Удалить мои данные на сервере» или когда Google сообщает, что токен недействителен (например, после удаления приложения).</li>
 <li>Факты, которые вы сами попросили запомнить («запомни: …», экран «Память»), — пока вы их не удалите в «Памяти».</li>
 <li>Если вы нажали 👍 или 👎 с исправлением, вопрос, ответ и исправление сохраняются, чтобы улучшать ответы для всех, без вашего имени.</li>
 <li><b>Вопросы моряков:</b> вопрос, который вы опубликовали кнопкой «Спросить моряков», ваши ответы и приложенные фото хранятся на сервере и видны всем пользователям Sea Wolf без вашего имени (видны только должность и тип судна). Перед публикацией текст проверяется автоматически: телефоны, e-mail, имена и номера документов скрываются. Свой вопрос или ответ можно удалить в любой момент; ответы, подтверждённые другими моряками, могут остаться без вашего имени в общих знаниях Старпома.</li>
@@ -191,7 +195,7 @@ footer{border-top:1px solid var(--line2);padding:22px 0 40px;color:var(--mute);f
 </article>
 <article lang="uk" data-lang="uk" hidden>
 <h1>Політика конфіденційності</h1>
-<p class="date">Діє з 20 листопада 2026 р. · Для застосунку Sea Wolf для Android (app.seawolf.logbook)</p>
+<p class="date">Діє з 23 листопада 2026 р. · Для застосунку Sea Wolf для Android (app.seawolf.logbook)</p>
 <p class="note">Переклад для зручності. У разі розбіжностей діє англійська версія.</p>
 <p class="upd"><b>Що змінилося 20 листопада 2026 р.:</b> з’явився необов’язковий помічник «Старпом» (розділ 3a): запитання й фото, які ви йому надсилаєте, обробляються на нашому сервері та сервісом штучного інтелекту Anthropic. Усе інше в Sea Wolf, як і раніше, зберігається лише на вашому телефоні.</p>
 <p>Sea Wolf («застосунок») — безкоштовний застосунок для моряків, який зберігає картку моряка, документи, рейси, список екіпажу, щоденник, години відпочинку, стаж і CV на телефоні користувача. Коротко: <b>усе, що ви зберігаєте в Sea Wolf, залишається на вашому пристрої. Єдиний виняток — необов’язковий помічник «Старпом»: коли ви ним користуєтеся, запитання й фото, які ви надсилаєте, потрапляють на наш сервер, щоб отримати відповідь (розділ 3a).</b></p>
@@ -232,6 +236,7 @@ footer{border-top:1px solid var(--line2);padding:22px 0 40px;color:var(--mute);f
 <li>Наш сервер (Hetzner Online, дата-центр у Гельсінкі, Фінляндія, ЄС) отримує запит, додає відповідні мануали й процедури та отримує відповідь.</li>
 <li>Anthropic PBC (США) як наш постачальник послуг обробляє запит своєю моделлю штучного інтелекту Claude, щоб сформувати відповідь. Згідно з комерційними умовами Anthropic, дані, надіслані через її API, не використовуються для навчання її моделей; Anthropic зберігає їх лише обмежений час для запобігання зловживанням.</li>
 <li>Google обробляє токен Play Integrity.</li>
+<li>Google (Firebase Cloud Messaging) доставляє сповіщення про питання моряків — нова відповідь на ваше питання, нове питання вашої служби, «Ваша відповідь допомогла». Для цього застосунок отримує від Google токен сповіщень і надсилає його на наш сервер. У сповіщенні передається лише текст питання або відповіді — ніколи не ім’я і не документи.</li>
 <li>«Точний переклад» у Перекладачі (необов’язковий перемикач) надсилає текст або скриншот так само; звичайний переклад працює на телефоні без інтернету.</li>
 </ul>
 <p><b>Що зберігає наш сервер</b></p>
@@ -240,6 +245,7 @@ footer{border-top:1px solid var(--line2);padding:22px 0 40px;color:var(--mute);f
 <li>Під час запуску, якщо є інтернет, застосунок один раз звертається до нашого сервера: передаються лише випадковий номер встановлення та версія застосунку — навіть якщо ви не користуєтеся Старпомом. Це потрібно, щоб рахувати кількість активних встановлень; видаляється через 30 днів.</li>
 <li>Лічильники використання для цієї інсталяції (кількість запитів на день, обсяг технічних даних) — для денних лімітів; видаляються через 30 днів.</li>
 <li>Результат перевірки Play Integrity для цієї інсталяції — замінюється під час кожної нової перевірки.</li>
+<li>Токен сповіщень цієї інсталяції та обрані вами служби — лише щоб надсилати сповіщення; видаляється кнопкою «Видалити мої дані на сервері» або коли Google повідомляє, що токен недійсний (наприклад, після видалення застосунку).</li>
 <li>Факти, які ви прямо попросили Старпома запам’ятати («запам’ятай: …», екран «Пам’ять»), — доки ви не видалите їх у «Пам’яті».</li>
 <li>Якщо ви натискаєте 👍 або 👎 з виправленням, запитання, відповідь і виправлення зберігаються, щоб покращувати відповіді для всіх користувачів, без вашого імені.</li>
 <li><b>Запитання моряків:</b> запитання, яке ви публікуєте кнопкою «Запитати моряків», відповіді, які ви публікуєте, і додані фото зберігаються на сервері й видні всім користувачам Sea Wolf без вашого імені (лише посада й тип судна). Перед публікацією текст перевіряється автоматично; номери телефонів, e-mail, імена й номери документів приховуються. Ви можете будь-коли видалити своє запитання чи відповідь; відповіді, підтверджені іншими моряками, можуть залишитися без вашого імені в спільних знаннях Старпома.</li>
@@ -261,7 +267,7 @@ footer{border-top:1px solid var(--line2);padding:22px 0 40px;color:var(--mute);f
 </article>
 <article lang="zh" data-lang="zh" hidden>
 <h1>隐私政策</h1>
-<p class="date">生效日期：2026 年 11 月 20 日 · 适用于 Android 版 Sea Wolf 应用（app.seawolf.logbook）</p>
+<p class="date">生效日期：2026 年 11 月 23 日 · 适用于 Android 版 Sea Wolf 应用（app.seawolf.logbook）</p>
 <p class="note">本译文仅供参考。如有出入，以英文版本为准。</p>
 <p class="upd"><b>2026 年 11 月 20 日 的更新：</b>新增可选的“大副”助手（第 3a 节）：您发送给它的问题和照片由我们的服务器和人工智能服务 Anthropic 处理。Sea Wolf 中的其他一切仍然只保存在您的手机上。</p>
 <p>Sea Wolf（“本应用”）是一款面向海员的免费应用，在用户自己的手机上保存海员名片、证书、航次、船员名单、日志、休息时间、海上资历和简历。本政策说明您的信息会如何处理。简而言之：<b>您保存在 Sea Wolf 中的一切都留在您的设备上。唯一的例外是可选的“大副”助手：当您使用它时，您发送的问题和照片会传到我们的服务器以获取回答（见第 3a 节）。</b></p>
@@ -302,6 +308,7 @@ footer{border-top:1px solid var(--line2);padding:22px 0 40px;color:var(--mute);f
 <li>我们的服务器（Hetzner Online，数据中心位于欧盟芬兰赫尔辛基）接收请求，添加相关的手册和程序，并获取回答。</li>
 <li>Anthropic PBC（美国）作为我们的服务提供商，使用其 Claude 人工智能模型处理请求以生成回答。根据 Anthropic 的商业条款，通过其 API 发送的数据不会用于训练其模型；Anthropic 仅在有限时间内保留这些数据，以防止滥用。</li>
 <li>Google 处理 Play Integrity 令牌。</li>
+<li>Google（Firebase Cloud Messaging）负责推送海员问答通知——你的问题有了新回答、你所在部门有新问题、“你的回答帮到了别人”。为此，应用从 Google 获取通知令牌并发送到我们的服务器。通知中只包含问题或回答的文字，绝不包括你的姓名或证件。</li>
 <li>翻译器中的“精准翻译”（可选开关）以同样方式发送文字或截图；普通翻译在手机上运行，无需联网。</li>
 </ul>
 <p><b>我们的服务器保留的内容</b></p>
@@ -310,6 +317,7 @@ footer{border-top:1px solid var(--line2);padding:22px 0 40px;color:var(--mute);f
 <li>应用启动且有网络时，会与我们的服务器联系一次：只发送随机安装标识和应用版本——即使您从未使用大副。我们用它来统计活跃安装数量；30天后删除。</li>
 <li>本次安装的使用计数（每日请求次数、技术数据量）——用于每日限额；30 天后删除。</li>
 <li>本次安装的 Play Integrity 校验结果——每次新的校验都会将其替换。</li>
+<li>本次安装的通知令牌和你选择的部门——仅用于向你发送通知；可通过“删除我在服务器上的数据”删除，或在 Google 报告令牌失效时（例如卸载应用后）自动删除。</li>
 <li>您明确要求“大副”记住的事实（“记住：……”、“记忆”界面）——保留到您在“记忆”中将其删除为止。</li>
 <li>如果您点按 👍 或 👎 并附上更正，问题、回答和更正将被保留，用于为所有用户改进回答，不含您的姓名。</li>
 <li><b>海员提问：</b>您通过“问海员”发布的问题、您发布的回答以及附加的照片会保存在服务器上，所有 Sea Wolf 用户都能看到，但不显示您的姓名（仅显示职务和船舶类型）。发布前会自动检查文字；电话号码、电子邮件、姓名和证书号码会被隐藏。您可以随时删除自己的问题或回答；经其他海员确认的回答可能会以不含您姓名的形式保留在“大副”的共享知识中。</li>
@@ -331,7 +339,7 @@ footer{border-top:1px solid var(--line2);padding:22px 0 40px;color:var(--mute);f
 </article>
 <article lang="id" data-lang="id" hidden>
 <h1>Kebijakan Privasi</h1>
-<p class="date">Berlaku sejak 20 November 2026 · Untuk aplikasi Sea Wolf untuk Android (app.seawolf.logbook)</p>
+<p class="date">Berlaku sejak 23 November 2026 · Untuk aplikasi Sea Wolf untuk Android (app.seawolf.logbook)</p>
 <p class="note">Terjemahan untuk kemudahan. Jika ada perbedaan, versi bahasa Inggris yang berlaku.</p>
 <p class="upd"><b>Yang berubah pada 20 November 2026:</b> ditambahkan asisten opsional Mualim I (bagian 3a): pertanyaan dan foto yang Anda kirim kepadanya diproses di server kami dan oleh layanan AI Anthropic. Semua hal lain di Sea Wolf tetap hanya tersimpan di ponsel Anda.</p>
 <p>Sea Wolf ("aplikasi") adalah aplikasi gratis untuk pelaut yang menyimpan kartu pelaut, dokumen, pelayaran, daftar kru, catatan harian, jam istirahat, masa layar, dan CV di ponsel pengguna sendiri. Kebijakan ini menjelaskan apa yang terjadi pada informasi Anda. Singkatnya: <b>semua yang Anda simpan di Sea Wolf tetap di perangkat Anda. Satu-satunya pengecualian adalah asisten opsional Mualim I: saat Anda menggunakannya, pertanyaan dan foto yang Anda kirim dikirim ke server kami untuk mendapatkan jawaban (bagian 3a).</b></p>
@@ -372,6 +380,7 @@ footer{border-top:1px solid var(--line2);padding:22px 0 40px;color:var(--mute);f
 <li>Server kami (Hetzner Online, pusat data di Helsinki, Finlandia, UE) menerima permintaan, menambahkan manual dan prosedur yang relevan, lalu mendapatkan jawaban.</li>
 <li>Anthropic PBC (AS) memproses permintaan dengan model AI Claude miliknya untuk menghasilkan jawaban, sebagai penyedia layanan kami. Berdasarkan ketentuan komersial Anthropic, data yang dikirim melalui API-nya tidak digunakan untuk melatih modelnya; Anthropic hanya menyimpannya untuk waktu terbatas guna mencegah penyalahgunaan.</li>
 <li>Google memproses token Play Integrity.</li>
+<li>Google (Firebase Cloud Messaging) mengirimkan notifikasi tentang pertanyaan pelaut — jawaban baru untuk pertanyaan Anda, pertanyaan baru untuk departemen Anda, “Jawaban Anda membantu”. Untuk itu aplikasi menerima token notifikasi dari Google dan mengirimkannya ke server kami. Notifikasi hanya berisi teks pertanyaan atau jawaban — tidak pernah nama atau dokumen Anda.</li>
 <li>"Terjemahan akurat" di Penerjemah (sakelar opsional) mengirim teks atau tangkapan layar dengan cara yang sama; terjemahan biasa berjalan di ponsel tanpa internet.</li>
 </ul>
 <p><b>Apa yang disimpan server kami</b></p>
@@ -380,6 +389,7 @@ footer{border-top:1px solid var(--line2);padding:22px 0 40px;color:var(--mute);f
 <li>Saat aplikasi dibuka dan ada internet, aplikasi menghubungi server kami sekali: hanya ID instalasi acak dan versi aplikasi yang dikirim — meskipun Anda tidak memakai Mualim I. Ini untuk menghitung jumlah instalasi aktif; dihapus setelah 30 hari.</li>
 <li>Penghitung penggunaan untuk instalasi ini (jumlah permintaan per hari, volume data teknis) — untuk batas harian; dihapus setelah 30 hari.</li>
 <li>Hasil pemeriksaan Play Integrity untuk instalasi ini — diganti pada setiap pemeriksaan baru.</li>
+<li>Token notifikasi instalasi ini dan departemen yang Anda pilih — hanya untuk mengirim notifikasi; dihapus dengan “Hapus data saya di server” atau saat Google melaporkan token tidak berlaku (misalnya setelah aplikasi dihapus).</li>
 <li>Fakta yang secara tegas Anda minta untuk diingat oleh Mualim I ("ingat: …", layar Memori) — sampai Anda menghapusnya di Memori.</li>
 <li>Jika Anda menekan 👍 atau 👎 dengan koreksi, pertanyaan, jawaban, dan koreksi tersebut disimpan untuk meningkatkan jawaban bagi semua pengguna, tanpa nama Anda.</li>
 <li><b>Pertanyaan pelaut:</b> pertanyaan yang Anda publikasikan dengan "Tanya pelaut", jawaban yang Anda kirim, dan foto terlampir disimpan di server dan dapat dilihat oleh semua pengguna Sea Wolf, tanpa nama Anda (hanya jabatan dan jenis kapal). Sebelum dipublikasikan, teks diperiksa secara otomatis; nomor telepon, email, nama, dan nomor dokumen disembunyikan. Anda dapat menghapus pertanyaan atau jawaban Anda kapan saja; jawaban yang dikonfirmasi oleh pelaut lain dapat tetap disimpan, tanpa nama Anda, dalam pengetahuan bersama Mualim I.</li>
@@ -401,7 +411,7 @@ footer{border-top:1px solid var(--line2);padding:22px 0 40px;color:var(--mute);f
 </article>
 <article lang="fil" data-lang="fil" hidden>
 <h1>Patakaran sa Privacy</h1>
-<p class="date">Epektibo mula 20 Nobyembre 2026 · Para sa Sea Wolf app para sa Android (app.seawolf.logbook)</p>
+<p class="date">Epektibo mula 23 Nobyembre 2026 · Para sa Sea Wolf app para sa Android (app.seawolf.logbook)</p>
 <p class="note">Salin para sa kaginhawahan. Kung may pagkakaiba, ang bersyong English ang masusunod.</p>
 <p class="upd"><b>Ano ang nagbago noong 20 Nobyembre 2026:</b> idinagdag ang opsyonal na assistant na Punong Opisyal (seksyon 3a): ang mga tanong at photo na ipinapadala mo rito ay pinoproseso sa aming server at ng AI service na Anthropic. Ang lahat ng iba pa sa Sea Wolf ay nananatili pa rin sa phone mo lamang.</p>
 <p>Ang Sea Wolf ("ang app") ay libreng app para sa mga seaman na nagtatago ng seafarer's card, mga dokumento, biyahe, crew list, logbook, oras ng pahinga, sea service at CV sa sariling phone ng user. Ipinapaliwanag ng patakarang ito kung ano ang nangyayari sa impormasyon mo. Sa madaling salita: <b>lahat ng itinatago mo sa Sea Wolf ay nananatili sa device mo. Ang tanging eksepsiyon ay ang opsyonal na assistant na Punong Opisyal: kapag ginamit mo ito, ang tanong at mga photo na ipinapadala mo ay pupunta sa aming server para makakuha ng sagot (seksyon 3a).</b></p>
@@ -442,6 +452,7 @@ footer{border-top:1px solid var(--line2);padding:22px 0 40px;color:var(--mute);f
 <li>Ang aming server (Hetzner Online, data centre sa Helsinki, Finland, EU) ang tumatanggap ng request, nagdaragdag ng mga kaugnay na manual at procedure at kumukuha ng sagot.</li>
 <li>Pinoproseso ng Anthropic PBC (USA) ang request gamit ang Claude AI model nito para makabuo ng sagot, bilang aming service provider. Ayon sa commercial terms ng Anthropic, hindi ginagamit ang data na ipinadala sa pamamagitan ng API nito para i-train ang mga model nito; itinatago lamang ito ng Anthropic sa limitadong panahon para maiwasan ang pang-aabuso.</li>
 <li>Pinoproseso ng Google ang Play Integrity token.</li>
+<li>Ang Google (Firebase Cloud Messaging) ang naghahatid ng mga notification tungkol sa mga tanong ng seaman — bagong sagot sa tanong mo, bagong tanong para sa departamento mo, “Nakatulong ang sagot mo”. Para dito, kumukuha ang app ng notification token mula sa Google at ipinapadala ito sa aming server. Teksto lang ng tanong o sagot ang laman ng notification — hindi kailanman ang pangalan o mga dokumento mo.</li>
 <li>Ang "Eksaktong salin" sa Tagasalin (isang opsyonal na switch) ay nagpapadala ng teksto o screenshot sa parehong paraan; ang karaniwang pagsasalin ay gumagana sa phone nang walang internet.</li>
 </ul>
 <p><b>Ano ang itinatago ng aming server</b></p>
@@ -450,6 +461,7 @@ footer{border-top:1px solid var(--line2);padding:22px 0 40px;color:var(--mute);f
 <li>Kapag binuksan ang app at may internet, isang beses itong kumokonekta sa aming server: ang random na ID ng installation at bersyon ng app lang ang ipinapadala — kahit hindi mo ginagamit ang Punong Opisyal. Ginagamit ito para bilangin ang mga aktibong installation; binubura pagkalipas ng 30 araw.</li>
 <li>Mga usage counter para sa installation na ito (bilang ng request bawat araw, dami ng teknikal na data) — para sa mga daily limit; binubura pagkalipas ng 30 araw.</li>
 <li>Ang resulta ng Play Integrity check para sa installation na ito — pinapalitan sa bawat bagong check.</li>
+<li>Ang notification token ng installation na ito at ang mga departamentong pinili mo — para lang magpadala ng notification; binubura gamit ang “Burahin ang data ko sa server” o kapag sinabi ng Google na hindi na valid ang token (halimbawa, matapos alisin ang app).</li>
 <li>Mga impormasyong tahasan mong hiniling na tandaan ng Punong Opisyal ("tandaan: …", ang screen na Memorya) — hanggang burahin mo ang mga ito sa Memorya.</li>
 <li>Kung pipindutin mo ang 👍 o 👎 na may koreksyon, itinatago ang tanong, sagot at koreksyon para mapahusay ang mga sagot para sa lahat ng user, nang wala ang pangalan mo.</li>
 <li><b>Mga tanong ng mga seaman:</b> ang tanong na inilalathala mo gamit ang "Tanungin ang mga marino", ang mga sagot na ipino-post mo, at ang mga nakalakip na photo ay iniimbak sa server at nakikita ng lahat ng user ng Sea Wolf, nang wala ang pangalan mo (ranggo at uri ng barko lamang). Bago ilathala, awtomatikong sinusuri ang teksto; itinatago ang mga numero ng phone, e-mail, pangalan at numero ng dokumento. Puwede mong burahin ang tanong o sagot mo anumang oras; ang mga sagot na kinumpirma ng ibang seaman ay maaaring manatili, nang wala ang pangalan mo, sa pinagsasaluhang kaalaman ng Punong Opisyal.</li>
@@ -471,7 +483,7 @@ footer{border-top:1px solid var(--line2);padding:22px 0 40px;color:var(--mute);f
 </article>
 <article lang="hi" data-lang="hi" hidden>
 <h1>गोपनीयता नीति</h1>
-<p class="date">लागू तिथि: 20 नवंबर 2026 · Android के लिए Sea Wolf ऐप (app.seawolf.logbook) पर लागू</p>
+<p class="date">लागू तिथि: 23 नवंबर 2026 · Android के लिए Sea Wolf ऐप (app.seawolf.logbook) पर लागू</p>
 <p class="note">यह अनुवाद सुविधा के लिए है। किसी भी अंतर की स्थिति में अंग्रेज़ी संस्करण मान्य होगा।</p>
 <p class="upd"><b>20 नवंबर 2026 को क्या बदला:</b> वैकल्पिक चीफ मेट सहायक जोड़ा गया (भाग 3a): आप इसे जो प्रश्न और फ़ोटो भेजते हैं, वे हमारे सर्वर पर और AI सेवा Anthropic द्वारा प्रोसेस किए जाते हैं। Sea Wolf में बाकी सब कुछ पहले की तरह केवल आपके फ़ोन पर ही रहता है।</p>
 <p>Sea Wolf ("ऐप") नाविकों के लिए एक मुफ़्त ऐप है, जो सीफेरर कार्ड, डॉक्यूमेंट्स, वॉयेज, क्रू लिस्ट, लॉगबुक, रेस्ट आवर्स, सी सर्विस और CV को उपयोगकर्ता के अपने फ़ोन पर रखता है। यह नीति बताती है कि आपकी जानकारी के साथ क्या होता है। संक्षेप में: <b>Sea Wolf में आप जो कुछ भी रखते हैं, वह आपके डिवाइस पर ही रहता है। एकमात्र अपवाद वैकल्पिक चीफ मेट सहायक है: जब आप इसका उपयोग करते हैं, तो आपके भेजे गए प्रश्न और फ़ोटो जवाब पाने के लिए हमारे सर्वर पर जाते हैं (भाग 3a)।</b></p>
@@ -512,6 +524,7 @@ footer{border-top:1px solid var(--line2);padding:22px 0 40px;color:var(--mute);f
 <li>हमारा सर्वर (Hetzner Online, डेटा सेंटर हेलसिंकी, फ़िनलैंड, EU में) अनुरोध प्राप्त करता है, संबंधित मैनुअल और प्रक्रियाएँ जोड़ता है और जवाब प्राप्त करता है।</li>
 <li>Anthropic PBC (USA) हमारे सेवा प्रदाता के रूप में, जवाब तैयार करने के लिए अपने Claude AI मॉडल से अनुरोध को प्रोसेस करता है। Anthropic की व्यावसायिक शर्तों के तहत, उसके API के ज़रिए भेजे गए डेटा का उपयोग उसके मॉडलों को प्रशिक्षित करने के लिए नहीं किया जाता; Anthropic दुरुपयोग रोकने के लिए इसे केवल सीमित समय तक रखता है।</li>
 <li>Google, Play Integrity टोकन को प्रोसेस करता है।</li>
+<li>Google (Firebase Cloud Messaging) नाविकों के सवालों की सूचनाएँ पहुँचाता है — आपके सवाल का नया जवाब, आपके विभाग का नया सवाल, “आपके जवाब से मदद मिली”। इसके लिए ऐप Google से एक सूचना टोकन लेता है और उसे हमारे सर्वर पर भेजता है। सूचना में केवल सवाल या जवाब का पाठ होता है — कभी आपका नाम या दस्तावेज़ नहीं।</li>
 <li>अनुवादक में "सटीक अनुवाद" (एक वैकल्पिक स्विच) टेक्स्ट या स्क्रीनशॉट को इसी तरह भेजता है; सामान्य अनुवाद फ़ोन पर बिना इंटरनेट के काम करता है।</li>
 </ul>
 <p><b>हमारा सर्वर क्या रखता है</b></p>
@@ -520,6 +533,7 @@ footer{border-top:1px solid var(--line2);padding:22px 0 40px;color:var(--mute);f
 <li>ऐप खुलने पर, अगर इंटरनेट है, तो वह हमारे सर्वर से एक बार जुड़ता है: केवल इंस्टॉलेशन का रैंडम पहचानकर्ता और ऐप का संस्करण भेजा जाता है — भले ही आप चीफ मेट का उपयोग न करें। इससे हम सक्रिय इंस्टॉलेशन गिनते हैं; 30 दिनों बाद हटा दिया जाता है।</li>
 <li>इस इंस्टॉलेशन के उपयोग काउंटर (प्रति दिन अनुरोधों की संख्या, तकनीकी डेटा की मात्रा) — दैनिक सीमाओं के लिए; 30 दिन बाद हटा दिए जाते हैं।</li>
 <li>इस इंस्टॉलेशन के लिए Play Integrity जाँच का परिणाम — हर नई जाँच पर बदल दिया जाता है।</li>
+<li>इस इंस्टॉलेशन का सूचना टोकन और आपके चुने हुए विभाग — केवल आपको सूचनाएँ भेजने के लिए; “सर्वर पर मेरा डेटा हटाएँ” से या जब Google बताए कि टोकन अमान्य है (जैसे ऐप हटाने के बाद), तब हटा दिया जाता है।</li>
 <li>वे तथ्य, जिन्हें याद रखने के लिए आप चीफ मेट से स्पष्ट रूप से कहते हैं ("याद रखें: …", मेमोरी स्क्रीन) — जब तक आप उन्हें मेमोरी में हटा न दें।</li>
 <li>अगर आप सुधार के साथ 👍 या 👎 दबाते हैं, तो प्रश्न, जवाब और सुधार सभी उपयोगकर्ताओं के लिए जवाब बेहतर बनाने हेतु आपके नाम के बिना रखे जाते हैं।</li>
 <li><b>नाविकों के प्रश्न:</b> "नाविकों से पूछो" से प्रकाशित किया गया आपका प्रश्न, आपके पोस्ट किए गए जवाब और जोड़ी गई फ़ोटो सर्वर पर संग्रहीत होते हैं और Sea Wolf के सभी उपयोगकर्ताओं को आपके नाम के बिना दिखते हैं (केवल रैंक और जहाज़ का प्रकार)। प्रकाशन से पहले टेक्स्ट की स्वचालित रूप से जाँच की जाती है; फ़ोन नंबर, ई-मेल, नाम और डॉक्यूमेंट नंबर छिपा दिए जाते हैं। आप अपना प्रश्न या जवाब कभी भी हटा सकते हैं; दूसरे नाविकों द्वारा पुष्टि किए गए जवाब आपके नाम के बिना चीफ मेट के साझा ज्ञान में रह सकते हैं।</li>
