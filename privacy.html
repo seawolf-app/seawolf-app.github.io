@@ -132,11 +132,11 @@ article h1{font-size:clamp(34px,4.6vw,52px);line-height:1.06;letter-spacing:-.02
 .date{color:var(--ink2);font-size:15px;margin:0 0 20px}
 .upd{background:var(--bg);border-radius:20px;padding:16px 18px;margin:18px 0;font-size:16px}
 article h2{font-size:24px;line-height:1.2;margin:36px 0 10px;scroll-margin-top:96px;letter-spacing:-.01em}
-article h2[data-anchor="starpom"],article h2[id^="questions-"]{display:inline-block;background:var(--inv);color:var(--on-inv);border-radius:999px;padding:6px 16px;font-size:20px}
+article h2[data-anchor="starpom"],article h2[id^="questions-"],article h2[id^="reviews-"]{display:inline-block;background:var(--inv);color:var(--on-inv);border-radius:999px;padding:6px 16px;font-size:20px}
 article p,article li{color:var(--ink)}article ul{padding-left:22px}article li{margin:7px 0}
 .note{color:var(--ink2);font-size:14px;font-style:italic}
 .mail{font-weight:700}
-@media (max-width:420px){article{border-radius:24px;padding:28px 18px}article h2[data-anchor="starpom"],article h2[id^="questions-"]{border-radius:16px}}
+@media (max-width:420px){article{border-radius:24px;padding:28px 18px}article h2[data-anchor="starpom"],article h2[id^="questions-"],article h2[id^="reviews-"]{border-radius:16px}}
 </style>
 </head>
 <body>
@@ -149,11 +149,11 @@ article p,article li{color:var(--ink)}article ul{padding-left:22px}article li{ma
 <main class="doc">
 <article lang="en" data-lang="en">
 <h1>Privacy Policy</h1>
-<p class="date">Effective date: 24 November 2026 · Applies to the Sea Wolf app for Android (app.seawolf.logbook)</p>
-<p class="upd"><b>What changed on 24 November 2026 (version 0.3.0):</b> the AI assistant is now called Sea Wolf (formerly Starpom, section 3a). Questions you ask on the “Ask” screen are published for all seafarers without your name, and your whole years of sea service are sent to our server — see the new section 3b. Everything else in Sea Wolf still stays only on your phone.</p>
-<p>Sea Wolf ("the app") is a free app for seafarers that keeps a seafarer's card, documents, voyages, crew list, logbook, hours of rest, sea service and CV on the user's own phone. This policy explains what happens to your information. In short: <b>everything you keep in Sea Wolf stays on your device. The only exception is the optional Starpom assistant: when you use it, the question and photos you send go to our server to get an answer (section 3a). Since version 0.3.0, questions you ask on the “Ask” screen are also published for all seafarers, without your name (section 3b).</b></p>
+<p class="date">Effective date: 25 November 2026 · Applies to the Sea Wolf app for Android (app.seawolf.logbook)</p>
+<p class="upd"><b>What changed on 25 November 2026 (version 0.3.3):</b> the AI assistant is now simply called Sea Wolf AI (section 3a). New section 3c “Vessel reviews”. To delete your data on our server, use Ask → My vessel → “Delete my data on the server”; vessel reviews stay after that but are no longer linked to you. Everything else in Sea Wolf still stays only on your phone.</p>
+<p>Sea Wolf ("the app") is a free app for seafarers that keeps a seafarer's card, documents, voyages, crew list, logbook, hours of rest, sea service and CV on the user's own phone. This policy explains what happens to your information. In short: <b>everything you keep in Sea Wolf stays on your device. The only exception is the optional Sea Wolf AI assistant: when you use it, the question and photos you send go to our server to get an answer (section 3a). Since version 0.3.0, questions you ask on the “Ask” screen are also published for all seafarers, without your name (section 3b). Vessel reviews you write are also stored on our server (section 3c).</b></p>
 <h2>1. Data you enter</h2>
-<p>Everything you enter or scan in the app — profile and contact details, photo, document numbers and scans, vessel and crew details, positions, logbook entries, hours of work and rest, salary records, sea service, colleagues — is stored only in the app's private storage on your phone. This data is not sent to any server (except what you send to Starpom yourself, sections 3a and 3b). The app has no user accounts.</p>
+<p>Everything you enter or scan in the app — profile and contact details, photo, document numbers and scans, vessel and crew details, positions, logbook entries, hours of work and rest, salary records, sea service, colleagues — is stored only in the app's private storage on your phone. This data is not sent to any server (except what you send to Sea Wolf AI or publish in the app yourself, sections 3a–3c). The app has no user accounts.</p>
 <h2>2. Permissions and the widget</h2>
 <ul>
 <li><b>Camera</b> — only when you scan a document or a QR code. Images are processed on the phone and saved only if you choose to keep them.</li>
@@ -166,24 +166,24 @@ article p,article li{color:var(--ink)}article ul{padding-left:22px}article li{ma
 <h2>3. Network connections</h2>
 <p>The app works fully offline. It connects to the internet only in these cases:</p>
 <ul>
-<li><b>Starpom assistant (optional)</b> — only when you send something to Starpom yourself; see section 3a.</li>
+<li><b>Sea Wolf AI assistant (optional)</b> — only when you send something to Sea Wolf AI yourself; see section 3a. Vessel reviews: section 3c.</li>
 <li><b>Optional language pack</b> — if you download Cyrillic text recognition (Russian and Ukrainian) in Settings, the files are downloaded from GitHub and each file is checked (SHA-256) before use. No personal data is sent; GitHub receives the technical request (such as your IP address) as for any download.</li>
 <li><b>Links you open</b> — for example MarineTraffic, VesselFinder, Telegram, WhatsApp, or e-mail. These open in other apps or the browser and are governed by those services' own policies.</li>
 <li><b>Google text recognition</b> — document scanning uses Google ML Kit, which runs on the phone through Google Play services. The text of your documents is not sent anywhere, but Google Play services may send Google anonymous diagnostic and usage information about the ML Kit component, as described in Google's terms.</li>
 </ul>
 <p>All fonts are built into the app; nothing else is downloaded. Apart from the Google component above, the app contains no advertising, no analytics and no third-party tracking.</p>
 <h2 id="starpom-en" data-anchor="starpom">3a. Sea Wolf AI assistant (formerly Starpom)</h2>
-<p>Starpom is optional. Nothing is sent until you open Starpom and send something yourself. Before first use the app shows what is sent and asks you to confirm.</p>
-<p><b>What is sent when you use Starpom</b></p>
+<p>Sea Wolf AI is optional. Nothing is sent until you open it and send something yourself. Before first use the app shows what is sent and asks you to confirm.</p>
+<p><b>What is sent when you use Sea Wolf AI</b></p>
 <ul>
 <li>your question (text, or voice converted to text on the phone) and the photos you attach (compressed on the phone);</li>
 <li>your rank and vessel type from your profile, and the app language;</li>
 <li>up to 3 of your “Technical” diary notes that match the question;</li>
-<li>the text of earlier messages in the current Starpom chat (not photos);</li>
+<li>the text of earlier messages in the current Sea Wolf AI chat (not photos);</li>
 <li>a random identifier of this installation (not your name or phone number);</li>
 <li>a Google Play Integrity token that confirms the request comes from the genuine Sea Wolf app (checked by Google).</li>
 </ul>
-<p><b>What is never sent:</b> your name, document numbers and scans, contacts, crew list, other diary entries, salary, sea service records or any other section of Sea Wolf. When Starpom fills a third-party application form, only the blank form is sent; your data is put into the form on the phone.</p>
+<p><b>What is never sent:</b> your name, document numbers and scans, contacts, crew list, other diary entries, salary, sea service records or any other section of Sea Wolf. When Sea Wolf AI fills a third-party application form, only the blank form is sent; your data is put into the form on the phone.</p>
 <p><b>Who processes it</b></p>
 <ul>
 <li>Our server (Hetzner Online, data centre in Helsinki, Finland, EU) receives the request, adds relevant manuals and procedures and gets an answer.</li>
@@ -194,17 +194,18 @@ article p,article li{color:var(--ink)}article ul{padding-left:22px}article li{ma
 </ul>
 <p><b>What our server keeps</b></p>
 <ul>
-<li>Chat messages and photos from “My chat” are not stored on the server after the answer is sent. The chat history is kept only on your phone (Starpom → History), and you can delete it there.</li>
-<li>When the app starts and has internet, it checks in with our server once: only the random installation identifier and the app version are sent — even if you never use Starpom. We use this to count active installations; it is deleted after 30 days.</li>
+<li>Chat messages and photos from “My chat” are not stored on the server after the answer is sent. The chat history is kept only on your phone, and you can delete it in the app.</li>
+<li>When the app starts and has internet, it checks in with our server once: only the random installation identifier and the app version are sent — even if you never use Sea Wolf AI. We use this to count active installations; it is deleted after 30 days.</li>
 <li>Usage counters for this installation (number of requests per day, technical data volume) — for daily limits; deleted after 30 days.</li>
 <li>The result of the Play Integrity check for this installation — replaced by each new check.</li>
 <li>The notification token of this installation and your chosen departments — only to send you notifications; deleted with “Delete my data on the server” or when Google reports the token as invalid (for example, after the app is removed).</li>
-<li>Facts you explicitly ask Starpom to remember (“remember: …”, the Memory screen) — until you delete them in Memory.</li>
+<li>Facts you explicitly ask Sea Wolf AI to remember (“remember: …”) — until you delete them in the app or delete your data on the server.</li>
 <li>If you press 👍 or 👎 with a correction, the question, answer and correction are kept to improve answers for all users, without your name.</li>
-<li><b>Seafarers' questions:</b> a question you publish with “Ask seafarers”, answers you post, and attached photos are stored on the server and visible to all Sea Wolf users, without your name (only rank and vessel type). Before publishing, the text is checked automatically; phone numbers, e-mails, names and document numbers are hidden. You can delete your question or answer at any time; answers confirmed by other seafarers may be kept, without your name, in Starpom's shared knowledge.</li>
-<li><b>Documents for Starpom:</b> manuals, procedures or blank forms you upload are stored on the server; after review by the developer they are added to Starpom's knowledge base for your company or for all users. Do not upload personal documents.</li>
+<li><b>Seafarers' questions:</b> a question you publish with “Ask seafarers”, answers you post, and attached photos are stored on the server and visible to all Sea Wolf users, without your name (only rank and vessel type). Before publishing, the text is checked automatically; phone numbers, e-mails, names and document numbers are hidden. You can delete your question or answer at any time; answers confirmed by other seafarers may be kept, without your name, in Sea Wolf AI's shared knowledge.</li>
+<li><b>Documents for Sea Wolf AI:</b> manuals, procedures or blank forms you upload are stored on the server; after review by the developer they are added to Sea Wolf AI's knowledge base for your company or for all users. Do not upload personal documents.</li>
+<li><b>Vessel reviews:</b> see section 3c.</li>
 </ul>
-<p><b>Limits and switching off.</b> Starpom has a free daily limit. You can simply not use Starpom; the rest of the app works fully without it and without internet. To delete everything kept for your installation on the server (facts in Memory, your published questions and answers, uploaded documents), use Starpom → Memory → “Delete my data on the server” or write to <span class="mail">myaziopa@gmail.com</span> with the installation ID shown in Starpom → Memory; we delete it within 30 days. In version 0.3.0 and later this button and the installation ID are in Ask → My vessel.</p>
+<p><b>Limits and switching off.</b> Sea Wolf AI has a free daily limit. You can simply not use Sea Wolf AI; the rest of the app works fully without it and without internet. To delete everything kept for your installation on the server (remembered facts, your published questions and answers, uploaded documents), use Ask → My vessel → “Delete my data on the server”, or write to <span class="mail">myaziopa@gmail.com</span> with the installation ID shown in Ask → My vessel; we delete it within 30 days. What happens to vessel reviews is described in section 3c.</p>
 <h2 id="questions-en">3b. Seafarers’ questions (version 0.3.0 and later)</h2>
 <ul>
 <li>A question you ask on the “Ask” screen is published in the seafarers’ feed together with the AI answer and is visible to all Sea Wolf users. The app tells you this before you send. Answers you post to other seafarers’ questions are public in the same way.</li>
@@ -215,6 +216,15 @@ article p,article li{color:var(--ink)}article ul{padding-left:22px}article li{ma
 <li>Notifications (Google Firebase, see section 3a): a new answer to your question, new questions for your department, and occasional reminders to experienced seafarers about questions still waiting for an answer. You can switch them off in the app’s notification settings.</li>
 <li>Any user can report a question or answer. Reported content is reviewed by the developer and may be hidden; content reported by three different users is hidden automatically.</li>
 <li>You can delete your own question or answer at any time. To delete everything kept on the server for your installation, use Ask → My vessel → “Delete my data on the server”, or write to us (section 9).</li>
+</ul>
+<h2 id="reviews-en">3c. Vessel reviews</h2>
+<ul>
+<li>A vessel review you write (ratings, text, your rank, the vessel name and IMO number, contract dates) is stored on our server and is visible to all Sea Wolf users.</li>
+<li>Other users see your rank, the months of the contract and the time on board — never your name.</li>
+<li>A review can be written only after a contract of at least 14 days. You can edit your own review.</li>
+<li>After “Delete my data on the server” (Ask → My vessel) your review stays for other seafarers but is no longer linked to your installation: it can no longer be edited, and its dates are kept as month and year only.</li>
+<li>Any user can report a review. Reported reviews are checked in the same way as questions (section 3b).</li>
+<li>Reviews are translated automatically into each reader’s language by the AI service Anthropic, as described in section 3a.</li>
 </ul>
 <h2>4. Backups, sharing and handover</h2>
 <p>Backups are files that you create and keep yourself; they are encrypted (AES-256) with a password you choose. When you share your card, CV, a contact file, a handover file or a backup, the file goes only where you send it. The developer never receives these files.</p>
@@ -231,12 +241,12 @@ article p,article li{color:var(--ink)}article ul{padding-left:22px}article li{ma
 </article>
 <article lang="ru" data-lang="ru" hidden>
 <h1>Политика конфиденциальности</h1>
-<p class="date">Действует с 24 ноября 2026 г. · Для приложения Sea Wolf для Android (app.seawolf.logbook)</p>
+<p class="date">Действует с 25 ноября 2026 г. · Для приложения Sea Wolf для Android (app.seawolf.logbook)</p>
 <p class="note">Перевод для удобства. При расхождении действует английская версия.</p>
-<p class="upd"><b>Что изменилось 24 ноября 2026 г. (версия 0.3.0):</b> помощник с ИИ теперь называется Sea Wolf (раньше — «Старпом», раздел 3a). Вопросы, которые вы задаёте на экране «Спросить», публикуются для всех моряков без вашего имени, а на наш сервер передаётся ваш стаж в полных годах — см. новый раздел 3b. Всё остальное в Sea Wolf по-прежнему хранится только на вашем телефоне.</p>
-<p>Sea Wolf («приложение») — бесплатное приложение для моряков, которое хранит карточку моряка, документы, рейсы, список экипажа, дневник, часы отдыха, стаж и CV на телефоне пользователя. Коротко: <b>всё, что вы храните в Sea Wolf, остаётся на вашем телефоне. Единственное исключение — необязательный помощник «Старпом»: когда вы им пользуетесь, ваш вопрос и фото уходят на наш сервер, чтобы получить ответ (раздел 3a). С версии 0.3.0 вопросы, которые вы задаёте на экране «Спросить», также публикуются для всех моряков — без вашего имени (раздел 3b).</b></p>
+<p class="upd"><b>Что изменилось 25 ноября 2026 г. (версия 0.3.3):</b> помощник с ИИ теперь называется просто ИИ Sea Wolf (раздел 3a). Новый раздел 3c «Отзывы о судах». Чтобы удалить свои данные на нашем сервере: Спросить → Моё судно → «Удалить мои данные на сервере»; отзывы о судах после этого остаются, но больше не связаны с вами. Всё остальное в Sea Wolf по-прежнему хранится только на вашем телефоне.</p>
+<p>Sea Wolf («приложение») — бесплатное приложение для моряков, которое хранит карточку моряка, документы, рейсы, список экипажа, дневник, часы отдыха, стаж и CV на телефоне пользователя. Коротко: <b>всё, что вы храните в Sea Wolf, остаётся на вашем телефоне. Единственное исключение — необязательный помощник ИИ Sea Wolf: когда вы им пользуетесь, ваш вопрос и фото уходят на наш сервер, чтобы получить ответ (раздел 3a). С версии 0.3.0 вопросы, которые вы задаёте на экране «Спросить», также публикуются для всех моряков — без вашего имени (раздел 3b). Отзывы о судах, которые вы пишете, тоже хранятся на нашем сервере (раздел 3c).</b></p>
 <h2>1. Данные, которые вы вводите</h2>
-<p>Всё, что вы вводите или сканируете — профиль и контакты, фото, номера и сканы документов, данные судна и экипажа, позиции, записи дневника, часы работы и отдыха, записи о зарплате, стаж, коллеги, — хранится только в закрытом хранилище приложения на вашем телефоне. Эти данные не передаются на сервер (кроме того, что вы сами отправляете Старпому, разделы 3a и 3b). Аккаунтов в приложении нет.</p>
+<p>Всё, что вы вводите или сканируете — профиль и контакты, фото, номера и сканы документов, данные судна и экипажа, позиции, записи дневника, часы работы и отдыха, записи о зарплате, стаж, коллеги, — хранится только в закрытом хранилище приложения на вашем телефоне. Эти данные не передаются на сервер (кроме того, что вы сами отправляете ИИ Sea Wolf или публикуете в приложении, разделы 3a–3c). Аккаунтов в приложении нет.</p>
 <h2>2. Разрешения и виджет</h2>
 <ul>
 <li><b>Камера</b> — только при сканировании документа или QR-кода. Изображения обрабатываются на телефоне и сохраняются, только если вы решите их оставить.</li>
@@ -249,24 +259,24 @@ article p,article li{color:var(--ink)}article ul{padding-left:22px}article li{ma
 <h2>3. Подключение к интернету</h2>
 <p>Приложение полностью работает без интернета и подключается только в этих случаях:</p>
 <ul>
-<li><b>Помощник «Старпом» (необязательно)</b> — только когда вы сами что-то ему отправляете; см. раздел 3a.</li>
+<li><b>Помощник ИИ Sea Wolf (необязательно)</b> — только когда вы сами что-то ему отправляете; см. раздел 3a. Отзывы о судах — раздел 3c.</li>
 <li><b>Дополнительный языковой пакет</b> — если вы скачиваете распознавание кириллицы (русский и украинский) в настройках, файлы загружаются с GitHub, и каждый файл перед использованием проверяется (SHA-256). Персональные данные не передаются; GitHub получает технический запрос (например, IP-адрес), как при любой загрузке.</li>
 <li><b>Ссылки, которые вы открываете</b> — например MarineTraffic, VesselFinder, Telegram, WhatsApp, почта. Они открываются в других приложениях или браузере и подчиняются правилам этих сервисов.</li>
 <li><b>Распознавание текста Google</b> — сканирование документов использует Google ML Kit, который работает на телефоне через сервисы Google Play. Текст ваших документов никуда не отправляется, но сервисы Google Play могут передавать Google анонимную диагностическую информацию о работе компонента ML Kit согласно условиям Google.</li>
 </ul>
 <p>Все шрифты встроены в приложение, больше ничего не скачивается. Кроме описанного выше компонента Google, в приложении нет рекламы, аналитики и сторонних трекеров.</p>
 <h2 id="starpom-ru" data-anchor="starpom">3a. ИИ Sea Wolf — помощник (раньше «Старпом»)</h2>
-<p>Старпом — необязательная функция. Ничего не отправляется, пока вы сами не откроете Старпома и не отправите вопрос. Перед первым использованием приложение показывает, что именно уходит на сервер, и просит подтвердить.</p>
-<p><b>Что отправляется, когда вы пользуетесь Старпомом</b></p>
+<p>ИИ Sea Wolf — необязательная функция. Ничего не отправляется, пока вы сами не откроете его и не отправите вопрос. Перед первым использованием приложение показывает, что именно уходит на сервер, и просит подтвердить.</p>
+<p><b>Что отправляется, когда вы пользуетесь ИИ Sea Wolf</b></p>
 <ul>
 <li>ваш вопрос (текстом или голосом, переведённым в текст на телефоне) и приложенные фото (сжатые на телефоне);</li>
 <li>должность и тип судна из вашей карточки, язык приложения;</li>
 <li>до 3 ваших заметок «Техника» из дневника, подходящих к вопросу;</li>
-<li>текст предыдущих сообщений текущего чата со Старпомом (без фото);</li>
+<li>текст предыдущих сообщений текущего чата с ИИ Sea Wolf (без фото);</li>
 <li>случайный номер этой установки приложения (не имя и не телефон);</li>
 <li>токен проверки Google Play Integrity — подтверждение, что запрос пришёл из настоящего приложения Sea Wolf (проверяет Google).</li>
 </ul>
-<p><b>Что не отправляется никогда:</b> имя, номера и сканы документов, контакты, список экипажа, остальные записи дневника, зарплата, стаж и другие разделы Sea Wolf. Когда Старпом заполняет чужую анкету, на сервер уходит только пустой бланк, а ваши данные вписываются в него на телефоне.</p>
+<p><b>Что не отправляется никогда:</b> имя, номера и сканы документов, контакты, список экипажа, остальные записи дневника, зарплата, стаж и другие разделы Sea Wolf. Когда ИИ Sea Wolf заполняет чужую анкету, на сервер уходит только пустой бланк, а ваши данные вписываются в него на телефоне.</p>
 <p><b>Кто обрабатывает</b></p>
 <ul>
 <li>Наш сервер (Hetzner Online, дата-центр в Хельсинки, Финляндия, ЕС) принимает запрос, подбирает подходящие мануалы и процедуры и получает ответ.</li>
@@ -277,17 +287,18 @@ article p,article li{color:var(--ink)}article ul{padding-left:22px}article li{ma
 </ul>
 <p><b>Что хранит наш сервер</b></p>
 <ul>
-<li>Сообщения и фото из «Моего чата» на сервере после ответа не хранятся. История чата хранится только на вашем телефоне (Старпом → История), и вы можете её удалить.</li>
-<li>При запуске, если есть интернет, приложение один раз обращается к нашему серверу: передаются только случайный номер установки и версия приложения — даже если вы не пользуетесь Старпомом. Это нужно, чтобы считать число активных установок; удаляется через 30 дней.</li>
+<li>Сообщения и фото из «Моего чата» на сервере после ответа не хранятся. История чата хранится только на вашем телефоне, и вы можете удалить её в приложении.</li>
+<li>При запуске, если есть интернет, приложение один раз обращается к нашему серверу: передаются только случайный номер установки и версия приложения — даже если вы не пользуетесь ИИ Sea Wolf. Это нужно, чтобы считать число активных установок; удаляется через 30 дней.</li>
 <li>Счётчики использования для этой установки (число запросов в день, объём трафика) — для дневного лимита; удаляются через 30 дней.</li>
 <li>Результат проверки Play Integrity для этой установки — заменяется при каждой новой проверке.</li>
 <li>Токен уведомлений этой установки и выбранные вами службы — только чтобы присылать уведомления; удаляется кнопкой «Удалить мои данные на сервере» или когда Google сообщает, что токен недействителен (например, после удаления приложения).</li>
-<li>Факты, которые вы сами попросили запомнить («запомни: …», экран «Память»), — пока вы их не удалите в «Памяти».</li>
+<li>Факты, которые вы сами попросили ИИ Sea Wolf запомнить («запомни: …»), — пока вы их не удалите в приложении или не удалите свои данные на сервере.</li>
 <li>Если вы нажали 👍 или 👎 с исправлением, вопрос, ответ и исправление сохраняются, чтобы улучшать ответы для всех, без вашего имени.</li>
-<li><b>Вопросы моряков:</b> вопрос, который вы опубликовали кнопкой «Спросить моряков», ваши ответы и приложенные фото хранятся на сервере и видны всем пользователям Sea Wolf без вашего имени (видны только должность и тип судна). Перед публикацией текст проверяется автоматически: телефоны, e-mail, имена и номера документов скрываются. Свой вопрос или ответ можно удалить в любой момент; ответы, подтверждённые другими моряками, могут остаться без вашего имени в общих знаниях Старпома.</li>
-<li><b>Документы для Старпома:</b> загруженные вами мануалы, процедуры и пустые бланки хранятся на сервере; после проверки разработчиком они добавляются в базу знаний Старпома для вашей компании или для всех. Не загружайте личные документы.</li>
+<li><b>Вопросы моряков:</b> вопрос, который вы опубликовали кнопкой «Спросить моряков», ваши ответы и приложенные фото хранятся на сервере и видны всем пользователям Sea Wolf без вашего имени (видны только должность и тип судна). Перед публикацией текст проверяется автоматически: телефоны, e-mail, имена и номера документов скрываются. Свой вопрос или ответ можно удалить в любой момент; ответы, подтверждённые другими моряками, могут остаться без вашего имени в общих знаниях ИИ Sea Wolf.</li>
+<li><b>Документы для ИИ Sea Wolf:</b> загруженные вами мануалы, процедуры и пустые бланки хранятся на сервере; после проверки разработчиком они добавляются в базу знаний ИИ Sea Wolf для вашей компании или для всех. Не загружайте личные документы.</li>
+<li><b>Отзывы о судах:</b> см. раздел 3c.</li>
 </ul>
-<p><b>Лимиты и отказ.</b> У Старпома есть бесплатный дневной лимит. Старпомом можно просто не пользоваться — всё остальное приложение полностью работает без него и без интернета. Чтобы удалить всё, что хранится на сервере для вашей установки (факты в «Памяти», опубликованные вопросы и ответы, загруженные документы), используйте «Старпом → Память → Удалить мои данные на сервере» или напишите на <span class="mail">myaziopa@gmail.com</span>, указав номер установки из «Старпом → Память»; мы удалим данные в течение 30 дней. В версии 0.3.0 и новее эта кнопка и номер установки — в «Спросить → Моё судно».</p>
+<p><b>Лимиты и отказ.</b> У ИИ Sea Wolf есть бесплатный дневной лимит. Можно просто не пользоваться ИИ Sea Wolf — всё остальное приложение полностью работает без него и без интернета. Чтобы удалить всё, что хранится на сервере для вашей установки (запомненные факты, опубликованные вопросы и ответы, загруженные документы), используйте «Спросить → Моё судно → Удалить мои данные на сервере» или напишите на <span class="mail">myaziopa@gmail.com</span>, указав номер установки из «Спросить → Моё судно»; мы удалим данные в течение 30 дней. Что происходит с отзывами о судах — в разделе 3c.</p>
 <h2 id="questions-ru">3b. Вопросы моряков (версия 0.3.0 и новее)</h2>
 <ul>
 <li>Вопрос, который вы задаёте на экране «Спросить», публикуется в ленте моряков вместе с ответом ИИ и виден всем пользователям Sea Wolf. Приложение предупреждает об этом до отправки. Ваши ответы на вопросы других моряков так же видны всем.</li>
@@ -298,6 +309,15 @@ article p,article li{color:var(--ink)}article ul{padding-left:22px}article li{ma
 <li>Уведомления (Google Firebase, см. раздел 3a): новый ответ на ваш вопрос, новые вопросы вашей специальности и иногда — напоминания опытным морякам о вопросах, которые ждут ответа. Их можно отключить в настройках уведомлений приложения.</li>
 <li>Любой пользователь может пожаловаться на вопрос или ответ. Жалобы проверяет разработчик и может скрыть содержимое; после жалоб трёх разных пользователей оно скрывается автоматически.</li>
 <li>Свой вопрос или ответ можно удалить в любой момент. Чтобы удалить всё, что хранится на сервере для вашей установки: Спросить → Моё судно → «Удалить мои данные на сервере», или напишите нам (раздел 9).</li>
+</ul>
+<h2 id="reviews-ru">3c. Отзывы о судах</h2>
+<ul>
+<li>Отзыв о судне, который вы пишете (оценки, текст, ваша должность, название судна и номер IMO, даты контракта), хранится на нашем сервере и виден всем пользователям Sea Wolf.</li>
+<li>Другие пользователи видят вашу должность, месяцы контракта и время на борту — но никогда не ваше имя.</li>
+<li>Отзыв можно написать только после контракта не короче 14 дней. Свой отзыв можно редактировать.</li>
+<li>После «Удалить мои данные на сервере» (Спросить → Моё судно) отзыв остаётся для других моряков, но больше не связан с вашей установкой: редактировать его уже нельзя, а от дат остаются только месяц и год.</li>
+<li>Любой пользователь может пожаловаться на отзыв. Отзывы с жалобами проверяются так же, как вопросы (раздел 3b).</li>
+<li>Отзывы автоматически переводятся на язык читателя ИИ-сервисом Anthropic, как описано в разделе 3a.</li>
 </ul>
 <h2>4. Резервные копии и передача</h2>
 <p>Резервные копии — это файлы, которые вы создаёте и храните сами; они зашифрованы (AES-256) паролем, который выбираете вы. Когда вы отправляете карточку, CV, файл контакта, файл передачи дел или копию, файл уходит только туда, куда вы его отправили. Разработчик эти файлы не получает.</p>
@@ -314,12 +334,12 @@ article p,article li{color:var(--ink)}article ul{padding-left:22px}article li{ma
 </article>
 <article lang="uk" data-lang="uk" hidden>
 <h1>Політика конфіденційності</h1>
-<p class="date">Діє з 24 листопада 2026 р. · Для застосунку Sea Wolf для Android (app.seawolf.logbook)</p>
+<p class="date">Діє з 25 листопада 2026 р. · Для застосунку Sea Wolf для Android (app.seawolf.logbook)</p>
 <p class="note">Переклад для зручності. У разі розбіжностей діє англійська версія.</p>
-<p class="upd"><b>Що змінилося 24 листопада 2026 р. (версія 0.3.0):</b> помічник зі ШІ тепер називається Sea Wolf (раніше — «Старпом», розділ 3a). Питання, які ви ставите на екрані «Запитати», публікуються для всіх моряків без вашого імені, а на наш сервер передається ваш стаж у повних роках — див. новий розділ 3b. Усе інше в Sea Wolf, як і раніше, зберігається лише на вашому телефоні.</p>
-<p>Sea Wolf («застосунок») — безкоштовний застосунок для моряків, який зберігає картку моряка, документи, рейси, список екіпажу, щоденник, години відпочинку, стаж і CV на телефоні користувача. Коротко: <b>усе, що ви зберігаєте в Sea Wolf, залишається на вашому пристрої. Єдиний виняток — необов’язковий помічник «Старпом»: коли ви ним користуєтеся, запитання й фото, які ви надсилаєте, потрапляють на наш сервер, щоб отримати відповідь (розділ 3a). З версії 0.3.0 питання, які ви ставите на екрані «Запитати», також публікуються для всіх моряків — без вашого імені (розділ 3b).</b></p>
+<p class="upd"><b>Що змінилося 25 листопада 2026 р. (версія 0.3.3):</b> помічник зі ШІ тепер називається просто ШІ Sea Wolf (розділ 3a). Новий розділ 3c «Відгуки про судна». Щоб видалити свої дані на нашому сервері: Запитати → Моє судно → «Видалити мої дані на сервері»; відгуки про судна після цього залишаються, але більше не пов’язані з вами. Усе інше в Sea Wolf, як і раніше, зберігається лише на вашому телефоні.</p>
+<p>Sea Wolf («застосунок») — безкоштовний застосунок для моряків, який зберігає картку моряка, документи, рейси, список екіпажу, щоденник, години відпочинку, стаж і CV на телефоні користувача. Коротко: <b>усе, що ви зберігаєте в Sea Wolf, залишається на вашому пристрої. Єдиний виняток — необов’язковий помічник ШІ Sea Wolf: коли ви ним користуєтеся, запитання й фото, які ви надсилаєте, потрапляють на наш сервер, щоб отримати відповідь (розділ 3a). З версії 0.3.0 питання, які ви ставите на екрані «Запитати», також публікуються для всіх моряків — без вашого імені (розділ 3b). Відгуки про судна, які ви пишете, теж зберігаються на нашому сервері (розділ 3c).</b></p>
 <h2>1. Дані, які ви вводите</h2>
-<p>Усе, що ви вводите або скануєте — профіль і контакти, фото, номери й скани документів, дані судна та екіпажу, позиції, записи щоденника, години роботи й відпочинку, записи про зарплату, стаж, колеги, — зберігається лише в закритому сховищі застосунку на вашому телефоні. Ці дані не передаються на жоден сервер (крім того, що ви самі надсилаєте Старпому, розділи 3a і 3b). Акаунтів у застосунку немає.</p>
+<p>Усе, що ви вводите або скануєте — профіль і контакти, фото, номери й скани документів, дані судна та екіпажу, позиції, записи щоденника, години роботи й відпочинку, записи про зарплату, стаж, колеги, — зберігається лише в закритому сховищі застосунку на вашому телефоні. Ці дані не передаються на жоден сервер (крім того, що ви самі надсилаєте ШІ Sea Wolf або публікуєте в застосунку, розділи 3a–3c). Акаунтів у застосунку немає.</p>
 <h2>2. Дозволи й віджет</h2>
 <ul>
 <li><b>Камера</b> — лише під час сканування документа або QR-коду. Зображення обробляються на телефоні й зберігаються, лише якщо ви вирішите їх залишити.</li>
@@ -332,24 +352,24 @@ article p,article li{color:var(--ink)}article ul{padding-left:22px}article li{ma
 <h2>3. Підключення до інтернету</h2>
 <p>Застосунок повністю працює без інтернету й підключається лише в таких випадках:</p>
 <ul>
-<li><b>Помічник «Старпом» (необов’язково)</b> — лише коли ви самі щось надсилаєте Старпому; див. розділ 3a.</li>
+<li><b>Помічник ШІ Sea Wolf (необов’язково)</b> — лише коли ви самі щось йому надсилаєте; див. розділ 3a. Відгуки про судна — розділ 3c.</li>
 <li><b>Додатковий мовний пакет</b> — якщо ви завантажуєте розпізнавання кирилиці (російська й українська) в налаштуваннях, файли завантажуються з GitHub, і кожен файл перед використанням перевіряється (SHA-256). Персональні дані не передаються; GitHub отримує технічний запит (наприклад, IP-адресу), як і під час будь-якого завантаження.</li>
 <li><b>Посилання, які ви відкриваєте</b> — наприклад MarineTraffic, VesselFinder, Telegram, WhatsApp, пошта. Вони відкриваються в інших застосунках або браузері й підпорядковуються правилам цих сервісів.</li>
 <li><b>Розпізнавання тексту Google</b> — сканування документів використовує Google ML Kit, що працює на телефоні через сервіси Google Play. Текст ваших документів нікуди не надсилається, але сервіси Google Play можуть передавати Google анонімну діагностичну інформацію про роботу компонента ML Kit відповідно до умов Google.</li>
 </ul>
 <p>Усі шрифти вбудовані в застосунок, більше нічого не завантажується. Крім описаного вище компонента Google, у застосунку немає реклами, аналітики та сторонніх трекерів.</p>
 <h2 id="starpom-uk" data-anchor="starpom">3a. ШІ Sea Wolf — помічник (раніше «Старпом»)</h2>
-<p>Старпом — необов’язкова функція. Нічого не надсилається, доки ви самі не відкриєте Старпома й не надішлете щось. Перед першим використанням застосунок показує, що саме надсилається, і просить підтвердити.</p>
-<p><b>Що надсилається, коли ви користуєтеся Старпомом</b></p>
+<p>ШІ Sea Wolf — необов’язкова функція. Нічого не надсилається, доки ви самі не відкриєте його й не надішлете щось. Перед першим використанням застосунок показує, що саме надсилається, і просить підтвердити.</p>
+<p><b>Що надсилається, коли ви користуєтеся ШІ Sea Wolf</b></p>
 <ul>
 <li>ваше запитання (текстом або голосом, перетвореним на текст на телефоні) і фото, які ви додаєте (стиснені на телефоні);</li>
 <li>ваша посада й тип судна з вашого профілю, а також мова застосунку;</li>
 <li>до 3 ваших нотаток «Техніка» зі щоденника, що відповідають запитанню;</li>
-<li>текст попередніх повідомлень поточного чату зі Старпомом (без фото);</li>
+<li>текст попередніх повідомлень поточного чату з ШІ Sea Wolf (без фото);</li>
 <li>випадковий ідентифікатор цієї інсталяції застосунку (не ваше ім’я й не номер телефону);</li>
 <li>токен Google Play Integrity, який підтверджує, що запит надійшов зі справжнього застосунку Sea Wolf (перевіряє Google).</li>
 </ul>
-<p><b>Що не надсилається ніколи:</b> ваше ім’я, номери й скани документів, контакти, список екіпажу, інші записи щоденника, зарплата, записи про стаж та будь-які інші розділи Sea Wolf. Коли Старпом заповнює анкету третьої сторони, надсилається лише порожній бланк; ваші дані вписуються в нього на телефоні.</p>
+<p><b>Що не надсилається ніколи:</b> ваше ім’я, номери й скани документів, контакти, список екіпажу, інші записи щоденника, зарплата, записи про стаж та будь-які інші розділи Sea Wolf. Коли ШІ Sea Wolf заповнює анкету третьої сторони, надсилається лише порожній бланк; ваші дані вписуються в нього на телефоні.</p>
 <p><b>Хто обробляє</b></p>
 <ul>
 <li>Наш сервер (Hetzner Online, дата-центр у Гельсінкі, Фінляндія, ЄС) отримує запит, додає відповідні мануали й процедури та отримує відповідь.</li>
@@ -360,17 +380,18 @@ article p,article li{color:var(--ink)}article ul{padding-left:22px}article li{ma
 </ul>
 <p><b>Що зберігає наш сервер</b></p>
 <ul>
-<li>Повідомлення й фото з чату «Мій чат» не зберігаються на сервері після надсилання відповіді. Історія чату зберігається лише на вашому телефоні (Старпом → Історія), і ви можете видалити її там.</li>
-<li>Під час запуску, якщо є інтернет, застосунок один раз звертається до нашого сервера: передаються лише випадковий номер встановлення та версія застосунку — навіть якщо ви не користуєтеся Старпомом. Це потрібно, щоб рахувати кількість активних встановлень; видаляється через 30 днів.</li>
+<li>Повідомлення й фото з чату «Мій чат» не зберігаються на сервері після надсилання відповіді. Історія чату зберігається лише на вашому телефоні, і ви можете видалити її в застосунку.</li>
+<li>Під час запуску, якщо є інтернет, застосунок один раз звертається до нашого сервера: передаються лише випадковий номер встановлення та версія застосунку — навіть якщо ви не користуєтеся ШІ Sea Wolf. Це потрібно, щоб рахувати кількість активних встановлень; видаляється через 30 днів.</li>
 <li>Лічильники використання для цієї інсталяції (кількість запитів на день, обсяг технічних даних) — для денних лімітів; видаляються через 30 днів.</li>
 <li>Результат перевірки Play Integrity для цієї інсталяції — замінюється під час кожної нової перевірки.</li>
 <li>Токен сповіщень цієї інсталяції та обрані вами служби — лише щоб надсилати сповіщення; видаляється кнопкою «Видалити мої дані на сервері» або коли Google повідомляє, що токен недійсний (наприклад, після видалення застосунку).</li>
-<li>Факти, які ви прямо попросили Старпома запам’ятати («запам’ятай: …», екран «Пам’ять»), — доки ви не видалите їх у «Пам’яті».</li>
+<li>Факти, які ви прямо попросили ШІ Sea Wolf запам’ятати («запам’ятай: …»), — доки ви не видалите їх у застосунку або не видалите свої дані на сервері.</li>
 <li>Якщо ви натискаєте 👍 або 👎 з виправленням, запитання, відповідь і виправлення зберігаються, щоб покращувати відповіді для всіх користувачів, без вашого імені.</li>
-<li><b>Запитання моряків:</b> запитання, яке ви публікуєте кнопкою «Запитати моряків», відповіді, які ви публікуєте, і додані фото зберігаються на сервері й видні всім користувачам Sea Wolf без вашого імені (лише посада й тип судна). Перед публікацією текст перевіряється автоматично; номери телефонів, e-mail, імена й номери документів приховуються. Ви можете будь-коли видалити своє запитання чи відповідь; відповіді, підтверджені іншими моряками, можуть залишитися без вашого імені в спільних знаннях Старпома.</li>
-<li><b>Документи для Старпома:</b> мануали, процедури або порожні бланки, які ви завантажуєте, зберігаються на сервері; після перевірки розробником вони додаються до бази знань Старпома для вашої компанії або для всіх користувачів. Не завантажуйте особисті документи.</li>
+<li><b>Запитання моряків:</b> запитання, яке ви публікуєте кнопкою «Запитати моряків», відповіді, які ви публікуєте, і додані фото зберігаються на сервері й видні всім користувачам Sea Wolf без вашого імені (лише посада й тип судна). Перед публікацією текст перевіряється автоматично; номери телефонів, e-mail, імена й номери документів приховуються. Ви можете будь-коли видалити своє запитання чи відповідь; відповіді, підтверджені іншими моряками, можуть залишитися без вашого імені в спільних знаннях ШІ Sea Wolf.</li>
+<li><b>Документи для ШІ Sea Wolf:</b> мануали, процедури або порожні бланки, які ви завантажуєте, зберігаються на сервері; після перевірки розробником вони додаються до бази знань ШІ Sea Wolf для вашої компанії або для всіх користувачів. Не завантажуйте особисті документи.</li>
+<li><b>Відгуки про судна:</b> див. розділ 3c.</li>
 </ul>
-<p><b>Ліміти й відмова від використання.</b> Старпом має безкоштовний денний ліміт. Ви можете просто не користуватися Старпомом; решта застосунку повністю працює без нього й без інтернету. Щоб видалити все, що зберігається на сервері для вашої інсталяції (факти в «Пам’яті», ваші опубліковані запитання й відповіді, завантажені документи), скористайтеся Старпом → Пам’ять → «Видалити мої дані на сервері» або напишіть на <span class="mail">myaziopa@gmail.com</span>, указавши ідентифікатор інсталяції, показаний у Старпом → Пам’ять; ми видалимо ці дані протягом 30 днів. У версії 0.3.0 і новіших ця кнопка й ідентифікатор інсталяції — у «Запитати → Моє судно».</p>
+<p><b>Ліміти й відмова від використання.</b> ШІ Sea Wolf має безкоштовний денний ліміт. Ви можете просто не користуватися ШІ Sea Wolf; решта застосунку повністю працює без нього й без інтернету. Щоб видалити все, що зберігається на сервері для вашої інсталяції (запам’ятовані факти, ваші опубліковані запитання й відповіді, завантажені документи), скористайтеся Запитати → Моє судно → «Видалити мої дані на сервері» або напишіть на <span class="mail">myaziopa@gmail.com</span>, указавши ідентифікатор інсталяції, показаний у Запитати → Моє судно; ми видалимо ці дані протягом 30 днів. Що відбувається з відгуками про судна — у розділі 3c.</p>
 <h2 id="questions-uk">3b. Питання моряків (версія 0.3.0 і новіші)</h2>
 <ul>
 <li>Питання, яке ви ставите на екрані «Запитати», публікується в стрічці моряків разом із відповіддю ШІ і його бачать усі користувачі Sea Wolf. Застосунок попереджає про це до надсилання. Ваші відповіді на питання інших моряків так само бачать усі.</li>
@@ -381,6 +402,15 @@ article p,article li{color:var(--ink)}article ul{padding-left:22px}article li{ma
 <li>Сповіщення (Google Firebase, див. розділ 3a): нова відповідь на ваше питання, нові питання вашої спеціальності й іноді — нагадування досвідченим морякам про питання, що чекають на відповідь. Їх можна вимкнути в налаштуваннях сповіщень застосунку.</li>
 <li>Будь-який користувач може поскаржитися на питання чи відповідь. Скарги перевіряє розробник і може приховати вміст; після скарг трьох різних користувачів він приховується автоматично.</li>
 <li>Своє питання чи відповідь можна видалити будь-коли. Щоб видалити все, що зберігається на сервері для вашої установки: Запитати → Моє судно → «Видалити мої дані на сервері», або напишіть нам (розділ 9).</li>
+</ul>
+<h2 id="reviews-uk">3c. Відгуки про судна</h2>
+<ul>
+<li>Відгук про судно, який ви пишете (оцінки, текст, ваша посада, назва судна й номер IMO, дати контракту), зберігається на нашому сервері й видний усім користувачам Sea Wolf.</li>
+<li>Інші користувачі бачать вашу посаду, місяці контракту й час на борту — але ніколи не ваше ім’я.</li>
+<li>Відгук можна написати лише після контракту тривалістю щонайменше 14 днів. Свій відгук можна редагувати.</li>
+<li>Після «Видалити мої дані на сервері» (Запитати → Моє судно) відгук залишається для інших моряків, але більше не пов’язаний з вашою інсталяцією: редагувати його вже не можна, а від дат залишаються лише місяць і рік.</li>
+<li>Будь-який користувач може поскаржитися на відгук. Відгуки зі скаргами перевіряються так само, як питання (розділ 3b).</li>
+<li>Відгуки автоматично перекладаються мовою читача ШІ-сервісом Anthropic, як описано в розділі 3a.</li>
 </ul>
 <h2>4. Резервні копії та передача</h2>
 <p>Резервні копії — це файли, які ви створюєте й зберігаєте самі; вони зашифровані (AES-256) паролем, який обираєте ви. Коли ви надсилаєте картку, CV, файл контакту, файл передачі справ або копію, файл потрапляє лише туди, куди ви його надіслали. Розробник цих файлів не отримує.</p>
@@ -397,12 +427,12 @@ article p,article li{color:var(--ink)}article ul{padding-left:22px}article li{ma
 </article>
 <article lang="zh" data-lang="zh" hidden>
 <h1>隐私政策</h1>
-<p class="date">生效日期：2026 年 11 月 24 日 · 适用于 Android 版 Sea Wolf 应用（app.seawolf.logbook）</p>
+<p class="date">生效日期：2026 年 11 月 25 日 · 适用于 Android 版 Sea Wolf 应用（app.seawolf.logbook）</p>
 <p class="note">本译文仅供参考。如有出入，以英文版本为准。</p>
-<p class="upd"><b>2026 年 11 月 24 日的更新（0.3.0 版）：</b>人工智能助手现名为 Sea Wolf（原“大副”，第 3a 节）。您在“提问”页面提出的问题会以不显示姓名的方式向所有海员公开，您的整年海龄会发送到我们的服务器——见新的第 3b 节。Sea Wolf 中的其他内容仍只保存在您的手机上。</p>
-<p>Sea Wolf（“本应用”）是一款面向海员的免费应用，在用户自己的手机上保存海员名片、证书、航次、船员名单、日志、休息时间、海上资历和简历。本政策说明您的信息会如何处理。简而言之：<b>您保存在 Sea Wolf 中的一切都留在您的设备上。唯一的例外是可选的“大副”助手：当您使用它时，您发送的问题和照片会传到我们的服务器以获取回答（见第 3a 节）。自 0.3.0 版起，您在“提问”页面提出的问题也会以不显示姓名的方式向所有海员公开（见第 3b 节）。</b></p>
+<p class="upd"><b>2026 年 11 月 25 日的更新（0.3.3 版）：</b>人工智能助手现在直接称为 Sea Wolf 人工智能（第 3a 节）。新增第 3c 节“船舶评价”。如需删除您在我们服务器上的数据：“提问”→“我的船”→“删除我在服务器上的数据”；此后船舶评价仍会保留，但不再与您关联。Sea Wolf 中的其他内容仍只保存在您的手机上。</p>
+<p>Sea Wolf（“本应用”）是一款面向海员的免费应用，在用户自己的手机上保存海员名片、证书、航次、船员名单、日志、休息时间、海上资历和简历。本政策说明您的信息会如何处理。简而言之：<b>您保存在 Sea Wolf 中的一切都留在您的设备上。唯一的例外是可选的 Sea Wolf 人工智能助手：当您使用它时，您发送的问题和照片会传到我们的服务器以获取回答（见第 3a 节）。自 0.3.0 版起，您在“提问”页面提出的问题也会以不显示姓名的方式向所有海员公开（见第 3b 节）。您撰写的船舶评价也会保存在我们的服务器上（见第 3c 节）。</b></p>
 <h2>1. 您输入的数据</h2>
-<p>您在本应用中输入或扫描的所有内容——个人资料和联系方式、照片、证书号码和扫描件、船舶和船员信息、船位、日志记录、工作和休息时间、工资记录、海上资历、同事——仅保存在您手机上本应用的私有存储中。这些数据不会发送到任何服务器（您自己发送给“大副”的内容除外，见第 3a、3b 节）。本应用没有用户账号。</p>
+<p>您在本应用中输入或扫描的所有内容——个人资料和联系方式、照片、证书号码和扫描件、船舶和船员信息、船位、日志记录、工作和休息时间、工资记录、海上资历、同事——仅保存在您手机上本应用的私有存储中。这些数据不会发送到任何服务器（您自己发送给 Sea Wolf 人工智能或在应用中发布的内容除外，见第 3a–3c 节）。本应用没有用户账号。</p>
 <h2>2. 权限与小组件</h2>
 <ul>
 <li><b>相机</b>——仅在您扫描证书或二维码时使用。图像在手机上处理，只有您选择保留时才会保存。</li>
@@ -415,24 +445,24 @@ article p,article li{color:var(--ink)}article ul{padding-left:22px}article li{ma
 <h2>3. 网络连接</h2>
 <p>本应用完全可以离线使用，仅在以下情况下连接互联网：</p>
 <ul>
-<li><b>“大副”助手（可选）</b>——仅在您自己向“大副”发送内容时；见第 3a 节。</li>
+<li><b>Sea Wolf 人工智能助手（可选）</b>——仅在您自己向其发送内容时；见第 3a 节。船舶评价见第 3c 节。</li>
 <li><b>可选语言包</b>——如果您在设置中下载西里尔文识别（俄语和乌克兰语），文件将从 GitHub 下载，每个文件在使用前都会进行校验（SHA-256）。不会发送任何个人数据；与任何下载一样，GitHub 会收到技术请求（例如您的 IP 地址）。</li>
 <li><b>您打开的链接</b>——例如 MarineTraffic、VesselFinder、Telegram、WhatsApp 或电子邮件。这些链接会在其他应用或浏览器中打开，并受这些服务各自政策的约束。</li>
 <li><b>Google 文字识别</b>——证书扫描使用 Google ML Kit，它通过 Google Play 服务在手机上运行。您证书上的文字不会被发送到任何地方，但 Google Play 服务可能会按照 Google 的条款，向 Google 发送有关 ML Kit 组件的匿名诊断和使用信息。</li>
 </ul>
 <p>所有字体都内置于应用中，不会下载其他任何内容。除上述 Google 组件外，本应用不含广告、分析工具或第三方跟踪。</p>
 <h2 id="starpom-zh" data-anchor="starpom">3a. Sea Wolf 人工智能助手（原“大副”）</h2>
-<p>“大副”是可选功能。在您自己打开“大副”并发送内容之前，不会发送任何内容。首次使用前，应用会显示将发送哪些内容，并请您确认。</p>
-<p><b>使用“大副”时发送的内容</b></p>
+<p>Sea Wolf 人工智能是可选功能。在您自己打开它并发送内容之前，不会发送任何内容。首次使用前，应用会显示将发送哪些内容，并请您确认。</p>
+<p><b>使用 Sea Wolf 人工智能时发送的内容</b></p>
 <ul>
 <li>您的问题（文字，或在手机上转换为文字的语音）以及您附加的照片（在手机上压缩）；</li>
 <li>您个人资料中的职务和船舶类型，以及应用语言；</li>
 <li>日志中与问题相关的最多 3 条您的“技术”笔记；</li>
-<li>当前“大副”对话中先前消息的文字（不含照片）；</li>
+<li>当前 Sea Wolf 人工智能对话中先前消息的文字（不含照片）；</li>
 <li>本次安装的随机标识符（不是您的姓名或电话号码）；</li>
 <li>Google Play Integrity 令牌，用于证明请求来自正版 Sea Wolf 应用（由 Google 校验）。</li>
 </ul>
-<p><b>绝不会发送的内容：</b>您的姓名、证书号码和扫描件、联系人、船员名单、其他日志记录、工资、海上资历记录以及 Sea Wolf 的任何其他部分。当“大副”填写第三方的申请表时，只发送空白表格；您的数据在手机上填入表格。</p>
+<p><b>绝不会发送的内容：</b>您的姓名、证书号码和扫描件、联系人、船员名单、其他日志记录、工资、海上资历记录以及 Sea Wolf 的任何其他部分。当 Sea Wolf 人工智能填写第三方的申请表时，只发送空白表格；您的数据在手机上填入表格。</p>
 <p><b>由谁处理</b></p>
 <ul>
 <li>我们的服务器（Hetzner Online，数据中心位于欧盟芬兰赫尔辛基）接收请求，添加相关的手册和程序，并获取回答。</li>
@@ -443,17 +473,18 @@ article p,article li{color:var(--ink)}article ul{padding-left:22px}article li{ma
 </ul>
 <p><b>我们的服务器保留的内容</b></p>
 <ul>
-<li>“我的对话”中的消息和照片在回答发送后不会保存在服务器上。对话记录只保存在您的手机上（“大副”→“历史”），您可以在那里删除。</li>
-<li>应用启动且有网络时，会与我们的服务器联系一次：只发送随机安装标识和应用版本——即使您从未使用大副。我们用它来统计活跃安装数量；30天后删除。</li>
+<li>“我的对话”中的消息和照片在回答发送后不会保存在服务器上。对话记录只保存在您的手机上，您可以在应用中删除。</li>
+<li>应用启动且有网络时，会与我们的服务器联系一次：只发送随机安装标识和应用版本——即使您从未使用 Sea Wolf 人工智能。我们用它来统计活跃安装数量；30天后删除。</li>
 <li>本次安装的使用计数（每日请求次数、技术数据量）——用于每日限额；30 天后删除。</li>
 <li>本次安装的 Play Integrity 校验结果——每次新的校验都会将其替换。</li>
 <li>本次安装的通知令牌和你选择的部门——仅用于向你发送通知；可通过“删除我在服务器上的数据”删除，或在 Google 报告令牌失效时（例如卸载应用后）自动删除。</li>
-<li>您明确要求“大副”记住的事实（“记住：……”、“记忆”界面）——保留到您在“记忆”中将其删除为止。</li>
+<li>您明确要求 Sea Wolf 人工智能记住的事实（“记住：……”）——保留到您在应用中将其删除或删除您在服务器上的数据为止。</li>
 <li>如果您点按 👍 或 👎 并附上更正，问题、回答和更正将被保留，用于为所有用户改进回答，不含您的姓名。</li>
-<li><b>海员提问：</b>您通过“问海员”发布的问题、您发布的回答以及附加的照片会保存在服务器上，所有 Sea Wolf 用户都能看到，但不显示您的姓名（仅显示职务和船舶类型）。发布前会自动检查文字；电话号码、电子邮件、姓名和证书号码会被隐藏。您可以随时删除自己的问题或回答；经其他海员确认的回答可能会以不含您姓名的形式保留在“大副”的共享知识中。</li>
-<li><b>提供给“大副”的文件：</b>您上传的手册、程序或空白表格会保存在服务器上；经开发者审核后，它们会被加入“大副”面向您公司或所有用户的知识库。请勿上传个人证件或个人文件。</li>
+<li><b>海员提问：</b>您通过“问海员”发布的问题、您发布的回答以及附加的照片会保存在服务器上，所有 Sea Wolf 用户都能看到，但不显示您的姓名（仅显示职务和船舶类型）。发布前会自动检查文字；电话号码、电子邮件、姓名和证书号码会被隐藏。您可以随时删除自己的问题或回答；经其他海员确认的回答可能会以不含您姓名的形式保留在 Sea Wolf 人工智能的共享知识中。</li>
+<li><b>提供给 Sea Wolf 人工智能的文件：</b>您上传的手册、程序或空白表格会保存在服务器上；经开发者审核后，它们会被加入 Sea Wolf 人工智能面向您公司或所有用户的知识库。请勿上传个人证件或个人文件。</li>
+<li><b>船舶评价：</b>见第 3c 节。</li>
 </ul>
-<p><b>限额与停用。</b>“大副”有免费的每日限额。您完全可以不使用“大副”；应用的其余部分无需它、也无需联网即可完整运行。如需删除服务器上为您的安装保存的所有内容（“记忆”中的事实、您发布的问题和回答、上传的文件），请使用“大副”→“记忆”→“删除我在服务器上的数据”，或发送电子邮件至 <span class="mail">myaziopa@gmail.com</span> 并注明“大副”→“记忆”中显示的安装 ID；我们会在 30 天内删除。0.3.0 及更高版本中，此按钮和安装 ID 位于“提问”→“我的船”。</p>
+<p><b>限额与停用。</b>Sea Wolf 人工智能有免费的每日限额。您完全可以不使用它；应用的其余部分无需它、也无需联网即可完整运行。如需删除服务器上为您的安装保存的所有内容（记住的事实、您发布的问题和回答、上传的文件），请使用“提问”→“我的船”→“删除我在服务器上的数据”，或发送电子邮件至 <span class="mail">myaziopa@gmail.com</span> 并注明“提问”→“我的船”中显示的安装 ID；我们会在 30 天内删除。船舶评价的处理方式见第 3c 节。</p>
 <h2 id="questions-zh">3b. 海员问答（0.3.0 及更高版本）</h2>
 <ul>
 <li>您在“提问”页面提出的问题会连同 AI 回答一起发布到海员动态中，所有 Sea Wolf 用户都能看到。发送前应用会提示这一点。您对其他海员问题的回答同样公开。</li>
@@ -464,6 +495,15 @@ article p,article li{color:var(--ink)}article ul{padding-left:22px}article li{ma
 <li>通知（Google Firebase，见第 3a 节）：您的问题有新回答、您所在部门的新问题，以及偶尔提醒资深海员还有问题等待回答。您可以在应用的通知设置中关闭。</li>
 <li>任何用户都可以举报问题或回答。被举报的内容由开发者审核并可能被隐藏；被三位不同用户举报的内容会自动隐藏。</li>
 <li>您可以随时删除自己的问题或回答。要删除服务器上为您的安装保存的全部数据：提问 → 我的船 → “删除我在服务器上的数据”，或给我们写信（第 9 节）。</li>
+</ul>
+<h2 id="reviews-zh">3c. 船舶评价</h2>
+<ul>
+<li>您撰写的船舶评价（评分、文字、您的职务、船名和 IMO 编号、合同日期）保存在我们的服务器上，所有 Sea Wolf 用户都能看到。</li>
+<li>其他用户能看到您的职务、合同月份和在船时间，但绝不会看到您的姓名。</li>
+<li>只有合同时长至少 14 天才能撰写评价。您可以编辑自己的评价。</li>
+<li>使用“删除我在服务器上的数据”（“提问”→“我的船”）后，您的评价仍会为其他海员保留，但不再与您的安装关联：无法再编辑，日期也只保留月份和年份。</li>
+<li>任何用户都可以举报评价。被举报的评价按与问题相同的方式审核（第 3b 节）。</li>
+<li>评价会由人工智能服务 Anthropic 自动翻译成读者的语言，详见第 3a 节。</li>
 </ul>
 <h2>4. 备份、分享和交接</h2>
 <p>备份是由您自己创建和保管的文件，并使用您选择的密码加密（AES-256）。当您分享名片、简历、联系人文件、交接文件或备份时，文件只会发送到您指定的地方。开发者从不接收这些文件。</p>
@@ -480,12 +520,12 @@ article p,article li{color:var(--ink)}article ul{padding-left:22px}article li{ma
 </article>
 <article lang="id" data-lang="id" hidden>
 <h1>Kebijakan Privasi</h1>
-<p class="date">Berlaku sejak 24 November 2026 · Untuk aplikasi Sea Wolf untuk Android (app.seawolf.logbook)</p>
+<p class="date">Berlaku sejak 25 November 2026 · Untuk aplikasi Sea Wolf untuk Android (app.seawolf.logbook)</p>
 <p class="note">Terjemahan untuk kemudahan. Jika ada perbedaan, versi bahasa Inggris yang berlaku.</p>
-<p class="upd"><b>Yang berubah pada 24 November 2026 (versi 0.3.0):</b> asisten AI sekarang bernama Sea Wolf (sebelumnya Mualim I, bagian 3a). Pertanyaan yang Anda ajukan di layar “Tanya” dipublikasikan untuk semua pelaut tanpa nama Anda, dan masa layar Anda dalam tahun penuh dikirim ke server kami — lihat bagian baru 3b. Semua hal lain di Sea Wolf tetap hanya tersimpan di ponsel Anda.</p>
-<p>Sea Wolf ("aplikasi") adalah aplikasi gratis untuk pelaut yang menyimpan kartu pelaut, dokumen, pelayaran, daftar kru, catatan harian, jam istirahat, masa layar, dan CV di ponsel pengguna sendiri. Kebijakan ini menjelaskan apa yang terjadi pada informasi Anda. Singkatnya: <b>semua yang Anda simpan di Sea Wolf tetap di perangkat Anda. Satu-satunya pengecualian adalah asisten opsional Mualim I: saat Anda menggunakannya, pertanyaan dan foto yang Anda kirim dikirim ke server kami untuk mendapatkan jawaban (bagian 3a). Sejak versi 0.3.0, pertanyaan yang Anda ajukan di layar “Tanya” juga dipublikasikan untuk semua pelaut, tanpa nama Anda (bagian 3b).</b></p>
+<p class="upd"><b>Yang berubah pada 25 November 2026 (versi 0.3.3):</b> asisten AI sekarang cukup bernama AI Sea Wolf (bagian 3a). Bagian baru 3c “Ulasan kapal”. Untuk menghapus data Anda di server kami: Tanya → Kapal saya → “Hapus data saya di server”; ulasan kapal tetap ada setelah itu, tetapi tidak lagi terhubung dengan Anda. Semua hal lain di Sea Wolf tetap hanya tersimpan di ponsel Anda.</p>
+<p>Sea Wolf ("aplikasi") adalah aplikasi gratis untuk pelaut yang menyimpan kartu pelaut, dokumen, pelayaran, daftar kru, catatan harian, jam istirahat, masa layar, dan CV di ponsel pengguna sendiri. Kebijakan ini menjelaskan apa yang terjadi pada informasi Anda. Singkatnya: <b>semua yang Anda simpan di Sea Wolf tetap di perangkat Anda. Satu-satunya pengecualian adalah asisten opsional AI Sea Wolf: saat Anda menggunakannya, pertanyaan dan foto yang Anda kirim dikirim ke server kami untuk mendapatkan jawaban (bagian 3a). Sejak versi 0.3.0, pertanyaan yang Anda ajukan di layar “Tanya” juga dipublikasikan untuk semua pelaut, tanpa nama Anda (bagian 3b). Ulasan kapal yang Anda tulis juga disimpan di server kami (bagian 3c).</b></p>
 <h2>1. Data yang Anda masukkan</h2>
-<p>Semua yang Anda masukkan atau pindai di aplikasi — profil dan kontak, foto, nomor dan pindaian dokumen, data kapal dan kru, posisi, catatan harian, jam kerja dan istirahat, catatan gaji, masa layar, rekan kerja — hanya disimpan di penyimpanan pribadi aplikasi di ponsel Anda. Data ini tidak dikirim ke server mana pun (kecuali yang Anda kirim sendiri ke Mualim I, bagian 3a dan 3b). Aplikasi tidak memiliki akun pengguna.</p>
+<p>Semua yang Anda masukkan atau pindai di aplikasi — profil dan kontak, foto, nomor dan pindaian dokumen, data kapal dan kru, posisi, catatan harian, jam kerja dan istirahat, catatan gaji, masa layar, rekan kerja — hanya disimpan di penyimpanan pribadi aplikasi di ponsel Anda. Data ini tidak dikirim ke server mana pun (kecuali yang Anda kirim sendiri ke AI Sea Wolf atau publikasikan di aplikasi, bagian 3a–3c). Aplikasi tidak memiliki akun pengguna.</p>
 <h2>2. Izin dan widget</h2>
 <ul>
 <li><b>Kamera</b> — hanya saat Anda memindai dokumen atau kode QR. Gambar diproses di ponsel dan hanya disimpan jika Anda memilih untuk menyimpannya.</li>
@@ -498,24 +538,24 @@ article p,article li{color:var(--ink)}article ul{padding-left:22px}article li{ma
 <h2>3. Koneksi internet</h2>
 <p>Aplikasi berfungsi sepenuhnya secara offline. Aplikasi hanya terhubung ke internet dalam kasus berikut:</p>
 <ul>
-<li><b>Asisten Mualim I (opsional)</b> — hanya saat Anda sendiri mengirim sesuatu ke Mualim I; lihat bagian 3a.</li>
+<li><b>Asisten AI Sea Wolf (opsional)</b> — hanya saat Anda sendiri mengirim sesuatu ke AI Sea Wolf; lihat bagian 3a. Ulasan kapal: bagian 3c.</li>
 <li><b>Paket bahasa opsional</b> — jika Anda mengunduh pengenalan teks Sirilik (Rusia dan Ukraina) di Pengaturan, file diunduh dari GitHub dan setiap file diperiksa (SHA-256) sebelum digunakan. Tidak ada data pribadi yang dikirim; GitHub menerima permintaan teknis (seperti alamat IP Anda) seperti pada unduhan apa pun.</li>
 <li><b>Tautan yang Anda buka</b> — misalnya MarineTraffic, VesselFinder, Telegram, WhatsApp, atau email. Tautan ini dibuka di aplikasi lain atau browser dan tunduk pada kebijakan layanan tersebut.</li>
 <li><b>Pengenalan teks Google</b> — pemindaian dokumen menggunakan Google ML Kit, yang berjalan di ponsel melalui layanan Google Play. Teks dokumen Anda tidak dikirim ke mana pun, tetapi layanan Google Play dapat mengirimkan informasi diagnostik dan penggunaan anonim tentang komponen ML Kit kepada Google, sesuai ketentuan Google.</li>
 </ul>
 <p>Semua font sudah tertanam di aplikasi; tidak ada hal lain yang diunduh. Selain komponen Google di atas, aplikasi tidak berisi iklan, analitik, atau pelacakan pihak ketiga.</p>
 <h2 id="starpom-id" data-anchor="starpom">3a. Asisten AI Sea Wolf (sebelumnya Mualim I)</h2>
-<p>Mualim I bersifat opsional. Tidak ada yang dikirim sampai Anda membuka Mualim I dan mengirim sesuatu sendiri. Sebelum penggunaan pertama, aplikasi menunjukkan apa yang dikirim dan meminta Anda mengonfirmasi.</p>
-<p><b>Apa yang dikirim saat Anda menggunakan Mualim I</b></p>
+<p>AI Sea Wolf bersifat opsional. Tidak ada yang dikirim sampai Anda membukanya dan mengirim sesuatu sendiri. Sebelum penggunaan pertama, aplikasi menunjukkan apa yang dikirim dan meminta Anda mengonfirmasi.</p>
+<p><b>Apa yang dikirim saat Anda menggunakan AI Sea Wolf</b></p>
 <ul>
 <li>pertanyaan Anda (teks, atau suara yang diubah menjadi teks di ponsel) dan foto yang Anda lampirkan (dikompresi di ponsel);</li>
 <li>jabatan dan jenis kapal dari profil Anda, serta bahasa aplikasi;</li>
 <li>hingga 3 catatan "Teknis" dari catatan harian Anda yang sesuai dengan pertanyaan;</li>
-<li>teks pesan sebelumnya dalam obrolan Mualim I saat ini (bukan foto);</li>
+<li>teks pesan sebelumnya dalam obrolan AI Sea Wolf saat ini (bukan foto);</li>
 <li>pengenal acak dari instalasi ini (bukan nama atau nomor telepon Anda);</li>
 <li>token Google Play Integrity yang memastikan bahwa permintaan berasal dari aplikasi Sea Wolf asli (diperiksa oleh Google).</li>
 </ul>
-<p><b>Apa yang tidak pernah dikirim:</b> nama Anda, nomor dan pindaian dokumen, kontak, daftar kru, entri catatan harian lainnya, gaji, catatan masa layar, atau bagian lain mana pun dari Sea Wolf. Saat Mualim I mengisi formulir aplikasi pihak ketiga, hanya formulir kosong yang dikirim; data Anda dimasukkan ke formulir di ponsel.</p>
+<p><b>Apa yang tidak pernah dikirim:</b> nama Anda, nomor dan pindaian dokumen, kontak, daftar kru, entri catatan harian lainnya, gaji, catatan masa layar, atau bagian lain mana pun dari Sea Wolf. Saat AI Sea Wolf mengisi formulir aplikasi pihak ketiga, hanya formulir kosong yang dikirim; data Anda dimasukkan ke formulir di ponsel.</p>
 <p><b>Siapa yang memprosesnya</b></p>
 <ul>
 <li>Server kami (Hetzner Online, pusat data di Helsinki, Finlandia, UE) menerima permintaan, menambahkan manual dan prosedur yang relevan, lalu mendapatkan jawaban.</li>
@@ -526,17 +566,18 @@ article p,article li{color:var(--ink)}article ul{padding-left:22px}article li{ma
 </ul>
 <p><b>Apa yang disimpan server kami</b></p>
 <ul>
-<li>Pesan dan foto dari "Obrolanku" tidak disimpan di server setelah jawaban dikirim. Riwayat obrolan hanya disimpan di ponsel Anda (Mualim I → Riwayat), dan Anda dapat menghapusnya di sana.</li>
-<li>Saat aplikasi dibuka dan ada internet, aplikasi menghubungi server kami sekali: hanya ID instalasi acak dan versi aplikasi yang dikirim — meskipun Anda tidak memakai Mualim I. Ini untuk menghitung jumlah instalasi aktif; dihapus setelah 30 hari.</li>
+<li>Pesan dan foto dari "Obrolanku" tidak disimpan di server setelah jawaban dikirim. Riwayat obrolan hanya disimpan di ponsel Anda, dan Anda dapat menghapusnya di aplikasi.</li>
+<li>Saat aplikasi dibuka dan ada internet, aplikasi menghubungi server kami sekali: hanya ID instalasi acak dan versi aplikasi yang dikirim — meskipun Anda tidak memakai AI Sea Wolf. Ini untuk menghitung jumlah instalasi aktif; dihapus setelah 30 hari.</li>
 <li>Penghitung penggunaan untuk instalasi ini (jumlah permintaan per hari, volume data teknis) — untuk batas harian; dihapus setelah 30 hari.</li>
 <li>Hasil pemeriksaan Play Integrity untuk instalasi ini — diganti pada setiap pemeriksaan baru.</li>
 <li>Token notifikasi instalasi ini dan departemen yang Anda pilih — hanya untuk mengirim notifikasi; dihapus dengan “Hapus data saya di server” atau saat Google melaporkan token tidak berlaku (misalnya setelah aplikasi dihapus).</li>
-<li>Fakta yang secara tegas Anda minta untuk diingat oleh Mualim I ("ingat: …", layar Memori) — sampai Anda menghapusnya di Memori.</li>
+<li>Fakta yang secara tegas Anda minta untuk diingat oleh AI Sea Wolf ("ingat: …") — sampai Anda menghapusnya di aplikasi atau menghapus data Anda di server.</li>
 <li>Jika Anda menekan 👍 atau 👎 dengan koreksi, pertanyaan, jawaban, dan koreksi tersebut disimpan untuk meningkatkan jawaban bagi semua pengguna, tanpa nama Anda.</li>
-<li><b>Pertanyaan pelaut:</b> pertanyaan yang Anda publikasikan dengan "Tanya pelaut", jawaban yang Anda kirim, dan foto terlampir disimpan di server dan dapat dilihat oleh semua pengguna Sea Wolf, tanpa nama Anda (hanya jabatan dan jenis kapal). Sebelum dipublikasikan, teks diperiksa secara otomatis; nomor telepon, email, nama, dan nomor dokumen disembunyikan. Anda dapat menghapus pertanyaan atau jawaban Anda kapan saja; jawaban yang dikonfirmasi oleh pelaut lain dapat tetap disimpan, tanpa nama Anda, dalam pengetahuan bersama Mualim I.</li>
-<li><b>Dokumen untuk Mualim I:</b> manual, prosedur, atau formulir kosong yang Anda unggah disimpan di server; setelah ditinjau oleh pengembang, dokumen tersebut ditambahkan ke basis pengetahuan Mualim I untuk perusahaan Anda atau untuk semua pengguna. Jangan mengunggah dokumen pribadi.</li>
+<li><b>Pertanyaan pelaut:</b> pertanyaan yang Anda publikasikan dengan "Tanya pelaut", jawaban yang Anda kirim, dan foto terlampir disimpan di server dan dapat dilihat oleh semua pengguna Sea Wolf, tanpa nama Anda (hanya jabatan dan jenis kapal). Sebelum dipublikasikan, teks diperiksa secara otomatis; nomor telepon, email, nama, dan nomor dokumen disembunyikan. Anda dapat menghapus pertanyaan atau jawaban Anda kapan saja; jawaban yang dikonfirmasi oleh pelaut lain dapat tetap disimpan, tanpa nama Anda, dalam pengetahuan bersama AI Sea Wolf.</li>
+<li><b>Dokumen untuk AI Sea Wolf:</b> manual, prosedur, atau formulir kosong yang Anda unggah disimpan di server; setelah ditinjau oleh pengembang, dokumen tersebut ditambahkan ke basis pengetahuan AI Sea Wolf untuk perusahaan Anda atau untuk semua pengguna. Jangan mengunggah dokumen pribadi.</li>
+<li><b>Ulasan kapal:</b> lihat bagian 3c.</li>
 </ul>
-<p><b>Batas dan berhenti menggunakan.</b> Mualim I memiliki batas harian gratis. Anda bisa saja tidak menggunakan Mualim I; bagian lain aplikasi berfungsi sepenuhnya tanpanya dan tanpa internet. Untuk menghapus semua yang disimpan untuk instalasi Anda di server (fakta di Memori, pertanyaan dan jawaban yang Anda publikasikan, dokumen yang diunggah), gunakan Mualim I → Memori → "Hapus data saya di server" atau tulis ke <span class="mail">myaziopa@gmail.com</span> dengan menyertakan ID instalasi yang ditampilkan di Mualim I → Memori; kami menghapusnya dalam 30 hari. Di versi 0.3.0 dan yang lebih baru, tombol ini dan ID instalasi ada di Tanya → Kapal saya.</p>
+<p><b>Batas dan berhenti menggunakan.</b> AI Sea Wolf memiliki batas harian gratis. Anda bisa saja tidak menggunakan AI Sea Wolf; bagian lain aplikasi berfungsi sepenuhnya tanpanya dan tanpa internet. Untuk menghapus semua yang disimpan untuk instalasi Anda di server (fakta yang diingat, pertanyaan dan jawaban yang Anda publikasikan, dokumen yang diunggah), gunakan Tanya → Kapal saya → "Hapus data saya di server" atau tulis ke <span class="mail">myaziopa@gmail.com</span> dengan menyertakan ID instalasi yang ditampilkan di Tanya → Kapal saya; kami menghapusnya dalam 30 hari. Apa yang terjadi dengan ulasan kapal dijelaskan di bagian 3c.</p>
 <h2 id="questions-id">3b. Pertanyaan pelaut (versi 0.3.0 dan yang lebih baru)</h2>
 <ul>
 <li>Pertanyaan yang Anda ajukan di layar “Tanya” dipublikasikan di umpan pelaut bersama jawaban AI dan terlihat oleh semua pengguna Sea Wolf. Aplikasi memberi tahu hal ini sebelum Anda mengirim. Jawaban Anda untuk pertanyaan pelaut lain juga publik dengan cara yang sama.</li>
@@ -547,6 +588,15 @@ article p,article li{color:var(--ink)}article ul{padding-left:22px}article li{ma
 <li>Notifikasi (Google Firebase, lihat bagian 3a): jawaban baru untuk pertanyaan Anda, pertanyaan baru untuk bidang Anda, dan sesekali pengingat untuk pelaut berpengalaman tentang pertanyaan yang masih menunggu jawaban. Anda dapat mematikannya di pengaturan notifikasi aplikasi.</li>
 <li>Setiap pengguna dapat melaporkan pertanyaan atau jawaban. Konten yang dilaporkan ditinjau oleh pengembang dan dapat disembunyikan; konten yang dilaporkan oleh tiga pengguna berbeda disembunyikan otomatis.</li>
 <li>Anda dapat menghapus pertanyaan atau jawaban Anda kapan saja. Untuk menghapus semua yang disimpan di server untuk instalasi Anda: Tanya → Kapal saya → “Hapus data saya di server”, atau tulis kepada kami (bagian 9).</li>
+</ul>
+<h2 id="reviews-id">3c. Ulasan kapal</h2>
+<ul>
+<li>Ulasan kapal yang Anda tulis (penilaian, teks, jabatan Anda, nama kapal dan nomor IMO, tanggal kontrak) disimpan di server kami dan dapat dilihat oleh semua pengguna Sea Wolf.</li>
+<li>Pengguna lain melihat jabatan Anda, bulan kontrak, dan lama waktu di kapal — tidak pernah nama Anda.</li>
+<li>Ulasan hanya dapat ditulis setelah kontrak minimal 14 hari. Anda dapat mengedit ulasan Anda sendiri.</li>
+<li>Setelah “Hapus data saya di server” (Tanya → Kapal saya), ulasan Anda tetap ada untuk pelaut lain tetapi tidak lagi terhubung dengan instalasi Anda: ulasan tidak dapat diedit lagi, dan tanggalnya hanya disimpan sebagai bulan dan tahun.</li>
+<li>Setiap pengguna dapat melaporkan ulasan. Ulasan yang dilaporkan diperiksa dengan cara yang sama seperti pertanyaan (bagian 3b).</li>
+<li>Ulasan diterjemahkan otomatis ke bahasa pembaca oleh layanan AI Anthropic, seperti dijelaskan di bagian 3a.</li>
 </ul>
 <h2>4. Cadangan, berbagi, dan serah terima</h2>
 <p>Cadangan adalah file yang Anda buat dan simpan sendiri; file tersebut dienkripsi (AES-256) dengan kata sandi pilihan Anda. Saat Anda membagikan kartu, CV, file kontak, file serah terima, atau cadangan, file hanya dikirim ke tempat yang Anda tuju. Pengembang tidak pernah menerima file ini.</p>
@@ -563,12 +613,12 @@ article p,article li{color:var(--ink)}article ul{padding-left:22px}article li{ma
 </article>
 <article lang="fil" data-lang="fil" hidden>
 <h1>Patakaran sa Privacy</h1>
-<p class="date">Epektibo mula 24 Nobyembre 2026 · Para sa Sea Wolf app para sa Android (app.seawolf.logbook)</p>
+<p class="date">Epektibo mula 25 Nobyembre 2026 · Para sa Sea Wolf app para sa Android (app.seawolf.logbook)</p>
 <p class="note">Salin para sa kaginhawahan. Kung may pagkakaiba, ang bersyong English ang masusunod.</p>
-<p class="upd"><b>Ano ang nagbago noong 24 Nobyembre 2026 (bersyon 0.3.0):</b> ang AI assistant ay tinatawag na ngayong Sea Wolf (dati ay Punong Opisyal, seksyon 3a). Ang mga tanong na itinatanong mo sa screen na “Magtanong” ay inilalathala para sa lahat ng seaman nang walang pangalan mo, at ipinapadala sa aming server ang buong taon ng iyong sea service — tingnan ang bagong seksyon 3b. Lahat ng iba pa sa Sea Wolf ay nananatili pa rin sa phone mo lang.</p>
-<p>Ang Sea Wolf ("ang app") ay libreng app para sa mga seaman na nagtatago ng seafarer's card, mga dokumento, biyahe, crew list, logbook, oras ng pahinga, sea service at CV sa sariling phone ng user. Ipinapaliwanag ng patakarang ito kung ano ang nangyayari sa impormasyon mo. Sa madaling salita: <b>lahat ng itinatago mo sa Sea Wolf ay nananatili sa device mo. Ang tanging eksepsiyon ay ang opsyonal na assistant na Punong Opisyal: kapag ginamit mo ito, ang tanong at mga photo na ipinapadala mo ay pupunta sa aming server para makakuha ng sagot (seksyon 3a). Mula bersyon 0.3.0, ang mga tanong na itinatanong mo sa screen na “Magtanong” ay inilalathala rin para sa lahat ng seaman, nang walang pangalan mo (seksyon 3b).</b></p>
+<p class="upd"><b>Ano ang nagbago noong 25 Nobyembre 2026 (bersyon 0.3.3):</b> ang AI assistant ay tinatawag na ngayong Sea Wolf AI lang (seksyon 3a). Bagong seksyon 3c “Mga review ng barko”. Para burahin ang data mo sa aming server: Magtanong → Aking barko → “Burahin ang data ko sa server”; nananatili pagkatapos noon ang mga review ng barko pero hindi na nakaugnay sa iyo. Lahat ng iba pa sa Sea Wolf ay nananatili pa rin sa phone mo lang.</p>
+<p>Ang Sea Wolf ("ang app") ay libreng app para sa mga seaman na nagtatago ng seafarer's card, mga dokumento, biyahe, crew list, logbook, oras ng pahinga, sea service at CV sa sariling phone ng user. Ipinapaliwanag ng patakarang ito kung ano ang nangyayari sa impormasyon mo. Sa madaling salita: <b>lahat ng itinatago mo sa Sea Wolf ay nananatili sa device mo. Ang tanging eksepsiyon ay ang opsyonal na Sea Wolf AI assistant: kapag ginamit mo ito, ang tanong at mga photo na ipinapadala mo ay pupunta sa aming server para makakuha ng sagot (seksyon 3a). Mula bersyon 0.3.0, ang mga tanong na itinatanong mo sa screen na “Magtanong” ay inilalathala rin para sa lahat ng seaman, nang walang pangalan mo (seksyon 3b). Iniimbak din sa aming server ang mga review ng barko na isinusulat mo (seksyon 3c).</b></p>
 <h2>1. Data na inilalagay mo</h2>
-<p>Lahat ng inilalagay o sina-scan mo sa app — profile at contact details, photo, numero at scan ng mga dokumento, detalye ng barko at crew, mga posisyon, logbook entries, oras ng trabaho at pahinga, record ng sahod, sea service, mga kasamahan — ay nakaimbak lamang sa pribadong storage ng app sa phone mo. Hindi ipinapadala ang data na ito sa anumang server (maliban sa ikaw mismo ang nagpapadala sa Punong Opisyal, seksyon 3a at 3b). Walang user account ang app.</p>
+<p>Lahat ng inilalagay o sina-scan mo sa app — profile at contact details, photo, numero at scan ng mga dokumento, detalye ng barko at crew, mga posisyon, logbook entries, oras ng trabaho at pahinga, record ng sahod, sea service, mga kasamahan — ay nakaimbak lamang sa pribadong storage ng app sa phone mo. Hindi ipinapadala ang data na ito sa anumang server (maliban sa ikaw mismo ang nagpapadala sa Sea Wolf AI o naglalathala sa app, seksyon 3a–3c). Walang user account ang app.</p>
 <h2>2. Mga pahintulot at ang widget</h2>
 <ul>
 <li><b>Camera</b> — kapag nag-scan ka lamang ng dokumento o QR code. Pinoproseso ang mga larawan sa phone at sine-save lamang kung pipiliin mong itago ang mga ito.</li>
@@ -581,24 +631,24 @@ article p,article li{color:var(--ink)}article ul{padding-left:22px}article li{ma
 <h2>3. Koneksyon sa internet</h2>
 <p>Gumagana nang buo ang app nang offline. Kumokonekta lamang ito sa internet sa mga kasong ito:</p>
 <ul>
-<li><b>Assistant na Punong Opisyal (opsyonal)</b> — kapag ikaw mismo lamang ang nagpapadala ng isang bagay sa Punong Opisyal; tingnan ang seksyon 3a.</li>
+<li><b>Sea Wolf AI assistant (opsyonal)</b> — kapag ikaw mismo lamang ang nagpapadala ng isang bagay sa Sea Wolf AI; tingnan ang seksyon 3a. Mga review ng barko: seksyon 3c.</li>
 <li><b>Opsyonal na language pack</b> — kung ida-download mo ang Cyrillic text recognition (Russian at Ukrainian) sa Settings, dina-download ang mga file mula sa GitHub at sinusuri (SHA-256) ang bawat file bago gamitin. Walang personal na data na ipinapadala; natatanggap ng GitHub ang teknikal na request (gaya ng IP address mo) tulad ng sa anumang download.</li>
 <li><b>Mga link na binubuksan mo</b> — halimbawa MarineTraffic, VesselFinder, Telegram, WhatsApp, o e-mail. Nagbubukas ang mga ito sa ibang app o browser at sakop ng sariling patakaran ng mga serbisyong iyon.</li>
 <li><b>Google text recognition</b> — gumagamit ang document scanning ng Google ML Kit, na tumatakbo sa phone sa pamamagitan ng Google Play services. Hindi ipinapadala kahit saan ang teksto ng mga dokumento mo, pero maaaring magpadala ang Google Play services sa Google ng anonymous na diagnostic at usage information tungkol sa ML Kit component, ayon sa mga tuntunin ng Google.</li>
 </ul>
 <p>Naka-built-in sa app ang lahat ng font; wala nang ibang dina-download. Maliban sa Google component sa itaas, walang advertising, analytics o third-party tracking ang app.</p>
 <h2 id="starpom-fil" data-anchor="starpom">3a. Sea Wolf AI assistant (dating Punong Opisyal)</h2>
-<p>Opsyonal ang Punong Opisyal. Walang ipinapadala hangga't hindi mo binubuksan ang Punong Opisyal at ikaw mismo ang nagpapadala ng isang bagay. Bago ang unang paggamit, ipinapakita ng app kung ano ang ipinapadala at hinihiling sa iyong kumpirmahin ito.</p>
-<p><b>Ano ang ipinapadala kapag ginagamit mo ang Punong Opisyal</b></p>
+<p>Opsyonal ang Sea Wolf AI. Walang ipinapadala hangga't hindi mo ito binubuksan at ikaw mismo ang nagpapadala ng isang bagay. Bago ang unang paggamit, ipinapakita ng app kung ano ang ipinapadala at hinihiling sa iyong kumpirmahin ito.</p>
+<p><b>Ano ang ipinapadala kapag ginagamit mo ang Sea Wolf AI</b></p>
 <ul>
 <li>ang tanong mo (teksto, o boses na ginawang teksto sa phone) at ang mga photo na inilalakip mo (kino-compress sa phone);</li>
 <li>ang ranggo mo at uri ng barko mula sa profile mo, at ang wika ng app;</li>
 <li>hanggang 3 sa mga "Teknikal" na tala mo sa logbook na tugma sa tanong;</li>
-<li>ang teksto ng mga naunang mensahe sa kasalukuyang chat sa Punong Opisyal (hindi ang mga photo);</li>
+<li>ang teksto ng mga naunang mensahe sa kasalukuyang chat sa Sea Wolf AI (hindi ang mga photo);</li>
 <li>isang random na identifier ng installation na ito (hindi ang pangalan o numero ng phone mo);</li>
 <li>isang Google Play Integrity token na nagpapatunay na galing ang request sa tunay na Sea Wolf app (sinusuri ng Google).</li>
 </ul>
-<p><b>Ano ang hindi kailanman ipinapadala:</b> ang pangalan mo, numero at scan ng mga dokumento, mga contact, crew list, iba pang logbook entries, sahod, record ng sea service o anumang iba pang bahagi ng Sea Wolf. Kapag pinupunan ng Punong Opisyal ang application form ng ibang partido, ang blangkong form lamang ang ipinapadala; inilalagay ang data mo sa form sa phone.</p>
+<p><b>Ano ang hindi kailanman ipinapadala:</b> ang pangalan mo, numero at scan ng mga dokumento, mga contact, crew list, iba pang logbook entries, sahod, record ng sea service o anumang iba pang bahagi ng Sea Wolf. Kapag pinupunan ng Sea Wolf AI ang application form ng ibang partido, ang blangkong form lamang ang ipinapadala; inilalagay ang data mo sa form sa phone.</p>
 <p><b>Sino ang nagpoproseso nito</b></p>
 <ul>
 <li>Ang aming server (Hetzner Online, data centre sa Helsinki, Finland, EU) ang tumatanggap ng request, nagdaragdag ng mga kaugnay na manual at procedure at kumukuha ng sagot.</li>
@@ -609,17 +659,18 @@ article p,article li{color:var(--ink)}article ul{padding-left:22px}article li{ma
 </ul>
 <p><b>Ano ang itinatago ng aming server</b></p>
 <ul>
-<li>Hindi iniimbak sa server ang mga mensahe at photo mula sa "Aking chat" pagkatapos maipadala ang sagot. Sa phone mo lamang nakatago ang history ng chat (Punong Opisyal → History), at puwede mo itong burahin doon.</li>
-<li>Kapag binuksan ang app at may internet, isang beses itong kumokonekta sa aming server: ang random na ID ng installation at bersyon ng app lang ang ipinapadala — kahit hindi mo ginagamit ang Punong Opisyal. Ginagamit ito para bilangin ang mga aktibong installation; binubura pagkalipas ng 30 araw.</li>
+<li>Hindi iniimbak sa server ang mga mensahe at photo mula sa "Aking chat" pagkatapos maipadala ang sagot. Sa phone mo lamang nakatago ang history ng chat, at puwede mo itong burahin sa app.</li>
+<li>Kapag binuksan ang app at may internet, isang beses itong kumokonekta sa aming server: ang random na ID ng installation at bersyon ng app lang ang ipinapadala — kahit hindi mo ginagamit ang Sea Wolf AI. Ginagamit ito para bilangin ang mga aktibong installation; binubura pagkalipas ng 30 araw.</li>
 <li>Mga usage counter para sa installation na ito (bilang ng request bawat araw, dami ng teknikal na data) — para sa mga daily limit; binubura pagkalipas ng 30 araw.</li>
 <li>Ang resulta ng Play Integrity check para sa installation na ito — pinapalitan sa bawat bagong check.</li>
 <li>Ang notification token ng installation na ito at ang mga departamentong pinili mo — para lang magpadala ng notification; binubura gamit ang “Burahin ang data ko sa server” o kapag sinabi ng Google na hindi na valid ang token (halimbawa, matapos alisin ang app).</li>
-<li>Mga impormasyong tahasan mong hiniling na tandaan ng Punong Opisyal ("tandaan: …", ang screen na Memorya) — hanggang burahin mo ang mga ito sa Memorya.</li>
+<li>Mga impormasyong tahasan mong hiniling na tandaan ng Sea Wolf AI ("tandaan: …") — hanggang burahin mo ang mga ito sa app o burahin ang data mo sa server.</li>
 <li>Kung pipindutin mo ang 👍 o 👎 na may koreksyon, itinatago ang tanong, sagot at koreksyon para mapahusay ang mga sagot para sa lahat ng user, nang wala ang pangalan mo.</li>
-<li><b>Mga tanong ng mga seaman:</b> ang tanong na inilalathala mo gamit ang "Tanungin ang mga marino", ang mga sagot na ipino-post mo, at ang mga nakalakip na photo ay iniimbak sa server at nakikita ng lahat ng user ng Sea Wolf, nang wala ang pangalan mo (ranggo at uri ng barko lamang). Bago ilathala, awtomatikong sinusuri ang teksto; itinatago ang mga numero ng phone, e-mail, pangalan at numero ng dokumento. Puwede mong burahin ang tanong o sagot mo anumang oras; ang mga sagot na kinumpirma ng ibang seaman ay maaaring manatili, nang wala ang pangalan mo, sa pinagsasaluhang kaalaman ng Punong Opisyal.</li>
-<li><b>Mga dokumento para sa Punong Opisyal:</b> ang mga manual, procedure o blangkong form na ina-upload mo ay iniimbak sa server; pagkatapos suriin ng developer, idinaragdag ang mga ito sa knowledge base ng Punong Opisyal para sa kumpanya mo o para sa lahat ng user. Huwag mag-upload ng mga personal na dokumento.</li>
+<li><b>Mga tanong ng mga seaman:</b> ang tanong na inilalathala mo gamit ang "Tanungin ang mga marino", ang mga sagot na ipino-post mo, at ang mga nakalakip na photo ay iniimbak sa server at nakikita ng lahat ng user ng Sea Wolf, nang wala ang pangalan mo (ranggo at uri ng barko lamang). Bago ilathala, awtomatikong sinusuri ang teksto; itinatago ang mga numero ng phone, e-mail, pangalan at numero ng dokumento. Puwede mong burahin ang tanong o sagot mo anumang oras; ang mga sagot na kinumpirma ng ibang seaman ay maaaring manatili, nang wala ang pangalan mo, sa pinagsasaluhang kaalaman ng Sea Wolf AI.</li>
+<li><b>Mga dokumento para sa Sea Wolf AI:</b> ang mga manual, procedure o blangkong form na ina-upload mo ay iniimbak sa server; pagkatapos suriin ng developer, idinaragdag ang mga ito sa knowledge base ng Sea Wolf AI para sa kumpanya mo o para sa lahat ng user. Huwag mag-upload ng mga personal na dokumento.</li>
+<li><b>Mga review ng barko:</b> tingnan ang seksyon 3c.</li>
 </ul>
-<p><b>Mga limitasyon at hindi paggamit.</b> May libreng daily limit ang Punong Opisyal. Puwede mo lang talagang hindi gamitin ang Punong Opisyal; gumagana nang buo ang natitirang bahagi ng app kahit wala ito at walang internet. Para burahin ang lahat ng itinatago sa server para sa installation mo (mga impormasyon sa Memorya, ang mga tanong at sagot na inilathala mo, mga na-upload na dokumento), gamitin ang Punong Opisyal → Memorya → "Burahin ang data ko sa server" o sumulat sa <span class="mail">myaziopa@gmail.com</span> kasama ang installation ID na ipinapakita sa Punong Opisyal → Memorya; buburahin namin ito sa loob ng 30 araw. Sa bersyon 0.3.0 at mas bago, nasa Magtanong → Aking barko ang button na ito at ang installation ID.</p>
+<p><b>Mga limitasyon at hindi paggamit.</b> May libreng daily limit ang Sea Wolf AI. Puwede mo lang talagang hindi gamitin ang Sea Wolf AI; gumagana nang buo ang natitirang bahagi ng app kahit wala ito at walang internet. Para burahin ang lahat ng itinatago sa server para sa installation mo (mga impormasyong natandaan, ang mga tanong at sagot na inilathala mo, mga na-upload na dokumento), gamitin ang Magtanong → Aking barko → "Burahin ang data ko sa server" o sumulat sa <span class="mail">myaziopa@gmail.com</span> kasama ang installation ID na ipinapakita sa Magtanong → Aking barko; buburahin namin ito sa loob ng 30 araw. Kung ano ang nangyayari sa mga review ng barko ay nasa seksyon 3c.</p>
 <h2 id="questions-fil">3b. Mga tanong ng seaman (bersyon 0.3.0 at mas bago)</h2>
 <ul>
 <li>Ang tanong na itinatanong mo sa screen na “Magtanong” ay inilalathala sa feed ng mga seaman kasama ang sagot ng AI at nakikita ng lahat ng gumagamit ng Sea Wolf. Sinasabi ito ng app bago ka magpadala. Ang mga sagot mo sa tanong ng ibang seaman ay pampubliko rin.</li>
@@ -630,6 +681,15 @@ article p,article li{color:var(--ink)}article ul{padding-left:22px}article li{ma
 <li>Mga notification (Google Firebase, tingnan ang seksyon 3a): bagong sagot sa tanong mo, mga bagong tanong para sa iyong department, at paminsan-minsang paalala sa mga bihasang seaman tungkol sa mga tanong na naghihintay pa ng sagot. Maaari mo itong patayin sa notification settings ng app.</li>
 <li>Sinumang gumagamit ay maaaring mag-report ng tanong o sagot. Sinusuri ng developer ang mga ni-report at maaaring itago ang mga ito; awtomatikong itinatago ang ni-report ng tatlong magkakaibang gumagamit.</li>
 <li>Maaari mong burahin ang sarili mong tanong o sagot anumang oras. Para burahin ang lahat ng nakatago sa server para sa iyong installation: Magtanong → Aking barko → “Burahin ang data ko sa server”, o sumulat sa amin (seksyon 9).</li>
+</ul>
+<h2 id="reviews-fil">3c. Mga review ng barko</h2>
+<ul>
+<li>Ang review ng barko na isinusulat mo (mga rating, teksto, ang ranggo mo, pangalan at IMO number ng barko, mga petsa ng kontrata) ay iniimbak sa aming server at nakikita ng lahat ng user ng Sea Wolf.</li>
+<li>Nakikita ng ibang user ang ranggo mo, ang mga buwan ng kontrata at ang tagal sa barko — hindi kailanman ang pangalan mo.</li>
+<li>Puwedeng magsulat ng review pagkatapos lamang ng kontratang hindi bababa sa 14 na araw. Puwede mong i-edit ang sarili mong review.</li>
+<li>Pagkatapos ng “Burahin ang data ko sa server” (Magtanong → Aking barko), nananatili ang review mo para sa ibang seaman pero hindi na ito nakaugnay sa installation mo: hindi na ito mae-edit, at buwan at taon lamang ang natitira sa mga petsa nito.</li>
+<li>Sinumang user ay maaaring mag-report ng review. Sinusuri ang mga ni-report na review sa parehong paraan tulad ng mga tanong (seksyon 3b).</li>
+<li>Awtomatikong isinasalin ang mga review sa wika ng bawat mambabasa ng AI service na Anthropic, gaya ng inilarawan sa seksyon 3a.</li>
 </ul>
 <h2>4. Backup, pagbabahagi at handover</h2>
 <p>Ang mga backup ay mga file na ikaw mismo ang gumagawa at nagtatago; naka-encrypt ang mga ito (AES-256) gamit ang password na pinili mo. Kapag ibinahagi mo ang card, CV, contact file, handover file o backup, doon lamang pupunta ang file kung saan mo ito ipinadala. Hindi kailanman natatanggap ng developer ang mga file na ito.</p>
@@ -646,12 +706,12 @@ article p,article li{color:var(--ink)}article ul{padding-left:22px}article li{ma
 </article>
 <article lang="hi" data-lang="hi" hidden>
 <h1>गोपनीयता नीति</h1>
-<p class="date">लागू तिथि: 24 नवंबर 2026 · Android के लिए Sea Wolf ऐप (app.seawolf.logbook) पर लागू</p>
+<p class="date">लागू तिथि: 25 नवंबर 2026 · Android के लिए Sea Wolf ऐप (app.seawolf.logbook) पर लागू</p>
 <p class="note">यह अनुवाद सुविधा के लिए है। किसी भी अंतर की स्थिति में अंग्रेज़ी संस्करण मान्य होगा।</p>
-<p class="upd"><b>24 नवंबर 2026 को क्या बदला (संस्करण 0.3.0):</b> AI सहायक का नाम अब Sea Wolf है (पहले चीफ मेट, भाग 3a)। “पूछें” स्क्रीन पर आप जो सवाल पूछते हैं, वे आपके नाम के बिना सभी नाविकों के लिए प्रकाशित होते हैं, और आपका समुद्री अनुभव पूरे वर्षों में हमारे सर्वर पर भेजा जाता है — नया भाग 3b देखें। Sea Wolf में बाकी सब कुछ पहले की तरह केवल आपके फ़ोन पर रहता है।</p>
-<p>Sea Wolf ("ऐप") नाविकों के लिए एक मुफ़्त ऐप है, जो सीफेरर कार्ड, डॉक्यूमेंट्स, वॉयेज, क्रू लिस्ट, लॉगबुक, रेस्ट आवर्स, सी सर्विस और CV को उपयोगकर्ता के अपने फ़ोन पर रखता है। यह नीति बताती है कि आपकी जानकारी के साथ क्या होता है। संक्षेप में: <b>Sea Wolf में आप जो कुछ भी रखते हैं, वह आपके डिवाइस पर ही रहता है। एकमात्र अपवाद वैकल्पिक चीफ मेट सहायक है: जब आप इसका उपयोग करते हैं, तो आपके भेजे गए प्रश्न और फ़ोटो जवाब पाने के लिए हमारे सर्वर पर जाते हैं (भाग 3a)। संस्करण 0.3.0 से, “पूछें” स्क्रीन पर आपके पूछे गए सवाल भी आपके नाम के बिना सभी नाविकों के लिए प्रकाशित होते हैं (भाग 3b)।</b></p>
+<p class="upd"><b>25 नवंबर 2026 को क्या बदला (संस्करण 0.3.3):</b> AI सहायक का नाम अब सिर्फ़ Sea Wolf AI है (भाग 3a)। नया भाग 3c “जहाज़ समीक्षाएँ”। हमारे सर्वर पर अपना डेटा हटाने के लिए: पूछें → मेरा जहाज़ → “सर्वर पर मेरा डेटा मिटाएँ”; इसके बाद भी जहाज़ समीक्षाएँ बनी रहती हैं, लेकिन वे अब आपसे जुड़ी नहीं रहतीं। Sea Wolf में बाकी सब कुछ पहले की तरह केवल आपके फ़ोन पर रहता है।</p>
+<p>Sea Wolf ("ऐप") नाविकों के लिए एक मुफ़्त ऐप है, जो सीफेरर कार्ड, डॉक्यूमेंट्स, वॉयेज, क्रू लिस्ट, लॉगबुक, रेस्ट आवर्स, सी सर्विस और CV को उपयोगकर्ता के अपने फ़ोन पर रखता है। यह नीति बताती है कि आपकी जानकारी के साथ क्या होता है। संक्षेप में: <b>Sea Wolf में आप जो कुछ भी रखते हैं, वह आपके डिवाइस पर ही रहता है। एकमात्र अपवाद वैकल्पिक Sea Wolf AI सहायक है: जब आप इसका उपयोग करते हैं, तो आपके भेजे गए प्रश्न और फ़ोटो जवाब पाने के लिए हमारे सर्वर पर जाते हैं (भाग 3a)। संस्करण 0.3.0 से, “पूछें” स्क्रीन पर आपके पूछे गए सवाल भी आपके नाम के बिना सभी नाविकों के लिए प्रकाशित होते हैं (भाग 3b)। आपकी लिखी जहाज़ समीक्षाएँ भी हमारे सर्वर पर रखी जाती हैं (भाग 3c)।</b></p>
 <h2>1. आपके द्वारा दर्ज किया गया डेटा</h2>
-<p>ऐप में आप जो कुछ भी दर्ज या स्कैन करते हैं — प्रोफ़ाइल और संपर्क विवरण, फ़ोटो, डॉक्यूमेंट नंबर और स्कैन, जहाज़ और क्रू की जानकारी, पोज़िशन, लॉगबुक प्रविष्टियाँ, काम और आराम के घंटे, वेतन रिकॉर्ड, सी सर्विस, साथी — केवल आपके फ़ोन पर ऐप के निजी स्टोरेज में रहता है। यह डेटा किसी भी सर्वर पर नहीं भेजा जाता (सिवाय उसके, जो आप ख़ुद चीफ मेट को भेजते हैं, भाग 3a और 3b)। ऐप में कोई यूज़र अकाउंट नहीं है।</p>
+<p>ऐप में आप जो कुछ भी दर्ज या स्कैन करते हैं — प्रोफ़ाइल और संपर्क विवरण, फ़ोटो, डॉक्यूमेंट नंबर और स्कैन, जहाज़ और क्रू की जानकारी, पोज़िशन, लॉगबुक प्रविष्टियाँ, काम और आराम के घंटे, वेतन रिकॉर्ड, सी सर्विस, साथी — केवल आपके फ़ोन पर ऐप के निजी स्टोरेज में रहता है। यह डेटा किसी भी सर्वर पर नहीं भेजा जाता (सिवाय उसके, जो आप ख़ुद Sea Wolf AI को भेजते हैं या ऐप में प्रकाशित करते हैं, भाग 3a–3c)। ऐप में कोई यूज़र अकाउंट नहीं है।</p>
 <h2>2. अनुमतियाँ और विजेट</h2>
 <ul>
 <li><b>कैमरा</b> — केवल तब, जब आप कोई डॉक्यूमेंट या QR कोड स्कैन करते हैं। तस्वीरें फ़ोन पर ही प्रोसेस होती हैं और तभी सेव होती हैं जब आप उन्हें रखना चुनें।</li>
@@ -664,24 +724,24 @@ article p,article li{color:var(--ink)}article ul{padding-left:22px}article li{ma
 <h2>3. इंटरनेट कनेक्शन</h2>
 <p>ऐप पूरी तरह ऑफ़लाइन काम करता है। यह केवल इन स्थितियों में इंटरनेट से जुड़ता है:</p>
 <ul>
-<li><b>चीफ मेट सहायक (वैकल्पिक)</b> — केवल तब, जब आप ख़ुद चीफ मेट को कुछ भेजते हैं; भाग 3a देखें।</li>
+<li><b>Sea Wolf AI सहायक (वैकल्पिक)</b> — केवल तब, जब आप ख़ुद Sea Wolf AI को कुछ भेजते हैं; भाग 3a देखें। जहाज़ समीक्षाएँ: भाग 3c।</li>
 <li><b>वैकल्पिक भाषा पैक</b> — अगर आप सेटिंग्स में सिरिलिक टेक्स्ट पहचान (रूसी और यूक्रेनी) डाउनलोड करते हैं, तो फ़ाइलें GitHub से डाउनलोड होती हैं और हर फ़ाइल को इस्तेमाल से पहले जाँचा जाता है (SHA-256)। कोई निजी डेटा नहीं भेजा जाता; किसी भी डाउनलोड की तरह GitHub को तकनीकी अनुरोध (जैसे आपका IP पता) मिलता है।</li>
 <li><b>आपके द्वारा खोले गए लिंक</b> — जैसे MarineTraffic, VesselFinder, Telegram, WhatsApp या ई-मेल। ये दूसरे ऐप्स या ब्राउज़र में खुलते हैं और उन सेवाओं की अपनी नीतियों के अधीन होते हैं।</li>
 <li><b>Google टेक्स्ट पहचान</b> — डॉक्यूमेंट स्कैनिंग Google ML Kit का उपयोग करती है, जो Google Play सेवाओं के ज़रिए फ़ोन पर ही चलता है। आपके डॉक्यूमेंट्स का टेक्स्ट कहीं नहीं भेजा जाता, लेकिन Google Play सेवाएँ Google की शर्तों के अनुसार ML Kit कंपोनेंट के बारे में अनाम डायग्नोस्टिक और उपयोग जानकारी Google को भेज सकती हैं।</li>
 </ul>
 <p>सभी फ़ॉन्ट ऐप में पहले से शामिल हैं; और कुछ डाउनलोड नहीं होता। ऊपर बताए गए Google कंपोनेंट के अलावा, ऐप में कोई विज्ञापन, एनालिटिक्स या थर्ड-पार्टी ट्रैकिंग नहीं है।</p>
 <h2 id="starpom-hi" data-anchor="starpom">3a. Sea Wolf AI सहायक (पहले चीफ मेट)</h2>
-<p>चीफ मेट वैकल्पिक है। जब तक आप चीफ मेट खोलकर ख़ुद कुछ नहीं भेजते, तब तक कुछ भी नहीं भेजा जाता। पहली बार उपयोग से पहले ऐप दिखाता है कि क्या भेजा जाता है और आपसे पुष्टि माँगता है।</p>
-<p><b>चीफ मेट का उपयोग करने पर क्या भेजा जाता है</b></p>
+<p>Sea Wolf AI वैकल्पिक है। जब तक आप इसे खोलकर ख़ुद कुछ नहीं भेजते, तब तक कुछ भी नहीं भेजा जाता। पहली बार उपयोग से पहले ऐप दिखाता है कि क्या भेजा जाता है और आपसे पुष्टि माँगता है।</p>
+<p><b>Sea Wolf AI का उपयोग करने पर क्या भेजा जाता है</b></p>
 <ul>
 <li>आपका प्रश्न (टेक्स्ट, या फ़ोन पर ही टेक्स्ट में बदली गई आवाज़) और आपके द्वारा जोड़ी गई फ़ोटो (फ़ोन पर कंप्रेस की गई);</li>
 <li>आपकी प्रोफ़ाइल से आपकी रैंक और जहाज़ का प्रकार, और ऐप की भाषा;</li>
 <li>लॉगबुक के आपके "तकनीकी" नोट्स में से अधिकतम 3, जो प्रश्न से मेल खाते हों;</li>
-<li>मौजूदा चीफ मेट चैट के पिछले संदेशों का टेक्स्ट (फ़ोटो नहीं);</li>
+<li>मौजूदा Sea Wolf AI चैट के पिछले संदेशों का टेक्स्ट (फ़ोटो नहीं);</li>
 <li>इस इंस्टॉलेशन का एक रैंडम पहचानकर्ता (आपका नाम या फ़ोन नंबर नहीं);</li>
 <li>Google Play Integrity टोकन, जो पुष्टि करता है कि अनुरोध असली Sea Wolf ऐप से आया है (Google द्वारा जाँचा जाता है)।</li>
 </ul>
-<p><b>क्या कभी नहीं भेजा जाता:</b> आपका नाम, डॉक्यूमेंट नंबर और स्कैन, संपर्क, क्रू लिस्ट, लॉगबुक की अन्य प्रविष्टियाँ, वेतन, सी सर्विस रिकॉर्ड या Sea Wolf का कोई अन्य भाग। जब चीफ मेट किसी तीसरे पक्ष का आवेदन फ़ॉर्म भरता है, तो केवल ख़ाली फ़ॉर्म भेजा जाता है; आपका डेटा फ़ोन पर ही फ़ॉर्म में भरा जाता है।</p>
+<p><b>क्या कभी नहीं भेजा जाता:</b> आपका नाम, डॉक्यूमेंट नंबर और स्कैन, संपर्क, क्रू लिस्ट, लॉगबुक की अन्य प्रविष्टियाँ, वेतन, सी सर्विस रिकॉर्ड या Sea Wolf का कोई अन्य भाग। जब Sea Wolf AI किसी तीसरे पक्ष का आवेदन फ़ॉर्म भरता है, तो केवल ख़ाली फ़ॉर्म भेजा जाता है; आपका डेटा फ़ोन पर ही फ़ॉर्म में भरा जाता है।</p>
 <p><b>इसे कौन प्रोसेस करता है</b></p>
 <ul>
 <li>हमारा सर्वर (Hetzner Online, डेटा सेंटर हेलसिंकी, फ़िनलैंड, EU में) अनुरोध प्राप्त करता है, संबंधित मैनुअल और प्रक्रियाएँ जोड़ता है और जवाब प्राप्त करता है।</li>
@@ -692,17 +752,18 @@ article p,article li{color:var(--ink)}article ul{padding-left:22px}article li{ma
 </ul>
 <p><b>हमारा सर्वर क्या रखता है</b></p>
 <ul>
-<li>"मेरी चैट" के संदेश और फ़ोटो जवाब भेजे जाने के बाद सर्वर पर संग्रहीत नहीं किए जाते। चैट का हिस्ट्री केवल आपके फ़ोन पर रहता है (चीफ मेट → हिस्ट्री), और आप उसे वहीं हटा सकते हैं।</li>
-<li>ऐप खुलने पर, अगर इंटरनेट है, तो वह हमारे सर्वर से एक बार जुड़ता है: केवल इंस्टॉलेशन का रैंडम पहचानकर्ता और ऐप का संस्करण भेजा जाता है — भले ही आप चीफ मेट का उपयोग न करें। इससे हम सक्रिय इंस्टॉलेशन गिनते हैं; 30 दिनों बाद हटा दिया जाता है।</li>
+<li>"मेरी चैट" के संदेश और फ़ोटो जवाब भेजे जाने के बाद सर्वर पर संग्रहीत नहीं किए जाते। चैट का हिस्ट्री केवल आपके फ़ोन पर रहता है, और आप उसे ऐप में हटा सकते हैं।</li>
+<li>ऐप खुलने पर, अगर इंटरनेट है, तो वह हमारे सर्वर से एक बार जुड़ता है: केवल इंस्टॉलेशन का रैंडम पहचानकर्ता और ऐप का संस्करण भेजा जाता है — भले ही आप Sea Wolf AI का उपयोग न करें। इससे हम सक्रिय इंस्टॉलेशन गिनते हैं; 30 दिनों बाद हटा दिया जाता है।</li>
 <li>इस इंस्टॉलेशन के उपयोग काउंटर (प्रति दिन अनुरोधों की संख्या, तकनीकी डेटा की मात्रा) — दैनिक सीमाओं के लिए; 30 दिन बाद हटा दिए जाते हैं।</li>
 <li>इस इंस्टॉलेशन के लिए Play Integrity जाँच का परिणाम — हर नई जाँच पर बदल दिया जाता है।</li>
 <li>इस इंस्टॉलेशन का सूचना टोकन और आपके चुने हुए विभाग — केवल आपको सूचनाएँ भेजने के लिए; “सर्वर पर मेरा डेटा हटाएँ” से या जब Google बताए कि टोकन अमान्य है (जैसे ऐप हटाने के बाद), तब हटा दिया जाता है।</li>
-<li>वे तथ्य, जिन्हें याद रखने के लिए आप चीफ मेट से स्पष्ट रूप से कहते हैं ("याद रखें: …", मेमोरी स्क्रीन) — जब तक आप उन्हें मेमोरी में हटा न दें।</li>
+<li>वे तथ्य, जिन्हें याद रखने के लिए आप Sea Wolf AI से स्पष्ट रूप से कहते हैं ("याद रखें: …") — जब तक आप उन्हें ऐप में न हटा दें या सर्वर पर अपना डेटा न मिटा दें।</li>
 <li>अगर आप सुधार के साथ 👍 या 👎 दबाते हैं, तो प्रश्न, जवाब और सुधार सभी उपयोगकर्ताओं के लिए जवाब बेहतर बनाने हेतु आपके नाम के बिना रखे जाते हैं।</li>
-<li><b>नाविकों के प्रश्न:</b> "नाविकों से पूछो" से प्रकाशित किया गया आपका प्रश्न, आपके पोस्ट किए गए जवाब और जोड़ी गई फ़ोटो सर्वर पर संग्रहीत होते हैं और Sea Wolf के सभी उपयोगकर्ताओं को आपके नाम के बिना दिखते हैं (केवल रैंक और जहाज़ का प्रकार)। प्रकाशन से पहले टेक्स्ट की स्वचालित रूप से जाँच की जाती है; फ़ोन नंबर, ई-मेल, नाम और डॉक्यूमेंट नंबर छिपा दिए जाते हैं। आप अपना प्रश्न या जवाब कभी भी हटा सकते हैं; दूसरे नाविकों द्वारा पुष्टि किए गए जवाब आपके नाम के बिना चीफ मेट के साझा ज्ञान में रह सकते हैं।</li>
-<li><b>चीफ मेट के लिए डॉक्यूमेंट्स:</b> आपके द्वारा अपलोड किए गए मैनुअल, प्रक्रियाएँ या ख़ाली फ़ॉर्म सर्वर पर संग्रहीत होते हैं; डेवलपर की समीक्षा के बाद उन्हें आपकी कंपनी के लिए या सभी उपयोगकर्ताओं के लिए चीफ मेट के नॉलेज बेस में जोड़ा जाता है। निजी डॉक्यूमेंट्स अपलोड न करें।</li>
+<li><b>नाविकों के प्रश्न:</b> "नाविकों से पूछो" से प्रकाशित किया गया आपका प्रश्न, आपके पोस्ट किए गए जवाब और जोड़ी गई फ़ोटो सर्वर पर संग्रहीत होते हैं और Sea Wolf के सभी उपयोगकर्ताओं को आपके नाम के बिना दिखते हैं (केवल रैंक और जहाज़ का प्रकार)। प्रकाशन से पहले टेक्स्ट की स्वचालित रूप से जाँच की जाती है; फ़ोन नंबर, ई-मेल, नाम और डॉक्यूमेंट नंबर छिपा दिए जाते हैं। आप अपना प्रश्न या जवाब कभी भी हटा सकते हैं; दूसरे नाविकों द्वारा पुष्टि किए गए जवाब आपके नाम के बिना Sea Wolf AI के साझा ज्ञान में रह सकते हैं।</li>
+<li><b>Sea Wolf AI के लिए डॉक्यूमेंट्स:</b> आपके द्वारा अपलोड किए गए मैनुअल, प्रक्रियाएँ या ख़ाली फ़ॉर्म सर्वर पर संग्रहीत होते हैं; डेवलपर की समीक्षा के बाद उन्हें आपकी कंपनी के लिए या सभी उपयोगकर्ताओं के लिए Sea Wolf AI के नॉलेज बेस में जोड़ा जाता है। निजी डॉक्यूमेंट्स अपलोड न करें।</li>
+<li><b>जहाज़ समीक्षाएँ:</b> भाग 3c देखें।</li>
 </ul>
-<p><b>सीमाएँ और उपयोग न करना।</b> चीफ मेट की एक मुफ़्त दैनिक सीमा है। आप चीफ मेट का उपयोग न करना भी चुन सकते हैं; बाकी ऐप इसके बिना और इंटरनेट के बिना पूरी तरह काम करता है। सर्वर पर आपके इंस्टॉलेशन के लिए रखी गई हर चीज़ (मेमोरी में तथ्य, आपके प्रकाशित प्रश्न और जवाब, अपलोड किए गए डॉक्यूमेंट्स) हटाने के लिए चीफ मेट → मेमोरी → "सर्वर पर मेरा डेटा मिटाओ" का उपयोग करें, या चीफ मेट → मेमोरी में दिखाई गई इंस्टॉलेशन ID के साथ <span class="mail">myaziopa@gmail.com</span> पर लिखें; हम इसे 30 दिनों के भीतर हटा देंगे। संस्करण 0.3.0 और नए में यह बटन और इंस्टॉलेशन ID पूछें → मेरा जहाज़ में है।</p>
+<p><b>सीमाएँ और उपयोग न करना।</b> Sea Wolf AI की एक मुफ़्त दैनिक सीमा है। आप Sea Wolf AI का उपयोग न करना भी चुन सकते हैं; बाकी ऐप इसके बिना और इंटरनेट के बिना पूरी तरह काम करता है। सर्वर पर आपके इंस्टॉलेशन के लिए रखी गई हर चीज़ (याद रखे गए तथ्य, आपके प्रकाशित प्रश्न और जवाब, अपलोड किए गए डॉक्यूमेंट्स) हटाने के लिए पूछें → मेरा जहाज़ → "सर्वर पर मेरा डेटा मिटाएँ" का उपयोग करें, या पूछें → मेरा जहाज़ में दिखाई गई इंस्टॉलेशन ID के साथ <span class="mail">myaziopa@gmail.com</span> पर लिखें; हम इसे 30 दिनों के भीतर हटा देंगे। जहाज़ों की समीक्षाओं के साथ क्या होता है, यह भाग 3c में है।</p>
 <h2 id="questions-hi">3b. नाविकों के सवाल (संस्करण 0.3.0 और नए)</h2>
 <ul>
 <li>“पूछें” स्क्रीन पर आप जो सवाल पूछते हैं, वह AI के जवाब के साथ नाविकों की फ़ीड में प्रकाशित होता है और Sea Wolf के सभी उपयोगकर्ता उसे देख सकते हैं। भेजने से पहले ऐप यह बताता है। दूसरे नाविकों के सवालों पर आपके जवाब भी इसी तरह सार्वजनिक होते हैं।</li>
@@ -713,6 +774,15 @@ article p,article li{color:var(--ink)}article ul{padding-left:22px}article li{ma
 <li>सूचनाएँ (Google Firebase, भाग 3a देखें): आपके सवाल पर नया जवाब, आपके विभाग के नए सवाल, और कभी-कभी अनुभवी नाविकों को उन सवालों की याद जो अभी जवाब का इंतज़ार कर रहे हैं। आप इन्हें ऐप की सूचना सेटिंग्स में बंद कर सकते हैं।</li>
 <li>कोई भी उपयोगकर्ता किसी सवाल या जवाब की शिकायत कर सकता है। शिकायत वाली सामग्री की जाँच डेवलपर करता है और उसे छिपाया जा सकता है; तीन अलग-अलग उपयोगकर्ताओं की शिकायत पर वह अपने-आप छिप जाती है।</li>
 <li>आप अपना सवाल या जवाब कभी भी हटा सकते हैं। सर्वर पर आपके इंस्टॉलेशन के लिए रखा सब कुछ हटाने के लिए: पूछें → मेरा जहाज़ → “सर्वर पर मेरा डेटा मिटाएँ”, या हमें लिखें (भाग 9)।</li>
+</ul>
+<h2 id="reviews-hi">3c. जहाज़ समीक्षाएँ</h2>
+<ul>
+<li>आपकी लिखी जहाज़ की समीक्षा (रेटिंग, टेक्स्ट, आपकी रैंक, जहाज़ का नाम और IMO नंबर, कॉन्ट्रैक्ट की तारीख़ें) हमारे सर्वर पर रखी जाती है और Sea Wolf के सभी उपयोगकर्ताओं को दिखती है।</li>
+<li>दूसरे उपयोगकर्ता आपकी रैंक, कॉन्ट्रैक्ट के महीने और जहाज़ पर बिताया समय देखते हैं — आपका नाम कभी नहीं।</li>
+<li>समीक्षा केवल कम से कम 14 दिनों के कॉन्ट्रैक्ट के बाद लिखी जा सकती है। आप अपनी समीक्षा संपादित कर सकते हैं।</li>
+<li>“सर्वर पर मेरा डेटा मिटाएँ” (पूछें → मेरा जहाज़) के बाद आपकी समीक्षा दूसरे नाविकों के लिए बनी रहती है, लेकिन अब आपके इंस्टॉलेशन से जुड़ी नहीं रहती: उसे अब संपादित नहीं किया जा सकता, और उसकी तारीख़ों में केवल महीना और साल रखे जाते हैं।</li>
+<li>कोई भी उपयोगकर्ता किसी समीक्षा की शिकायत कर सकता है। शिकायत वाली समीक्षाओं की जाँच सवालों की तरह ही होती है (भाग 3b)।</li>
+<li>समीक्षाओं का अनुवाद AI सेवा Anthropic द्वारा अपने-आप हर पाठक की भाषा में किया जाता है, जैसा भाग 3a में बताया गया है।</li>
 </ul>
 <h2>4. बैकअप, शेयरिंग और हैंडओवर</h2>
 <p>बैकअप वे फ़ाइलें हैं जिन्हें आप ख़ुद बनाते और रखते हैं; वे आपके चुने हुए पासवर्ड से एन्क्रिप्ट (AES-256) होती हैं। जब आप अपना कार्ड, CV, कॉन्टैक्ट फ़ाइल, हैंडओवर फ़ाइल या बैकअप शेयर करते हैं, तो फ़ाइल केवल वहीं जाती है जहाँ आप भेजते हैं। डेवलपर को ये फ़ाइलें कभी नहीं मिलतीं।</p>
