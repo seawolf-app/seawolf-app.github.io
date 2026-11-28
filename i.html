@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Sea Wolf</title>
+<style>
+  html,body{margin:0;height:100%;background:#000;color:#bbb;font:16px/1.4 system-ui,sans-serif}
+  body{display:flex;align-items:center;justify-content:center;text-align:center}
+  a{color:#fff}
+</style>
+</head>
+<body>
+<p id="go"><a href="https://play.google.com/store/apps/details?id=app.seawolf.logbook">Sea Wolf</a></p>
+<script>
+  // Sea Wolf invitation (28.11.2026): opens the app with the code (seawolf://invite/CODE), or Google Play without it.
+  (function () {
+    var code = (location.hash || '').replace('#', '').replace(/[^A-Za-z0-9-]/g, '').slice(0, 10);
+    var play = 'https://play.google.com/store/apps/details?id=app.seawolf.logbook';
+    if (!code) { location.replace(play); return; }
+    if (/Android/i.test(navigator.userAgent)) {
+      location.replace('intent://invite/' + code + '#Intent;scheme=seawolf;package=app.seawolf.logbook;S.browser_fallback_url=' +
+        encodeURIComponent(play) + ';end');
+    } else {
+      location.replace(play);
+    }
+  })();
+</script>
+</body>
+</html>
